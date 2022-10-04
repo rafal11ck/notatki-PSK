@@ -1,12 +1,12 @@
-#+title: archtektura systemów komputerowych wykład 1 04.10.2022
+#+title: archtektura systemów komputerowych wykład 01 04.10.2022
 * algorytmy
 * kodowania !
-** NKB
-** U1 i U2
-** ZM
-** Satło i zmiennopozycyjny
-** ASCII
-** UNICODE
+- NKB
+- U1 i U2
+- ZM
+- Satło i zmiennopozycyjny
+- ASCII
+- UNICODE
 Jest ich wiele
 ** Kodowanie Gray'a
 * Ręcznie kodowanie RSA
