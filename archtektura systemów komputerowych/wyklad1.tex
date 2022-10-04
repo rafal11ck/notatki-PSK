@@ -1,0 +1,151 @@
+% Created 2022-10-04 Tue 18:41
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Rafał Grot}
+\date{\today}
+\title{archtektura systemów komputerowych wykład 1 04.10.2022}
+\hypersetup{
+ pdfauthor={Rafał Grot},
+ pdftitle={archtektura systemów komputerowych wykład 1 04.10.2022},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 28.2 (Org mode 9.6)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\section{algorytmy}
+\label{sec:org3a83d90}
+\section{kodowania !}
+\label{sec:orgac1e1fe}
+\subsection{NKB}
+\label{sec:orgee4d612}
+\subsection{U1 i U2}
+\label{sec:orge2d4b33}
+\subsection{ZM}
+\label{sec:org9889f04}
+\subsection{Satło i zmiennopozycyjny}
+\label{sec:orgbfe4e24}
+\subsection{ASCII}
+\label{sec:orgfb92935}
+\subsection{UNICODE}
+\label{sec:org27e019a}
+Jest ich wiele
+\subsection{Kodowanie Gray'a}
+\label{sec:orge9445c8}
+\section{Ręcznie kodowanie RSA}
+\label{sec:orgdac72ab}
+dla małych liczb
+\section{komponenty}
+\label{sec:org580c14a}
+\subsection{moduł logiczny}
+\label{sec:org61dd6f5}
+układ logiczny, którey orperuje zgodnie z ale=gebrą Boola'a.Najprostrzymi modułami są bramki logiczne realizujące proste operacje: iloczynu, sumy ,różnicy symetrycznej i negacji.
+\subsection{porjektownie}
+\label{sec:orgfd8823e}
+\begin{itemize}
+\item metody klasyczne
+\begin{itemize}
+\item tablice Karnaugh
+\end{itemize}
+\item Języki HDL
+(jeszcze żyją)
+\end{itemize}
+\subsection{funktory logiczne}
+\label{sec:orgc90b691}
+Są realizacją sprzętową matematycznego modelu funkcji logicznej.
+dzielimy od złożności dzilimy na:
+\begin{description}
+\item[{Układy małe skali integracji (SSI)}] relizują podstawowe operacjie logiczne: AND, OR, NOT, XOR
+\item[{średniej skali integracji (MSI)}] 
+\end{description}
+\section{przesyłanie informacji}
+\label{sec:orgc8cd0a1}
+\subsection{komunikacja}
+\label{sec:org7ac4f78}
+\subsubsection{W komputerach klasy PC}
+\label{sec:org2d7f502}
+Odbywa się na dwóch platformach
+\begin{enumerate}
+\item sprzętowej
+\label{sec:org97411e0}
+\begin{description}
+\item[{wymiana danych między modułami komputera}] np CPU i pamięci
+\item transmisje danych z/do pamięci masowej
+\item przesyłanie z/do urządzeń peryferyjnyc
+\end{description}
+\item softwareowej
+\label{sec:org7a470b0}
+\begin{itemize}
+\item transmitowanie pamięci między aplikacjami
+\end{itemize}
+\begin{enumerate}
+\item przesyłanie danych między systemami komputerami (sieci komputerowe)
+\label{sec:org7dc5912}
+\end{enumerate}
+\item architektury połączeń
+\label{sec:org29dcb58}
+\begin{enumerate}
+\item magistrali
+\label{sec:orgefe5a31}
+\item gwiazdy
+\label{sec:orgd9043b3}
+\item pierścienia
+\label{sec:org26e2da4}
+\item siatki
+\label{sec:org4df6d58}
+\end{enumerate}
+\end{enumerate}
+\section{Komputer klasy PC}
+\label{sec:orgc141537}
+\subsection{Posiada cechy:}
+\label{sec:orgbcd6280}
+\begin{description}
+\item[{porgramowalność}] umożliwa uruchomienie dowolnego oprogramowania lub jego stworzenia
+\item[{uniwersalne zastosowania}] \begin{description}
+\item[{typowo użytkowe}] jako maszyna do pisania i gormadzenia danych, jako narzędzie obliczeniowe, wpracy biurowej
+\item o charkaterze rozrywkowym
+\item[{badawczo-naukowe}] w naukach ścisłych, w medycynie, w farmacji
+\item[{wspomagające projektowanie}] np narzędzia CAD, CAE, CAI, CAM, CASE itp.
+\end{description}
+\item modularność konstrukcji
+\end{description}
+\subsection{komponenty}
+\label{sec:org38dd8cc}
+\subsubsection{monitor}
+\label{sec:orgd17578c}
+\subsubsection{klawaitura}
+\label{sec:orgb3251d5}
+\subsubsection{urządzenie wskazujące (mysz)}
+\label{sec:org02a3b24}
+\subsection{jednostka centralną}
+\label{sec:orgc8a3677}
+\subsubsection{CPU}
+\label{sec:orgfcc519b}
+\subsubsection{płytę główną}
+\label{sec:org36ae1ff}
+\subsubsection{kart roszerzające}
+\label{sec:org209b015}
+NP:
+\begin{itemize}
+\item karty graficzne
+\item karty muzyczne
+\item karty sieciowe
+\end{itemize}
+\subsubsection{pamięć operacyjna}
+\label{sec:orgeb7fb7e}
+wykonana z modółów pamięci RAM
+\end{document}
