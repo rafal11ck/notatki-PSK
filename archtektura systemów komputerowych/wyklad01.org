@@ -8,9 +8,8 @@
 - ASCII
 - UNICODE
 Jest ich wiele
-*** Kodowanie Gray'a
-*** Ręcznie kodowanie RSA
-dla małych liczb
+- Kodowanie Gray'a :: mówił że fajne
+- Ręcznie kodowanie RSA :: mówił że można sobie zrobić dla małych liczb
 * komponenty
 ** moduł logiczny
 układ logiczny, którey orperuje zgodnie z ale=gebrą Boola'a.Najprostrzymi modułami są bramki logiczne realizujące proste operacje: iloczynu, sumy ,różnicy symetrycznej i negacji.
@@ -26,7 +25,7 @@ WIkipedia dobre źródlo info
 Są realizacją sprzętową matematycznego modelu funkcji logicznej.
 dzielimy od złożności dzilimy na:
 - Układy małe skali integracji (SSI) :: relizują podstawowe operacjie logiczne: AND, OR, NOT, XOR
-- średniej skali integracji (MSI) ::
+- średniej skali integracji (MSI)
 * przesyłanie informacji
 ** komunikacja
 *** W komputerach klasy PC
@@ -37,7 +36,7 @@ Odbywa się na dwóch platformach
 - przesyłanie z/do urządzeń peryferyjnyc
 **** softwareowej
 - transmitowanie pamięci między aplikacjami
-***** przesyłanie danych między systemami komputerami (sieci komputerowe)
+- przesyłanie danych między systemami komputerami (sieci komputerowe)
 **** architektury połączeń
 ***** magistrali
 ***** gwiazdy
@@ -58,7 +57,7 @@ Odbywa się na dwóch platformach
 - urządzenie wskazujące (mysz)
 *** jednostka centralna
 **** CPU
-**** płyta główną
+**** płyta główna
 **** karty roszerzające
 NP:
 - karty graficzne
