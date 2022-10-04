@@ -1,6 +1,6 @@
 #+title: archtektura systemów komputerowych wykład 01 04.10.2022
 * algorytmy
-* kodowania !
+** kodowania !
 - NKB
 - U1 i U2
 - ZM
@@ -8,8 +8,8 @@
 - ASCII
 - UNICODE
 Jest ich wiele
-** Kodowanie Gray'a
-* Ręcznie kodowanie RSA
+*** Kodowanie Gray'a
+*** Ręcznie kodowanie RSA
 dla małych liczb
 * komponenty
 ** moduł logiczny
@@ -39,10 +39,10 @@ Odbywa się na dwóch platformach
 - transmitowanie pamięci między aplikacjami
 ***** przesyłanie danych między systemami komputerami (sieci komputerowe)
 **** architektury połączeń
-******* magistrali
-******* gwiazdy
-******* pierścienia
-******* siatki
+***** magistrali
+***** gwiazdy
+***** pierścienia
+***** siatki
 * Komputer klasy PC
 ** Posiada cechy:
  - porgramowalność :: umożliwa uruchomienie dowolnego oprogramowania lub jego stworzenia
@@ -53,13 +53,13 @@ Odbywa się na dwóch platformach
    + wspomagające projektowanie :: np narzędzia CAD, CAE, CAI, CAM, CASE itp.
  - modularność konstrukcji
 ** komponenty
-*** monitor
-*** klawaitura
-*** urządzenie wskazujące (mysz)
-** jednostka centralną
+- monitor
+- klawaitura
+- urządzenie wskazujące (mysz)
+** jednostka centralna
 *** CPU
-*** płytę główną
-*** kart roszerzające
+*** płyta główną
+*** karty roszerzające
 NP:
 - karty graficzne
 - karty muzyczne
