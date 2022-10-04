@@ -56,13 +56,13 @@ Odbywa się na dwóch platformach
 - monitor
 - klawaitura
 - urządzenie wskazujące (mysz)
-** jednostka centralna
-*** CPU
-*** płyta główną
-*** karty roszerzające
+*** jednostka centralna
+**** CPU
+**** płyta główną
+**** karty roszerzające
 NP:
 - karty graficzne
 - karty muzyczne
 - karty sieciowe
-*** pamięć operacyjna
+**** pamięć operacyjna
 wykonana z modółów pamięci RAM
