@@ -1,0 +1,68 @@
+#+title: archtektura systemów komputerowych wykład 01 04.10.2022
+* algorytmy
+* kodowania !
+- NKB
+- U1 i U2
+- ZM
+- Satło i zmiennopozycyjny
+- ASCII
+- UNICODE
+Jest ich wiele
+** Kodowanie Gray'a
+* Ręcznie kodowanie RSA
+dla małych liczb
+* komponenty
+** moduł logiczny
+układ logiczny, którey orperuje zgodnie z ale=gebrą Boola'a.Najprostrzymi modułami są bramki logiczne realizujące proste operacje: iloczynu, sumy ,różnicy symetrycznej i negacji.
+** porjektownie
+- metody klasyczne
+  + tablice Karnaugh
+- Języki HDL
+  (jeszcze żyją)
+** funktory logiczne
+#+begin_comment
+WIkipedia dobre źródlo info
+#+end_comment
+Są realizacją sprzętową matematycznego modelu funkcji logicznej.
+dzielimy od złożności dzilimy na:
+- Układy małe skali integracji (SSI) :: relizują podstawowe operacjie logiczne: AND, OR, NOT, XOR
+- średniej skali integracji (MSI) ::
+* przesyłanie informacji
+** komunikacja
+*** W komputerach klasy PC
+Odbywa się na dwóch platformach
+**** sprzętowej
+- wymiana danych między modułami komputera :: np CPU i pamięci
+- transmisje danych z/do pamięci masowej
+- przesyłanie z/do urządzeń peryferyjnyc
+**** softwareowej
+- transmitowanie pamięci między aplikacjami
+***** przesyłanie danych między systemami komputerami (sieci komputerowe)
+**** architektury połączeń
+******* magistrali
+******* gwiazdy
+******* pierścienia
+******* siatki
+* Komputer klasy PC
+** Posiada cechy:
+ - porgramowalność :: umożliwa uruchomienie dowolnego oprogramowania lub jego stworzenia
+ - uniwersalne zastosowania ::
+   + typowo użytkowe :: jako maszyna do pisania i gormadzenia danych, jako narzędzie obliczeniowe, wpracy biurowej
+   + o charkaterze rozrywkowym
+   + badawczo-naukowe :: w naukach ścisłych, w medycynie, w farmacji
+   + wspomagające projektowanie :: np narzędzia CAD, CAE, CAI, CAM, CASE itp.
+ - modularność konstrukcji
+** komponenty
+*** monitor
+*** klawaitura
+*** urządzenie wskazujące (mysz)
+** jednostka centralną
+*** CPU
+*** płytę główną
+*** kart roszerzające
+NP:
+- karty graficzne
+- karty muzyczne
+- karty sieciowe
+*** pamięć operacyjna
+wykonana z modółów pamięci RAM

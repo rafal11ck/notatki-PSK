@@ -1,0 +1,147 @@
+% Created 2022-10-04 Tue 21:12
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Rafał Grot}
+\date{\today}
+\title{archtektura systemów komputerowych wykład 01 04.10.2022}
+\hypersetup{
+ pdfauthor={Rafał Grot},
+ pdftitle={archtektura systemów komputerowych wykład 01 04.10.2022},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 28.2 (Org mode 9.6)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\section{algorytmy}
+\label{sec:org6ecc595}
+\section{kodowania !}
+\label{sec:org1b132d4}
+\begin{itemize}
+\item NKB
+\item U1 i U2
+\item ZM
+\item Satło i zmiennopozycyjny
+\item ASCII
+\item UNICODE
+\end{itemize}
+Jest ich wiele
+\subsection{Kodowanie Gray'a}
+\label{sec:org1284817}
+\section{Ręcznie kodowanie RSA}
+\label{sec:orgf9aa1e8}
+dla małych liczb
+\section{komponenty}
+\label{sec:org0b56daf}
+\subsection{moduł logiczny}
+\label{sec:orgf38ab56}
+układ logiczny, którey orperuje zgodnie z ale=gebrą Boola'a.Najprostrzymi modułami są bramki logiczne realizujące proste operacje: iloczynu, sumy ,różnicy symetrycznej i negacji.
+\subsection{porjektownie}
+\label{sec:org8400446}
+\begin{itemize}
+\item metody klasyczne
+\begin{itemize}
+\item tablice Karnaugh
+\end{itemize}
+\item Języki HDL
+(jeszcze żyją)
+\end{itemize}
+\subsection{funktory logiczne}
+\label{sec:orga7a72f0}
+Są realizacją sprzętową matematycznego modelu funkcji logicznej.
+dzielimy od złożności dzilimy na:
+\begin{description}
+\item[{Układy małe skali integracji (SSI)}] relizują podstawowe operacjie logiczne: AND, OR, NOT, XOR
+\item[{średniej skali integracji (MSI)}] 
+\end{description}
+\section{przesyłanie informacji}
+\label{sec:orgdc02376}
+\subsection{komunikacja}
+\label{sec:org17fb6fc}
+\subsubsection{W komputerach klasy PC}
+\label{sec:org89dc592}
+Odbywa się na dwóch platformach
+\begin{enumerate}
+\item sprzętowej
+\label{sec:org19d5163}
+\begin{description}
+\item[{wymiana danych między modułami komputera}] np CPU i pamięci
+\item transmisje danych z/do pamięci masowej
+\item przesyłanie z/do urządzeń peryferyjnyc
+\end{description}
+\item softwareowej
+\label{sec:orgc05d741}
+\begin{itemize}
+\item transmitowanie pamięci między aplikacjami
+\end{itemize}
+\begin{enumerate}
+\item przesyłanie danych między systemami komputerami (sieci komputerowe)
+\label{sec:orgf23c06a}
+\end{enumerate}
+\item architektury połączeń
+\label{sec:orgc7c7404}
+\begin{enumerate}
+\item magistrali
+\label{sec:org4baa05c}
+\item gwiazdy
+\label{sec:orgb7c4295}
+\item pierścienia
+\label{sec:org2233402}
+\item siatki
+\label{sec:org7c74456}
+\end{enumerate}
+\end{enumerate}
+\section{Komputer klasy PC}
+\label{sec:org93e6e85}
+\subsection{Posiada cechy:}
+\label{sec:orga28d635}
+\begin{description}
+\item[{porgramowalność}] umożliwa uruchomienie dowolnego oprogramowania lub jego stworzenia
+\item[{uniwersalne zastosowania}] \begin{description}
+\item[{typowo użytkowe}] jako maszyna do pisania i gormadzenia danych, jako narzędzie obliczeniowe, wpracy biurowej
+\item o charkaterze rozrywkowym
+\item[{badawczo-naukowe}] w naukach ścisłych, w medycynie, w farmacji
+\item[{wspomagające projektowanie}] np narzędzia CAD, CAE, CAI, CAM, CASE itp.
+\end{description}
+\item modularność konstrukcji
+\end{description}
+\subsection{komponenty}
+\label{sec:orgccd3834}
+\subsubsection{monitor}
+\label{sec:org3813264}
+\subsubsection{klawaitura}
+\label{sec:org0656c19}
+\subsubsection{urządzenie wskazujące (mysz)}
+\label{sec:orgeb59486}
+\subsection{jednostka centralną}
+\label{sec:orgbf763ca}
+\subsubsection{CPU}
+\label{sec:org4b0692b}
+\subsubsection{płytę główną}
+\label{sec:orgb95b92c}
+\subsubsection{kart roszerzające}
+\label{sec:org9473336}
+NP:
+\begin{itemize}
+\item karty graficzne
+\item karty muzyczne
+\item karty sieciowe
+\end{itemize}
+\subsubsection{pamięć operacyjna}
+\label{sec:org1746c77}
+wykonana z modółów pamięci RAM
+\end{document}
