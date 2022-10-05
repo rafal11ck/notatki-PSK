@@ -1,0 +1,32 @@
+#+title: Matematyka 1 cos
+
+* liczby zespolone
++ $\mathbb{Z}$ - zbiór liczb całkowitych
++ $\mathbb{R}$ - zboór liczb rzeczywistych
++ $\mathbb{C}$ - zbiór liczb zespolonych
+$$\mathbb{Z} \subset \mathbb{R} \subset \mathbb{C}$$
+** postać algerbraiczna liczby zespolonej
+$$z=a+bi$$
+
+Zapis zgodny z [[https://en.wikipedia.org/wiki/Complex_number]] (prznynajmniej w części)
+- $\Re(z) = a$ - część rzeczywista liczby zespolonej.
+- $\Im(z) = b$ - częśc urojona liczby zespolonej.
+- $i$ - jednostka urojona $i^2=-1$
+*** sprzężenie liczby zespolonej
+$$z=a+bi$$
+$$\overline{z}=a-bi$$
+$$w=f-gi$$
+$$\overline{w}=f+gi$$
+** postać trygonometryczna liczby zespolonej
+$$z=(z)(\cos\varphi*\sin\varphi)$$
+** postać wykładnicza liczby zespolonej
+$$z=(z)*e^{i\varphi}$$
+** modół liczby zespolonej
+$$$$
+[[./figure01.png]]
+
+$|z|=\sqrt{a^2+b^2}$
+
+$\varphi$ - argument
+** Potęgowanie liczby zespolonej
+$$z=a+bi \to z=|z|(\cos \varphi + i \sin \varphi)^n \to |z|^n(\cos n \varphi + i \sin n \varphi)$$
