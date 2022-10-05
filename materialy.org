@@ -1,0 +1,11 @@
+#+title: Źródła materiałów 1ID12B
+
+* Arechitektura systemów komputerowych
+- wykłady :: [[https://hector.tu.kielce.pl/przedmioty/ask-wyklady.html]]
+* Podstawy porgramowania 1
+- wykłady :: [[https://achilles.tu.kielce.pl/portal/Members/84df831b59534bdc88bef09b15e73c99/podstawy-programowania-1]]
+- laboratioria :: [[https://weaii-moodle.tu.kielce.pl/enrol/index.php?id=149]] trzeba się logować oraz kod *~kubit_12B~*
+* Teoria układóœ logicznych
+- laboratoria :: https://weaii-moodle.tu.kielce.pl/course/view.php?id=304 potrzebny kod *tul2022*
+* Podstawy elektorniki
+- laboratioria :: ???
