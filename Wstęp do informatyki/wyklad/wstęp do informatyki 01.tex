@@ -1,4 +1,4 @@
-% Created 2022-10-07 Fri 17:59
+% Created 2022-10-07 Fri 23:41
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -27,93 +27,53 @@
 \maketitle
 \tableofcontents
 
+\large
+
 \textbf{MACIE OPANOWAC NKB I U2}
 wstęp do infrmatyki moodle bez hasłą
-\section{System liczbowy}
-\label{sec:org03771cf}
-\subsection{System liczbowy o podstawie R: \(\R \in N\)}
-\label{sec:orgb421e36}
-Alfabet: \(\A = {\hat{a}_1,\hat{a}_2,...,\hat{a}_R}, |A|=R\)
-\(SR \to DEC\):
-\(x_{DEC} : R = W | Reszta\)
-\$X\textsubscript{DEC} : R | \(W_0\) | \(R_{0}\)
-\(X_{0} :R\) | \(W_1\) | \(R_{1}\)
-\(X_{1} :R\) | \(W_2\) | \(R_{2}\)
-\(W_{W-2}\) :R | \(W_{W-1}\) | \(R_{N-1}\)
-\(W_{W-1}\) :R | \(0\) | \(R_{N}\)
-$$X_{DEC}=Y_R=(R_R, R_{R-1},...,R_1,R_0)$$
 
-\(110_{DEC} : 2 = 55| 0\)
-\(55_{DEC} : 2  = 27| 1\)
-\(27_{DEC} : 2  = 13| 1\)
-\(13_{DEC} : 2  = 6| 1\)
-\(6_{DEC} : 2  = 3| 0\)
-\(3_{DEC} : 2  = 1| 1\)
-\(1_{DEC} : 2  = 1| 1\)
+\section{System liczbowy o podstawie R \(R \in N\)}
+\label{sec:org2d55117}
+Alfabet: \(A = \{ \hat{a}_0, \hat{a}_1, \dots, \hat{a}_0 \} , |A| = R\\\)
+\subsection{DEC -> SR}
+\label{sec:org717f9ce}
+\begin{latex}
+\begin{tabular}{c|c|c}
+    $X_{DEC}:R =$& Wynik & Reszta \\
+    \hline
+    $X_{0}:R$ & W_0 & R_{0} \\
+    $X_{1}:R$ & W_1 & R_{1} \\
+    $X_{2}:R$ & W_2 & R_{2} \\
+    \vdots & \vdots & \vdots \\
+    $X_{N-2}:R$ & W_{N-1} & R_{N-1} \\
+    $X_{N-1}:R$ & 0 & R_{N} \\
+\end{tabular}
+\(\uparrow\)
+\end{latex}
+Odczytujemy od dołu.
 
-\subsection{\(SR \to DEC\)}
-\label{sec:org56c9752}
-\(X_{DEC} = \foreach{N}{i=0}a_i*R , a_i \in A\)
-np:
-\$lX\textsubscript{DEC} = 0 * 2\textsuperscript{0} + 1 * 2\textsuperscript{1} + 1*2\textsuperscript{2} + 0 * 2\textsuperscript{3} + 0 * 2\textsuperscript{4} + 1*2\^{}\% + 1*2\textsuperscript{6} = 0 + 2 7+ 4 + 8 + 0 + 32 + 64 = 110\$\$
-\section{Reperezentacja liczb ujemnych}
-\label{sec:org5bf9468}
-\subsection{System ZM (Znak moduł)}
-\label{sec:orgb7ea601}
-\(L_{ZM} = (b_n a_{aN-1}, a_{N-2}, ... , a_{1}, a_0)_{ZM}), a\such \in A, i-a_0,...a_{N-1}\)
-\(b_N \in {0,1}\) gdzie \(b_n=0\) oznacza \(L > 0\)
-\(b_N=1\) oznacza \(L < 0\)
-\subsection{System U2 (dopełniniowy do 2)}
-\label{sec:org9c7bf30}
-\subsubsection{BIN \(\to\) DEC}
-\label{sec:org8bd6c27}
-\begin{enumerate}
-\item U2
-\label{sec:org6a385a1}
-\(L_{U2}= (a_{N-1+} a_{N-2} ... a_1 a_0)_{U2}\)
-\(U2 \to DEC\)
-\(L_{U2}= a_{N-1}*2^{N-1} + \sum{u-2}{i=0}a_i*2\)
+$$X_{DEC} = Y_R = ( R_N, R_{N-1}, \dots, R_{1}, R_{0})_{R}$$
+\subsubsection{\(110_{DEC} \xrightarrow{?} Y_{2}\)}
+\label{sec:org3e57a83}
+\begin{latex}
 
-\(L_{DEC}\)
-\item MKB
-\label{sec:org0c06a06}
-\(L_{MKB}= (a_{N-1+} a_{N-2} ... a_1 a_0)_{NKB}\)
+\begin{tabular}{c c|c}
+110_{DEC}:2= & 55 & 0 \\
+55 : 2 = & 27 & 1 \\
+27 : 2 = & 13 & 1 \\
+13 : 2 = & 6 & 1 \\
+6 : 2 = & 3 & 0 \\
+3 : 2 = & 1 & 1 \\
+1 : 2 = & 0 & 1 \\
+\end{tabular}
+\(\uparrow\)
 
-\(1101110_{U2} = -18\)
-\(1101110_{NKB} = 110_{DEC}\)
-\end{enumerate}
-\subsubsection{DEC \(\to\) BIN}
-\label{sec:org35731af}
-\begin{enumerate}
-\item DEC \(\to\) NKB
-\label{sec:orgb43789f}
-Użyj algorytmu DEC \(\to\) SR dla \(R=2\)
-\begin{enumerate}
-\item Użyj algorytmu DEC \(\to\) SR dla \(R=2\)
-\end{enumerate}
-\(L=(a_{N-1} a_{N-2} ... a_1 a_0)\)
-\begin{enumerate}
-\item dodaj ``0'' do najbardziej znaczącej cyfry
-\end{enumerate}
-\(L_{NKB}=(a_{N-1} a_{N-2} ... a_1 a_0)_{NKB}\)
-\(L_{NKB}=(a_{N-1} a_{N-2} ... a_1 a_0)_{NKB}\)
-\(L_{NKB}= 0 a_{N-1} a_{N-2} ... a_1 a_0\)
-\begin{enumerate}
-\item dla \(L_{DEC} >= 0\) KONIEC; \$dla \$L\textsubscript{DEC} < 0  ?????
-\end{enumerate}
-\(L_{U2}=(B_w b_{w-1} b_{w-2} ... b_1 b_0)_{U2}\)
+$$Y_2=1101110_2=110_{10}$$
+\end{latex}
+\subsection{SR \(\to\) DEC}
+\label{sec:orgae9db52}
+$$X_{DEC} = \sum_{i=0}^{N} a_i \cdot R^{i}, a_{i}: \in A$$
 
-\(1101110_{NKB}\)
-\(110_{DEC} = 01101110_{U2}\)
-\(-110_{DEC}=01101110\)
-100100001
-+00000001
-
-\noindent\rule{\textwidth}{0.5pt}
-\(10010010_{U2} = -110_{DEC}\)
-
-DEC \(\to\) NKB
-NKB \(\to\) U2
-zmiana znaku \textbf{L<0}
-\end{enumerate}
+np. \(1101110_{2} \xrightarrow{?} DEC\)
+$$X_{DEC} = 0 \cdot 2^0 + 1 \cdot 2^1 + 0 \cdot 2^2 + 1 \cdot 2^3 + 0 \cdot 2^4 + 1 \cdot 2^5 + 1 \cdot 2^6 = 0 + 2 + 4 + 8 + 0 + 32 + 64 = 110_{10} $$
 \end{document}
