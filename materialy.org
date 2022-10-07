@@ -9,3 +9,5 @@
 - laboratoria :: https://weaii-moodle.tu.kielce.pl/course/view.php?id=304 potrzebny kod *tul2022*
 * Podstawy elektorniki
 - laboratioria :: ???
+* Wstęp do informatyki
+- wykłady :: [[https://weaii-moodle.tu.kielce.pl/course/view.php?id=408]]
