@@ -3,12 +3,12 @@
 wstęp do infrmatyki moodle bez hasłą
 * System liczbowy
 ** System liczbowy o podstawie R: $\R \in N$
-Alfabet: $\A-{\hat{a_1},\hat{a_2},...,\hat{a_R}}, |A|=R$
+Alfabet: $\A = {\hat{a}_1,\hat{a}_2,...,\hat{a}_R}, |A|=R$
 $SR \to DEC$:
-$$x_{DEC} : R = W | Reszta$$
-$X_{DEC} :R $ | $W_0$ | $R_{0}
-$X_{0} :R $ | $W_1$ | $R_{1}
-$X_{1} :R $ | $W_2$ | $R_{2}
+$x_{DEC} : R = W | Reszta$
+$X_{DEC} : R | $W_0$ | $R_{0}$
+$X_{0} :R $ | $W_1$ | $R_{1}$
+$X_{1} :R $ | $W_2$ | $R_{2}$
 $W_{W-2}$ :R | $W_{W-1}$ | $R_{N-1}$
 $W_{W-1}$ :R | $0$ | $R_{N}$
 $$X_{DEC}=Y_R=(R_R, R_{R-1},...,R_1,R_0)$$
