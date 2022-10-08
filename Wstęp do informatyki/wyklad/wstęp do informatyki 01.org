@@ -1,15 +1,18 @@
 #+title: Wprowadzenie do systemów liczbowych
+#+language: pl
 \large
 
 *MACIE OPANOWAC NKB I U2*
-wstęp do infrmatyki moodle bez hasłą
+wstęp do infrmatyki moodle bez hasła
 
-* System liczbowy o podstawie R $R \in N$
-Alfabet: $A = \{ \hat{a}_0, \hat{a}_1, \dots, \hat{a}_0 \} , |A| = R\\$
-** DEC -> SR
+* System liczbowy o podstawie $R$
+$R \in \mathbb{N}$ \\
+Alfabet: $A = \{ \hat{a}_0, \hat{a}_1, \dots, \hat{a}_0 \}$ \\
+$|A| = R$
+** DEC $\to$ SR
 #+begin_latex
 \begin{tabular}{c|c|c}
-    $X_{DEC}:R =$& Wynik & Reszta \\
+    $X_{\text{DEC}}:R =$& Wynik & Reszta \\
     \hline
     $X_{0}:R$ & W_0 & R_{0} \\
     $X_{1}:R$ & W_1 & R_{1} \\
@@ -22,12 +25,14 @@ Alfabet: $A = \{ \hat{a}_0, \hat{a}_1, \dots, \hat{a}_0 \} , |A| = R\\$
 #+end_latex
 Odczytujemy od dołu.
 
-$$X_{DEC} = Y_R = ( R_N, R_{N-1}, \dots, R_{1}, R_{0})_{R}$$
-*** $110_{DEC} \xrightarrow{?} Y_{2}$
+$$X_{\text{DEC}} = Y_R = ( R_N R_{N-1} \dots R_{1} R_{0})_{R}$$
+*** przykład
+$110_{\text{DEC}} \xrightarrow{?} Y_{2}$
+\\
 #+begin_latex
 \\
 \begin{tabular}{c c|c}
-110_{DEC}:2= & 55 & 0 \\
+110_{\text{DEC}}:2= & 55 & 0 \\
 55 : 2 = & 27 & 1 \\
 27 : 2 = & 13 & 1 \\
 13 : 2 = & 6 & 1 \\
@@ -40,7 +45,51 @@ $$X_{DEC} = Y_R = ( R_N, R_{N-1}, \dots, R_{1}, R_{0})_{R}$$
 $$Y_2=1101110_2=110_{10}$$
 #+end_latex
 ** SR $\to$ DEC
-$$X_{DEC} = \sum_{i=0}^{N} a_i \cdot R^{i}, a_{i}: \in A$$
+$$X_{\text{DEC}} = \sum_{i=0}^{N} a_i \cdot R^{i}, a_{i}: \in A$$
 
-np. $1101110_{2} \xrightarrow{?}$ DEC
-$$X_{DEC} = 0 \cdot 2^0 + 1 \cdot 2^1 + 0 \cdot 2^2 + 1 \cdot 2^3 + 0 \cdot 2^4 + 1 \cdot 2^5 + 1 \cdot 2^6 = 0 + 2 + 4 + 8 + 0 + 32 + 64 = 110_{10} $$
+*** Przykład
+$1101110_{2} \xrightarrow{?}$ DEC
+$$X_{\text{DEC}} = 0 \cdot 2^0 + 1 \cdot 2^1 + 1 \cdot 2^2 + 1 \cdot 2^3 + 0 \cdot 2^4 + 1 \cdot 2^5 + 1 \cdot 2^6 = 0 + 2 + 4 + 8 + 0 + 32 + 64 = 110_{10} $$
+
+* System ZN (Znak moduł)
+$$\text{L}_{\text{ZN}} = (b_n \underbrace{ a_{N-1} a_{N-2} \dots  a_1 a_0}_{L_{\text{NKB}} \geq 0} )_{\text{ZN}}$$
+$$a_i \in A , i=0,1,\dots,N-1$$
+$$b_N \in \{0,1\}$$
+gdzie
+- $b_N=0$ oznacza $L\geq0$
+- $b_N=1$ oznacza $L<0$
+* NKB
+$$\text{L}_{\text{NKB}}=(a_{N-1}a_{N-2} \dots a_1 a_0)_{\text{NKB}}$$
+** NKB $\to$ DEC
+$$\text{L}_{\text{DEC}} = \sum_{i=0}^{N-1} a_i \cdot 2^i $$
+*** Przykład
+$$\underset{64}{1}10\underset{8}{1}1\underset{2}{1}0_{\text{NKB}} = 110_{\text{DEC}}$$
+** DEC $\to$ NKB
+Użyj algorytmu [[DEC $\to$ SR]] dla $R = 2$
+* System U2 (dopełneniowy do 2)
+$$\text{L}_{\text{U2}}=(a_{N-1}a_{N-2} \dots a_1 a_0)_{\text{U2}}$$
+\\
+$a_{N-1}}$ -- waga ujemna
+** $\test{L}_{\text{U2}} \to$ DEC
+Coś mi się wydaje że to powinno być $L_{\text{DEC}}$ ale tak jest(było) na tablicy.
+
+$$\text{L}_{\text{U2}}= {-a_{N-1}} \cdot 2^{N-1} + \sum_{i=0}^{N-1} a_i \cdot 2^i$$
+*** przykład
+$$\underset{-64}{1}10\underset{8}{1}1\underset{2}{1}0_{\text{U2}} = -18_{\text{DEC}}$$
+** DEC $\to$ U2
+1) Użyj algorytmu [[DEC $\to$ SR]] dla $R=2$ /(Czyli tak samo jak [[DEC $\to$ NKB]])/
+   \\
+   $\text{L} = (a_{N-1} a_{N-2} \dots a_1 a_0)$
+2) Dostaw "0" do najbardziej znaczącej cyfry
+\\
+$\text{L} = (0 a_{N-1} a_{N-2} \dots a_1 a_0)$
+   a) dla $\text{L} \geq 0 \quad$ KONIEC
+   b) dla $\text{L} < 0 \quad$
+#+begin_latex
+\begin{tabular}{llllllll}
+$\text{L} &= &(0 &a_{N-1} &a_{N-2} &\dots &a_1 &a_0)$ \\
+&+ &0 &0 &0 &\dots &0 &1\\
+\hline
+$\text{L}_{\text{U2}} &= &(b_N &b_{N-1} &b_{N-1} &\dots &b_{2} &b_{1}$
+\end{tabular}
+#+end_latex

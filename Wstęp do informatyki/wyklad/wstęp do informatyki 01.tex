@@ -1,4 +1,4 @@
-% Created 2022-10-07 Fri 23:41
+% Created 2022-10-08 Sat 15:48
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -14,14 +14,14 @@
 \usepackage{hyperref}
 \author{Rafał Grot}
 \date{\today}
-\title{Wprowadzenie do systemóœ liczbowych}
+\title{Wprowadzenie do systemów liczbowych}
 \hypersetup{
  pdfauthor={Rafał Grot},
- pdftitle={Wprowadzenie do systemóœ liczbowych},
+ pdftitle={Wprowadzenie do systemów liczbowych},
  pdfkeywords={},
  pdfsubject={},
  pdfcreator={Emacs 28.2 (Org mode 9.6)}, 
- pdflang={English}}
+ pdflang={Polish}}
 \begin{document}
 
 \maketitle
@@ -30,16 +30,18 @@
 \large
 
 \textbf{MACIE OPANOWAC NKB I U2}
-wstęp do infrmatyki moodle bez hasłą
+wstęp do infrmatyki moodle bez hasła
 
-\section{System liczbowy o podstawie R \(R \in N\)}
-\label{sec:org2d55117}
-Alfabet: \(A = \{ \hat{a}_0, \hat{a}_1, \dots, \hat{a}_0 \} , |A| = R\\\)
-\subsection{DEC -> SR}
-\label{sec:org717f9ce}
+\section{System liczbowy o podstawie \(R\)}
+\label{sec:orgd220aac}
+\(R \in \mathbb{N}\) \\
+Alfabet: \(A = \{ \hat{a}_0, \hat{a}_1, \dots, \hat{a}_0 \}\) \\
+\(|A| = R\)
+\subsection{DEC \(\to\) SR}
+\label{sec:org110a1ff}
 \begin{latex}
 \begin{tabular}{c|c|c}
-    $X_{DEC}:R =$& Wynik & Reszta \\
+    $X_{\text{DEC}}:R =$& Wynik & Reszta \\
     \hline
     $X_{0}:R$ & W_0 & R_{0} \\
     $X_{1}:R$ & W_1 & R_{1} \\
@@ -52,13 +54,15 @@ Alfabet: \(A = \{ \hat{a}_0, \hat{a}_1, \dots, \hat{a}_0 \} , |A| = R\\\)
 \end{latex}
 Odczytujemy od dołu.
 
-$$X_{DEC} = Y_R = ( R_N, R_{N-1}, \dots, R_{1}, R_{0})_{R}$$
-\subsubsection{\(110_{DEC} \xrightarrow{?} Y_{2}\)}
-\label{sec:org3e57a83}
+$$X_{\text{DEC}} = Y_R = ( R_N R_{N-1} \dots R_{1} R_{0})_{R}$$
+\subsubsection{przykład}
+\label{sec:org1521b6d}
+\(110_{\text{DEC}} \xrightarrow{?} Y_{2}\)
+
 \begin{latex}
 
 \begin{tabular}{c c|c}
-110_{DEC}:2= & 55 & 0 \\
+110_{\text{DEC}}:2= & 55 & 0 \\
 55 : 2 = & 27 & 1 \\
 27 : 2 = & 13 & 1 \\
 13 : 2 = & 6 & 1 \\
@@ -71,9 +75,69 @@ $$X_{DEC} = Y_R = ( R_N, R_{N-1}, \dots, R_{1}, R_{0})_{R}$$
 $$Y_2=1101110_2=110_{10}$$
 \end{latex}
 \subsection{SR \(\to\) DEC}
-\label{sec:orgae9db52}
-$$X_{DEC} = \sum_{i=0}^{N} a_i \cdot R^{i}, a_{i}: \in A$$
+\label{sec:org2681616}
+$$X_{\text{DEC}} = \sum_{i=0}^{N} a_i \cdot R^{i}, a_{i}: \in A$$
 
-np. \(1101110_{2} \xrightarrow{?} DEC\)
-$$X_{DEC} = 0 \cdot 2^0 + 1 \cdot 2^1 + 0 \cdot 2^2 + 1 \cdot 2^3 + 0 \cdot 2^4 + 1 \cdot 2^5 + 1 \cdot 2^6 = 0 + 2 + 4 + 8 + 0 + 32 + 64 = 110_{10} $$
+\subsubsection{Przykład}
+\label{sec:org9a4e022}
+\(1101110_{2} \xrightarrow{?}\) DEC
+$$X_{\text{DEC}} = 0 \cdot 2^0 + 1 \cdot 2^1 + 1 \cdot 2^2 + 1 \cdot 2^3 + 0 \cdot 2^4 + 1 \cdot 2^5 + 1 \cdot 2^6 = 0 + 2 + 4 + 8 + 0 + 32 + 64 = 110_{10} $$
+
+\section{System ZN (Znak moduł)}
+\label{sec:org0165023}
+$$\text{L}_{\text{ZN}} = (b_n \underbrace{ a_{N-1} a_{N-2} \dots  a_1 a_0}_{L_{\text{NKB}} \geq 0} )_{\text{ZN}}$$
+$$a_i \in A , i=0,1,\dots,N-1$$
+$$b_N \in \{0,1\}$$
+gdzie
+\begin{itemize}
+\item \(b_N=0\) oznacza \(L\geq0\)
+\item \(b_N=1\) oznacza \(L<0\)
+\end{itemize}
+\section{NKB}
+\label{sec:orge886311}
+$$\text{L}_{\text{NKB}}=(a_{N-1}a_{N-2} \dots a_1 a_0)_{\text{NKB}}$$
+\subsection{NKB \(\to\) DEC}
+\label{sec:org569deb9}
+$$\text{L}_{\text{DEC}} = \sum_{i=0}^{N-1} a_i \cdot 2^i $$
+\subsubsection{Przykład}
+\label{sec:org71af190}
+$$\underset{64}{1}10\underset{8}{1}1\underset{2}{1}0_{\text{NKB}} = 110_{\text{DEC}}$$
+\subsection{DEC \(\to\) NKB}
+\label{sec:org4435383}
+Użyj algorytmu \ref{sec:org110a1ff} dla \(R = 2\)
+\section{System U2 (dopełneniowy do 2)}
+\label{sec:orgbb74f9d}
+$$\text{L}_{\text{U2}}=(a_{N-1}a_{N-2} \dots a_1 a_0)_{\text{U2}}$$
+
+\(a_{N-1}}\) -- waga ujemna
+\subsection{\(\test{L}_{\text{U2}} \to\) DEC}
+\label{sec:org5ed86ed}
+Coś mi się wydaje że to powinno być \(L_{\text{DEC}}\) ale tak jest(było) na tablicy.
+
+$$\text{L}_{\text{U2}}= {-a_{N-1}} \cdot 2^{N-1} + \sum_{i=0}^{N-1} a_i \cdot 2^i$$
+\subsubsection{przykład}
+\label{sec:orgb141ff2}
+$$\underset{-64}{1}10\underset{8}{1}1\underset{2}{1}0_{\text{U2}} = -18_{\text{DEC}}$$
+\subsection{DEC \(\to\) U2}
+\label{sec:org07f4226}
+\begin{enumerate}
+\item Użyj algorytmu \ref{sec:org110a1ff} dla \(R=2\) \emph{(Czyli tak samo jak \ref{sec:org4435383})}
+
+\(\text{L} = (a_{N-1} a_{N-2} \dots a_1 a_0)\)
+\item Dostaw "0" do najbardziej znaczącej cyfry
+\end{enumerate}
+
+\(\text{L} = (0 a_{N-1} a_{N-2} \dots a_1 a_0)\)
+\begin{enumerate}
+\item dla \(\text{L} \geq 0 \quad\) KONIEC
+\item dla \(\text{L} < 0 \quad\)
+\end{enumerate}
+\begin{latex}
+\begin{tabular}{llllllll}
+$\text{L} &= (&0 &a_{N-1} &a_{N-2} &\dots &a_1 &a_0)$ \\
+&+ &0 &0 &0 &\dots &0 &1\\
+\hline
+$\text{L}_{\text{U2}} &= &(b_N &b_{N-1} &b_{N-1} &\dots &b_{2} &b_{1}$
+\end{tabular}
+\end{latex}
 \end{document}
