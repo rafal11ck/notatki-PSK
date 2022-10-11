@@ -1,0 +1,177 @@
+#+title: Wyklad02
+* Cykl pracy komputrea
+** Uruchomienie komputera
+*** Włączenie zasilania
+**** przejście w stan wysokiej impedancji
+**** moduły wykonują testy wewnętrzne
+**** mikroprocesor wystawia na magistralę adresową wartość FFFF:0 (zapis segment:offset)
+**** mikroprocesor pobiera zawartość zaadresowaniej pamięci i rozpoczyna wykonanie programu
+***** BIOS
+Umieszczony w pamięci nieulotnej, zawiera podprogram POST
+****** POST
+Jest pierwszą prcedurą uruchomioną bo BIOS
+******* Weryfikuje rejsetry CPU :: zapsuje wartości w rejestrach, każda jest przygotowana dla danej architekttury procesora
+******* Weryfikuje integralność BIOSu
+Liczenie sumy kontrolnej.
+******* Werifikuje komponenty komputera
+******** DMA
+******** Timer
+******** Kontroler przerwań
+******** Sprawdzenie i weryfikacja pamięci operacyjnej.
+******* Zainicjowanie pamięci
+******** katalogwanie
+- magistrali komputera
+*** Ładowanie systemu operacyjnego
+Z pamięci masowej, blokowej
+- katalogwanie urządzeń we/wy
+- katalogowanie urządzeń blokowych
+- Ładowanie sterowników
+- zainicjowanie systemu plików
+*** Inicjacja systemu operacyjnego
+**** uruchamianie usług
+usługa to np serwer wydruku.
+**** ładowanie aplikacji w tle
+Np sterownik wspomagająćy działanie klawiatury lub myszy.
+**** Organizacja pamięci
+**** Uruchomienie powłoki
+*** Faza aplikacji
+1) urzuchomienie aplikacji
+2) zakończenie aplikacji
+3) oczekiwanie na polecenia
+4) od nowa aż do zamknięcia systemu
+*** zamykanie systemu operacyjnego
+**** zapisanie danych
+**** zamknięcie plikóœ
+**** zwolnienie zasobów
+**** wyłączenie komputera
+* Konstrukcja i zasada działąnia mikroprocesora
+** mikroprocesor
+Jest ukłądem ctfrowym skewencyjnym, wykonujączym polecenai(instrukcje). CPU jest jedonstka obliczeniwą komputera.
+Konstrukcyjnie każdy procesor jest układem FSM wykonanym zgodnie z modelem RTL.
+*** Typy
+**** SISD
+Single instruction single data.
+**** SIMD
+Pojedyńczy strumień instrukcji i wiele strumieni danych.
+np: MMX+.
+**** MISD
+Wiele strumni instrukcji, jeden strumień danych.
+**** MIMD
+Wiele strumieni instukcji, wiele strumieni danych.
+*** Rodzaje
+**** CISC (Complex Insturcion Set Computer)
+Mnożenie, dzielenie.
+**** RISC (Reduced Insturcion Set Computer)
+np: architektura ARM.
+Potrzeba mniej zasobóœ sprzętowych żeby zrealzować układ, więc mniejsze zurzycie prądu.
+**** VLIW (Very long instruction word)
+np: Intel Itanium
+*** Moduły
+**** Ścieżka danych
+- blok rejstróœ ogólnego przeznacznia
+- pamięci podręczne pierwszego poziomu
+- rejestry adresowe
+- pamięć stronnicowania i translaci adresóœ TLB
+- układ arytmetyczno-logiczny
+**** moduły kontrolera
+- sterownik magistal
+- układy sterujące
+- układ adresowy
+- blok pobierania rozkazów
+- dekoder instrukcji :: mówi jak instukcja zostanie wykonana
+
+
+** Architektury
+*** von Neumana
+cechy:
+- posadanie skończnej, w pełnu fukcjonalnie listy rozkazów.
+- posadanie możliwośći wprdazanai programóœ oraz przchowywania ich w pamieći.
+- dane i rozkazy powwiny być swobodnie dostępnie.
+- przetwarzaine informacji następuje na skutek sekwencyjnego odczytywania instrukcji z pamięci i wykonywania ich przez procesor komputera.
+*** Harwardzka
+Starsza od von Neumana.
+cechy:
+- rozdzielenie pamięci danych i pamięci programu (podział logiczny).
+- instrukcjie posiadaja prostą konstrukcję, nie występuje mikrokod.
+** Rodziny procoesorów
+*** X86/IA-32
+**** cechy:
+- rodzaju CISC, typu SISD
+- posiada 16/32 bitową archtektórę
+- zapisuje słowa metodą little-endian
+- największa wartość jest wielkości 16,32,64 bitów(zależnie od rodziny)
+- mogącym współpracować z koprocesorem
+- potrafiąćym zaadresować 1MB pamięci RAM (4FB procesor 386+)
+- posiada wiele trybów adresowania pamięci
+**** tryby pracy
+***** rzeczywisty 8086
+- może zadresować 1MB RAM
+- nie ma możliwości ochrony pamięci, zarządzania zadaniami, wątkami
+- nie są dostępnie roszerzone instrukcje
+- dostęp do urządzeń jest możliwy przez wywałania funkcji BIOSu
+***** chronionym
+- dostępna jest cała przestrzeń adresowa.
+- pamięc i zadania są chronione: segmenty definiuje się w tabliczach GDT i LDT
+- dostępna jest pamięć wirtualna oraz stronnciowanie
+- dostępna jest wieleozadaniowość (wielowątkowość)
+- dostępny jest tryb "virtual 8086 mode" :: procesor emuluje jeden ze swoich poprzedników
+***** rejestry
+****** ogólnego przeznaczenia
+******* akumulator
+AL,AH,AX,EAX<RAX
+******* ideksowo bazowy
+BL,BH,BX,EBX,RBX
+******* licznik
+CL,CH,CX,ECXRCX
+******* roszerzająćy akumulator
+DL,DH,DX
+******* indeks źródła SI,ESI,RSI
+******* ideks przeznaczenia
+DI,EDI,RDI
+******* wskaźnik stosu
+SP,ESP,RSP
+******* bazowy stosu (ramki stosu)
+BP,EBP,RBP
+******* licznika programu
+IP,EIP,RIP
+****** segmentowe
+- programu CS
+- stosu SS
+- danych DS,ES,FS,GS
+****** stanu (flags)
+****** kontrolne (Crx)
+****** debuggera
+**** zarządzanie panięcią
+***** tryby adresowania
+- natychmiastowe
+- rejestrowe
+- bezpośrednie
+- pośrednie
+- bazowe
+- indeksowe
+- bazowo-ideksowe
+***** mechanizym ochrony
+Typu sektor:przemieszczenie bazujące na deskryptorach segmentóœ globlanych GDT i lokalnych LDT.
+***** obsługa stronicowania
+wykorzystuje tablicę TLB do odwzorwania nieciągłego obszaru pamięci fizycznej w ciągłe obszary pamięci logicznej (segmentów).
+***** pamięć wirtualna
+pozwala na wymianę stron pamięci RAM z pamięcią masowoą w trakcie odwołania do segmentów pamięci.
+*** IA-64
+Zostałą apracowana przez firmy intel oraz Hewlett-Packard.
+**** cechy:
+- rodzaju CISC/RISC typu MIMD (SIMD)
+- posadającym 128 rejestrów ogólnego przeznaczenia (16 typu integer, 96 do dyspozycji aplikacji (alokowalnych))
+- super-skalarny
+- posiada zaawansowany mechanizm potokowy.
+- posiada możliwość wykonania instrukcji w innej kolejności (out-of-order execution)
+- posiada mechanizm spekulatywnego wykonywania rozkazów
+- potrafi wyknać 12 instrukcji w jednym cyklu zegara (Itanium 9500 series)
+- posiada zaawansowane mechanizmy wirtualizacji
+- wyknującym instrukcje w trybie warunkowym
+**** EPIC / VLIW
+Archiitektura IA-64 jest odmianą modelu EPIC ()ang. Explicitly Paraller Instruction Computing), będącego rodzajem modelu MIMD.
+***** cechy:
+- zazwyczaj są rodzaju RISC lub o podobnym modelu oblcizeniowym
+- wielordzeniwoość
+*** ARM
+RISK

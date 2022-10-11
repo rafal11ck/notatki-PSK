@@ -1,0 +1,348 @@
+% Created 2022-10-11 Tue 15:41
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Rafał Grot}
+\date{\today}
+\title{Wyklad02}
+\hypersetup{
+ pdfauthor={Rafał Grot},
+ pdftitle={Wyklad02},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 28.2 (Org mode 9.6)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\section{Cykl pracy komputrea}
+\label{sec:org34c4d30}
+\subsection{Uruchomienie komputera}
+\label{sec:orgeb1b0d8}
+\subsubsection{Włączenie zasilania}
+\label{sec:orgf562129}
+\begin{enumerate}
+\item przejście w stan wysokiej impedancji
+\label{sec:orgc360e23}
+\item moduły wykonują testy wewnętrzne
+\label{sec:org1ade9c5}
+\item mikroprocesor wystawia na magistralę adresową wartość FFFF:0 (zapis segment:offset)
+\label{sec:org5ed411d}
+\item mikroprocesor pobiera zawartość zaadresowaniej pamięci i rozpoczyna wykonanie programu
+\label{sec:org35132eb}
+\begin{enumerate}
+\item BIOS
+\label{sec:org43cb3e4}
+Umieszczony w pamięci nieulotnej, zawiera podprogram POST
+\begin{enumerate}
+\item POST
+\label{sec:orga429f8f}
+Jest pierwszą prcedurą uruchomioną bo BIOS
+\begin{enumerate}
+\item Weryfikuje rejsetry CPU :: zapsuje wartości w rejestrach, każda jest przygotowana dla danej architekttury procesora
+\label{sec:org819f2d9}
+\item Weryfikuje integralność BIOSu
+\label{sec:orgcb404cf}
+Liczenie sumy kontrolnej.
+\item Werifikuje komponenty komputera
+\label{sec:org2d9c6e1}
+\begin{enumerate}
+\item DMA
+\label{sec:orgb570be2}
+\item Timer
+\label{sec:orgaf46ed6}
+\item Kontroler przerwań
+\label{sec:orgad6f1ea}
+\item Sprawdzenie i weryfikacja pamięci operacyjnej.
+\label{sec:org59d7996}
+\end{enumerate}
+\item Zainicjowanie pamięci
+\label{sec:org13eed5b}
+\begin{enumerate}
+\item katalogwanie
+\label{sec:org2787c60}
+\begin{itemize}
+\item magistrali komputera
+\end{itemize}
+\end{enumerate}
+\end{enumerate}
+\end{enumerate}
+\end{enumerate}
+\end{enumerate}
+\subsubsection{Ładowanie systemu operacyjnego}
+\label{sec:org2d2d93a}
+Z pamięci masowej, blokowej
+\begin{itemize}
+\item katalogwanie urządzeń we/wy
+\item katalogowanie urządzeń blokowych
+\item Ładowanie sterowników
+\item zainicjowanie systemu plików
+\end{itemize}
+\subsubsection{Inicjacja systemu operacyjnego}
+\label{sec:org5179268}
+\begin{enumerate}
+\item uruchamianie usług
+\label{sec:org4fcc2fe}
+usługa to np serwer wydruku.
+\item ładowanie aplikacji w tle
+\label{sec:orgd4430c5}
+Np sterownik wspomagająćy działanie klawiatury lub myszy.
+\item Organizacja pamięci
+\label{sec:orgea28136}
+\item Uruchomienie powłoki
+\label{sec:orgf29f8ef}
+\end{enumerate}
+\subsubsection{Faza aplikacji}
+\label{sec:org3ee07a6}
+\begin{enumerate}
+\item urzuchomienie aplikacji
+\item zakończenie aplikacji
+\item oczekiwanie na polecenia
+\item od nowa aż do zamknięcia systemu
+\end{enumerate}
+\subsubsection{zamykanie systemu operacyjnego}
+\label{sec:org9cf0c15}
+\begin{enumerate}
+\item zapisanie danych
+\label{sec:org3bce0c8}
+\item zamknięcie plikóœ
+\label{sec:org678d203}
+\item zwolnienie zasobów
+\label{sec:org34f4641}
+\item wyłączenie komputera
+\label{sec:orgc5a4b7c}
+\end{enumerate}
+\section{Konstrukcja i zasada działąnia mikroprocesora}
+\label{sec:org6381023}
+\subsection{mikroprocesor}
+\label{sec:org8eec540}
+Jest ukłądem ctfrowym skewencyjnym, wykonujączym polecenai(instrukcje). CPU jest jedonstka obliczeniwą komputera.
+Konstrukcyjnie każdy procesor jest układem FSM wykonanym zgodnie z modelem RTL.
+\subsubsection{Typy}
+\label{sec:orgdf2633a}
+\begin{enumerate}
+\item SISD
+\label{sec:org3f52880}
+Single instruction single data.
+\item SIMD
+\label{sec:org407569c}
+Pojedyńczy strumień instrukcji i wiele strumieni danych.
+np: MMX+.
+\item MISD
+\label{sec:org654e264}
+Wiele strumni instrukcji, jeden strumień danych.
+\item MIMD
+\label{sec:orgb266fd8}
+Wiele strumieni instukcji, wiele strumieni danych.
+\end{enumerate}
+\subsubsection{Rodzaje}
+\label{sec:org1621382}
+\begin{enumerate}
+\item CISC (Complex Insturcion Set Computer)
+\label{sec:orgc1705bc}
+Mnożenie, dzielenie.
+\item RISC (Reduced Insturcion Set Computer)
+\label{sec:orgb6ab160}
+np: architektura ARM.
+Potrzeba mniej zasobóœ sprzętowych żeby zrealzować układ, więc mniejsze zurzycie prądu.
+\item VLIW (Very long instruction word)
+\label{sec:org15afcb5}
+np: Intel Itanium
+\end{enumerate}
+\subsubsection{Moduły}
+\label{sec:org1cb3ba7}
+\begin{enumerate}
+\item Ścieżka danych
+\label{sec:org2eea4af}
+\begin{itemize}
+\item blok rejstróœ ogólnego przeznacznia
+\item pamięci podręczne pierwszego poziomu
+\item rejestry adresowe
+\item pamięć stronnicowania i translaci adresóœ TLB
+\item układ arytmetyczno-logiczny
+\end{itemize}
+\item moduły kontrolera
+\label{sec:orgcfb1a41}
+\begin{itemize}
+\item sterownik magistal
+\item układy sterujące
+\item układ adresowy
+\item blok pobierania rozkazów
+\item[{dekoder instrukcji}] mówi jak instukcja zostanie wykonana
+\end{itemize}
+\end{enumerate}
+
+
+\subsection{Architektury}
+\label{sec:org1fc361a}
+\subsubsection{von Neumana}
+\label{sec:org2a0eb6c}
+cechy:
+\begin{itemize}
+\item posadanie skończnej, w pełnu fukcjonalnie listy rozkazów.
+\item posadanie możliwośći wprdazanai programóœ oraz przchowywania ich w pamieći.
+\item dane i rozkazy powwiny być swobodnie dostępnie.
+\item przetwarzaine informacji następuje na skutek sekwencyjnego odczytywania instrukcji z pamięci i wykonywania ich przez procesor komputera.
+\end{itemize}
+\subsubsection{Harwardzka}
+\label{sec:org6c3af21}
+Starsza od von Neumana.
+cechy:
+\begin{itemize}
+\item rozdzielenie pamięci danych i pamięci programu (podział logiczny).
+\item instrukcjie posiadaja prostą konstrukcję, nie występuje mikrokod.
+\end{itemize}
+\subsection{Rodziny procoesorów}
+\label{sec:org6419fa4}
+\subsubsection{X86/IA-32}
+\label{sec:orgbedf7cf}
+\begin{enumerate}
+\item cechy:
+\label{sec:orgb338cb5}
+\begin{itemize}
+\item rodzaju CISC, typu SISD
+\item posiada 16/32 bitową archtektórę
+\item zapisuje słowa metodą little-endian
+\item największa wartość jest wielkości 16,32,64 bitów(zależnie od rodziny)
+\item mogącym współpracować z koprocesorem
+\item potrafiąćym zaadresować 1MB pamięci RAM (4FB procesor 386+)
+\item posiada wiele trybów adresowania pamięci
+\end{itemize}
+\item tryby pracy
+\label{sec:org8e1a9b5}
+\begin{enumerate}
+\item rzeczywisty 8086
+\label{sec:org3d8cf58}
+\begin{itemize}
+\item może zadresować 1MB RAM
+\item nie ma możliwości ochrony pamięci, zarządzania zadaniami, wątkami
+\item nie są dostępnie roszerzone instrukcje
+\item dostęp do urządzeń jest możliwy przez wywałania funkcji BIOSu
+\end{itemize}
+\item chronionym
+\label{sec:org5ae809d}
+\begin{itemize}
+\item dostępna jest cała przestrzeń adresowa.
+\item pamięc i zadania są chronione: segmenty definiuje się w tabliczach GDT i LDT
+\item dostępna jest pamięć wirtualna oraz stronnciowanie
+\item dostępna jest wieleozadaniowość (wielowątkowość)
+\item[{dostępny jest tryb ``virtual 8086 mode''}] procesor emuluje jeden ze swoich poprzedników
+\end{itemize}
+\item rejestry
+\label{sec:orgff45d9c}
+\begin{enumerate}
+\item ogólnego przeznaczenia
+\label{sec:org447acce}
+\begin{enumerate}
+\item akumulator
+\label{sec:orgc053727}
+AL,AH,AX,EAX<RAX
+\item ideksowo bazowy
+\label{sec:orgdbb11ec}
+BL,BH,BX,EBX,RBX
+\item licznik
+\label{sec:org9b95a90}
+CL,CH,CX,ECXRCX
+\item roszerzająćy akumulator
+\label{sec:orgbef8cae}
+DL,DH,DX
+\item indeks źródła SI,ESI,RSI
+\label{sec:org48aaf42}
+\item ideks przeznaczenia
+\label{sec:org7404185}
+DI,EDI,RDI
+\item wskaźnik stosu
+\label{sec:org90ed1aa}
+SP,ESP,RSP
+\item bazowy stosu (ramki stosu)
+\label{sec:orgd22785a}
+BP,EBP,RBP
+\item licznika programu
+\label{sec:org22051d6}
+IP,EIP,RIP
+\end{enumerate}
+\item segmentowe
+\label{sec:org68813b1}
+\begin{itemize}
+\item programu CS
+\item stosu SS
+\item danych DS,ES,FS,GS
+\end{itemize}
+\item stanu (flags)
+\label{sec:orgef44651}
+\item kontrolne (Crx)
+\label{sec:org076bf8c}
+\item debuggera
+\label{sec:org14130e3}
+\end{enumerate}
+\end{enumerate}
+\item zarządzanie panięcią
+\label{sec:org2bfdcad}
+\begin{enumerate}
+\item tryby adresowania
+\label{sec:orgfe83394}
+\begin{itemize}
+\item natychmiastowe
+\item rejestrowe
+\item bezpośrednie
+\item pośrednie
+\item bazowe
+\item indeksowe
+\item bazowo-ideksowe
+\end{itemize}
+\item mechanizym ochrony
+\label{sec:org68dd66c}
+Typu sektor:przemieszczenie bazujące na deskryptorach segmentóœ globlanych GDT i lokalnych LDT.
+\item obsługa stronicowania
+\label{sec:orgde4aa5b}
+wykorzystuje tablicę TLB do odwzorwania nieciągłego obszaru pamięci fizycznej w ciągłe obszary pamięci logicznej (segmentów).
+\item pamięć wirtualna
+\label{sec:org2d563c3}
+pozwala na wymianę stron pamięci RAM z pamięcią masowoą w trakcie odwołania do segmentów pamięci.
+\end{enumerate}
+\end{enumerate}
+\subsubsection{IA-64}
+\label{sec:orgee2039a}
+Zostałą apracowana przez firmy intel oraz Hewlett-Packard.
+\begin{enumerate}
+\item cechy:
+\label{sec:org807ba1f}
+\begin{itemize}
+\item rodzaju CISC/RISC typu MIMD (SIMD)
+\item posadającym 128 rejestrów ogólnego przeznaczenia (16 typu integer, 96 do dyspozycji aplikacji (alokowalnych))
+\item super-skalarny
+\item posiada zaawansowany mechanizm potokowy.
+\item posiada możliwość wykonania instrukcji w innej kolejności (out-of-order execution)
+\item posiada mechanizm spekulatywnego wykonywania rozkazów
+\item potrafi wyknać 12 instrukcji w jednym cyklu zegara (Itanium 9500 series)
+\item posiada zaawansowane mechanizmy wirtualizacji
+\item wyknującym instrukcje w trybie warunkowym
+\end{itemize}
+\item EPIC / VLIW
+\label{sec:org4b5e1f1}
+Archiitektura IA-64 jest odmianą modelu EPIC ()ang. Explicitly Paraller Instruction Computing), będącego rodzajem modelu MIMD.
+\begin{enumerate}
+\item cechy:
+\label{sec:org2aa273a}
+\begin{itemize}
+\item zazwyczaj są rodzaju RISC lub o podobnym modelu oblcizeniowym
+\item wielordzeniwoość
+\end{itemize}
+\end{enumerate}
+\end{enumerate}
+\subsubsection{ARM}
+\label{sec:orgf25b9f6}
+RISK
+\end{document}

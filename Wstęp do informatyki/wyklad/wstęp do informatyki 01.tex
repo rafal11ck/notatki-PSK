@@ -1,4 +1,4 @@
-% Created 2022-10-08 Sat 15:48
+% Created 2022-10-10 Mon 12:49
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -33,12 +33,12 @@
 wstęp do infrmatyki moodle bez hasła
 
 \section{System liczbowy o podstawie \(R\)}
-\label{sec:orgd220aac}
+\label{sec:org3a1022e}
 \(R \in \mathbb{N}\) \\
 Alfabet: \(A = \{ \hat{a}_0, \hat{a}_1, \dots, \hat{a}_0 \}\) \\
 \(|A| = R\)
 \subsection{DEC \(\to\) SR}
-\label{sec:org110a1ff}
+\label{sec:orgcfadec0}
 \begin{latex}
 \begin{tabular}{c|c|c}
     $X_{\text{DEC}}:R =$& Wynik & Reszta \\
@@ -56,7 +56,7 @@ Odczytujemy od dołu.
 
 $$X_{\text{DEC}} = Y_R = ( R_N R_{N-1} \dots R_{1} R_{0})_{R}$$
 \subsubsection{przykład}
-\label{sec:org1521b6d}
+\label{sec:org63da54f}
 \(110_{\text{DEC}} \xrightarrow{?} Y_{2}\)
 
 \begin{latex}
@@ -75,16 +75,16 @@ $$X_{\text{DEC}} = Y_R = ( R_N R_{N-1} \dots R_{1} R_{0})_{R}$$
 $$Y_2=1101110_2=110_{10}$$
 \end{latex}
 \subsection{SR \(\to\) DEC}
-\label{sec:org2681616}
+\label{sec:org6e0241b}
 $$X_{\text{DEC}} = \sum_{i=0}^{N} a_i \cdot R^{i}, a_{i}: \in A$$
 
 \subsubsection{Przykład}
-\label{sec:org9a4e022}
+\label{sec:org1da290c}
 \(1101110_{2} \xrightarrow{?}\) DEC
 $$X_{\text{DEC}} = 0 \cdot 2^0 + 1 \cdot 2^1 + 1 \cdot 2^2 + 1 \cdot 2^3 + 0 \cdot 2^4 + 1 \cdot 2^5 + 1 \cdot 2^6 = 0 + 2 + 4 + 8 + 0 + 32 + 64 = 110_{10} $$
 
 \section{System ZN (Znak moduł)}
-\label{sec:org0165023}
+\label{sec:org74f4d85}
 $$\text{L}_{\text{ZN}} = (b_n \underbrace{ a_{N-1} a_{N-2} \dots  a_1 a_0}_{L_{\text{NKB}} \geq 0} )_{\text{ZN}}$$
 $$a_i \in A , i=0,1,\dots,N-1$$
 $$b_N \in \{0,1\}$$
@@ -94,34 +94,34 @@ gdzie
 \item \(b_N=1\) oznacza \(L<0\)
 \end{itemize}
 \section{NKB}
-\label{sec:orge886311}
+\label{sec:org2bafe12}
 $$\text{L}_{\text{NKB}}=(a_{N-1}a_{N-2} \dots a_1 a_0)_{\text{NKB}}$$
 \subsection{NKB \(\to\) DEC}
-\label{sec:org569deb9}
+\label{sec:org89b4361}
 $$\text{L}_{\text{DEC}} = \sum_{i=0}^{N-1} a_i \cdot 2^i $$
 \subsubsection{Przykład}
-\label{sec:org71af190}
+\label{sec:orged83c94}
 $$\underset{64}{1}10\underset{8}{1}1\underset{2}{1}0_{\text{NKB}} = 110_{\text{DEC}}$$
 \subsection{DEC \(\to\) NKB}
-\label{sec:org4435383}
-Użyj algorytmu \ref{sec:org110a1ff} dla \(R = 2\)
+\label{sec:org5ffc62b}
+Użyj algorytmu \ref{sec:orgcfadec0} dla \(R = 2\)
 \section{System U2 (dopełneniowy do 2)}
-\label{sec:orgbb74f9d}
+\label{sec:orgc40cb10}
 $$\text{L}_{\text{U2}}=(a_{N-1}a_{N-2} \dots a_1 a_0)_{\text{U2}}$$
 
 \(a_{N-1}}\) -- waga ujemna
 \subsection{\(\test{L}_{\text{U2}} \to\) DEC}
-\label{sec:org5ed86ed}
+\label{sec:orgca6afc8}
 Coś mi się wydaje że to powinno być \(L_{\text{DEC}}\) ale tak jest(było) na tablicy.
 
 $$\text{L}_{\text{U2}}= {-a_{N-1}} \cdot 2^{N-1} + \sum_{i=0}^{N-1} a_i \cdot 2^i$$
 \subsubsection{przykład}
-\label{sec:orgb141ff2}
+\label{sec:org39d0a8f}
 $$\underset{-64}{1}10\underset{8}{1}1\underset{2}{1}0_{\text{U2}} = -18_{\text{DEC}}$$
 \subsection{DEC \(\to\) U2}
-\label{sec:org07f4226}
+\label{sec:org74ec717}
 \begin{enumerate}
-\item Użyj algorytmu \ref{sec:org110a1ff} dla \(R=2\) \emph{(Czyli tak samo jak \ref{sec:org4435383})}
+\item Użyj algorytmu \ref{sec:orgcfadec0} dla \(R=2\) \emph{(Czyli tak samo jak \ref{sec:org5ffc62b})}
 
 \(\text{L} = (a_{N-1} a_{N-2} \dots a_1 a_0)\)
 \item Dostaw "0" do najbardziej znaczącej cyfry
@@ -134,10 +134,12 @@ $$\underset{-64}{1}10\underset{8}{1}1\underset{2}{1}0_{\text{U2}} = -18_{\text{D
 \end{enumerate}
 \begin{latex}
 \begin{tabular}{llllllll}
-$\text{L} &= (&0 &a_{N-1} &a_{N-2} &\dots &a_1 &a_0)$ \\
+$\text{L} &= &(0 &a_{N-1} &a_{N-2} &\dots &a_1 &a_0)$ \\
 &+ &0 &0 &0 &\dots &0 &1\\
 \hline
 $\text{L}_{\text{U2}} &= &(b_N &b_{N-1} &b_{N-1} &\dots &b_{2} &b_{1}$
 \end{tabular}
 \end{latex}
+\section{TEST}
+\label{sec:org782644c}
 \end{document}
