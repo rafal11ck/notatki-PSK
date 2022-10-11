@@ -93,3 +93,4 @@ $\text{L} &= &(0 &a_{N-1} &a_{N-2} &\dots &a_1 &a_0)$ \\
 $\text{L}_{\text{U2}} &= &(b_N &b_{N-1} &b_{N-1} &\dots &b_{2} &b_{1}$
 \end{tabular}
 #+end_latex
+* TEST
