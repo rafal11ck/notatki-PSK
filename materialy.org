@@ -17,6 +17,9 @@
 https://weaii-moodle.tu.kielce.pl/course/view.php?id=304 tul2022
 * Podstawy elektorniki
 **  laboratioria :: ???
+[[https://weaii-moodle.tu.kielce.pl/course/view.php?id=457]]
+** wykłady
+[[https://weaii-moodle.tu.kielce.pl/course/view.php?id=26]]
 * Wstęp do informatyki
 ** wykłady
 [[https://weaii-moodle.tu.kielce.pl/course/view.php?id=408]]
