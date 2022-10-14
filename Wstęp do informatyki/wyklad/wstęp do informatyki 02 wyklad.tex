@@ -1,0 +1,216 @@
+% Created 2022-10-14 Fri 19:42
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Rafał Grot}
+\date{\today}
+\title{Wstęp do informatyki wylkad 2, Systemy liczbowe z ograniczoną długością rejestru.}
+\hypersetup{
+ pdfauthor={Rafał Grot},
+ pdftitle={Wstęp do informatyki wylkad 2, Systemy liczbowe z ograniczoną długością rejestru.},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 28.2 (Org mode 9.6)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\section{System NKB\(_{(N)}\)}
+\label{sec:orgc513405}
+\begin{latex}
+\begin{tabular}{rccccc}
+\cline{2-6}
+\text{Rejestr: } &  \multicolumn{1}{|c|}{a$_{N-1}} & \multicolumn{1}{|c|}{a_{N-2}} & \dots & \multicolumn{1}{|c|}{a_{1}} & \multicolumn{1}{|c|}{a$_0} \\
+\cline{2-6}
+\text{Wagi cyfr: } & 2^{N-1} & 2^{N-2} & & 2^1 & 2^0 \\
+\end{tabular}
+\end{latex}
+
+Zakres: L\(_{\text{NKB}}(N)} = [0,2^{N}-1]\)
+\section{System U2\(_{(N)}\)}
+\label{sec:org46d765d}
+\begin{latex}
+\begin{tabular}{rccccc}
+\cline{2-6}
+\text{Rejestr: } &  \multicolumn{1}{|c|}{a$_{N-1}} & \multicolumn{1}{|c|}{a_{N-2}} & \dots & \multicolumn{1}{|c|}{a_{1}} & \multicolumn{1}{|c|}{a$_0} \\
+\cline{2-6}
+\text{Wagi cyfr: } & -2^{N-1} & 2^{N-2} & & 2^1 & 2^0 \\
+\end{tabular}
+\end{latex}
+
+Zakres: L\(_{\text{U2}(N)} = [-2^{N-1},2^{N-1}-1]\)
+\section{DEC \(\to\) NKB\textsubscript{(N)}}
+\label{sec:org5efe99a}
+\begin{latex}
+\begin{tabular}{rl|l}
+\begin{aligned}
+    L$_{\text{DEC}} : 2 =& W_0 & R_0 \\
+    W_0 : 2 =& W_1 & R_1 \\
+    &\vdots & \vdots \\
+    W_{N-2} : 2 =& W_{N-1} & R_{N-1} \\
+\hline
+    W_{N-1} : 2  =& W_{N} & R_N \\
+    W_{N} : 2 =& W_{N+1} & R_{N+1} \\
+    &\vdots  & \vdots \\
+    W_{M-1} : 2 = & 0 & R_{M-1}
+\end{aligned}
+\end{tabular}
+\end{latex}
+\section{NKB\(_N \to\) DEC}
+\label{sec:orgbe0cb23}
+$$\text{L}_{\text{DEC}} = \sum_{i=0}^{N-1}a_i \times 2^{i} $$
+\section{DEC \(\to\) U2\(_{(N)}\)}
+\label{sec:orgb67645f}
+\begin{enumerate}
+\item \hyperref[sec:org5efe99a]{DEC \(\to\) NKB\textsubscript{(N)}}
+\item \begin{itemize}
+\item Dla L\(_{\text{DEC} \geq 0}\) KONIEC;
+\item Dla L\(_{\text{DEC} < 0}\) Zamiana znaku
+\end{itemize}
+\end{enumerate}
+\subsection{Zamiana znaku}
+\label{sec:org75204a1}
+\begin{latex}
+
+
+\begin{tabular}{l|c|c|c|c|c|l}
+\cline{2-6}
+\text{a)} & a_{N-1} & a_{N-2} & \dots & a_1 & a_2 & = A_{\text{U2}(N)}=L_{\text{DEC}}\\
+\cline{2-6}
+\noalign{\smallskip}
+\cline{2-6}
+\text{b)} & \overline{a_{N-1}} & \overline{a_{N-2}} & \dots & \overline{a_1} & \overline{a_2} \\
+\cline{2-6}
+\noalign{\smallskip}
+\cline{2-6}
++ & 0 & 0 & \dots & 0 & 1 \\
+\cline{2-6}
+\noalign{\smallskip}
+\cline{2-6}
+= & b_{(N-1)} & b_{(N-2)} & \dots & b_1 & b_2 & = B_{\text{U2}(N)} = L_{\text{DEC}}\\
+\cline{2-6}
+\end{tabular}
+\end{latex}
+\subsection{Warunek}
+\label{sec:org15730e3}
+$$ L_{\text{DEC}} = \left[ -2^{N-1}, 2^{N-1}-1} \right] $$
+Innaczej się nie zmieści w rejestrze
+\subsection{Przykłady}
+\label{sec:org02f0425}
+\subsubsection{L\textsubscript{\text{DEC}} = 127}
+\label{sec:org134ef70}
+
+\begin{latex}
+\begin{tabular}{ll}
+L_{\text{NKB}&=01111111 \\
+L_{\text{U2}&=01111111
+\end{tabular}
+\end{latex}
+\subsubsection{L\textsubscript{\text{DEC}} = -127}
+\label{sec:org3e7c8af}
+
+\begin{latex}
+\begin{tabular}{rll}
+|L_{\text{DEC}}| = L_{\text{NKB}(8)} =& 01111111 \\
+& 10000000 \\
++& 00000001 \\
+\cline{2-2}
+&10000001_{\text{U2}(8)} & =-128
+\end{tabular}
+\end{latex}
+\subsubsection{L\textsubscript{\text{DEC}} = 128}
+\label{sec:org80cab6e}
+
+L\(_{\text{NKB}(8)}=10000000_{\text{NKB}(8)}\)
+
+L\(_{\text{U2}(8)} \neq 10000000_{\text{U2}(8)} = -128_{\text{DEC}}\)
+\subsubsection{L\textsubscript{\text{DEC}} = -128}
+\label{sec:orgdd2c891}
+
+\begin{latex}
+\begin{tabular}{rll}
+|L_{\text{DEC}}|=&10000000 \\
+&01111111 \\
++&00000001\\
+\cline{2-2}
+&10000000_{\text{U2}(8)}&=-128
+
+\end{tabular}
+\end{latex}
+\section{NKB\(_{N} \to \text{U2}_{N}\)}
+\label{sec:org22179d4}
+Nie istnieje!
+
+Zmiana Interpretacji
+\section{\(\text{NKB}_N \to \text{U2}_M , M > N\)}
+\label{sec:org930a89e}
+Istneje
+
+\section{\(\text{U2}_{(N)} \to \text{NKB}_{(N)}\)}
+\label{sec:orgff185ee}
+\textbf{Nie istnieje}
+
+\section{\(\text{U2}_{(M)} \to \text{NKB}_{(N)}\)}
+\label{sec:org152eb0c}
+Nie istnieje dla dowolnego \(M>0,N>0\) .
+\section{Jakieś pierdoły}
+\label{sec:org60cdb51}
+\begin{itemize}
+\item \(A_{\text{DEC}}=128\)
+\item \(B_{\text{DEC}}=127\)
+\item \(A_{\text{U2}(8)} > B_{\text{U2}(8)} =\) FALSE
+\item \(A_{\text{U2}(16)} > B_{\text{U2}(16)} =\) TRUE
+\end{itemize}
+\section{\(\text{NKB}_{N} \to \text{NKB}_{(8)}, M > N\)}
+\label{sec:org6f98dd5}
+\begin{itemize}
+\item 
+\end{itemize}
+\begin{latex}
+\begin{tabular}{rccccc}
+\cline{2-6}
+\text{L$_{\text{NKB}_{(N)}}$} =&  \multicolumn{1}{|c|}{a$_{N-1}} & \multicolumn{1}{|c|}{a_{N-2}} & \dots & \multicolumn{1}{|c|}{a_{1}} & \multicolumn{1}{|c|}{a$_0} \\
+\cline{2-6}
+\end{tabular}
+\left\textsubscript{\text{NKB}\((N)\)}
+\end{latex}
+\begin{itemize}
+\item 
+\end{itemize}
+\begin{latex}
+\begin{tabular}{l|c|c|c|c|c|c|c|c|c|}
+\cline{2-9}
+L$_{\text{NKB}(M)} = & 0 & 0 & \dots & a_{N-1} & a_{N-2} & \dots & a_1 & a_0 \\
+\cline{2-9}
+\end{tabular}
+\left\textsubscript{\text{NKB}\((N)\)}
+\end{latex}
+\section{\(\text{NKB}_{(N)} \to \text{NKB}_{(M)}, M < N \\\) i \(\text{U2}_{(N)} \to \text{U2}_{(M)}, M < N\)}
+\label{sec:org418bf89}
+\begin{latex}
+\begin{tabular}{l|c|c|c|c|c|}
+\cline{2-6}
+L_{\text{NKB}(N)} =& a_{N-1} & a$_{N-2}$ & \dots & a_1 & a_0 \\
+\cline{2-6}
+\end{tabular}
+
+\begin{tabular}{l|c|c|c|c|}
+\cline{2-5}
+L_{\text{NKB}(M)} =& a$_{M-2}$ & \dots & a_1 & a_0 \\
+\cline{2-5}
+
+\end{tabular}
+\end{latex}
+\end{document}
