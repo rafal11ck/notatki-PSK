@@ -2,15 +2,15 @@
 
 * Arechitektura systemów komputerowych
 ** wykłady
-[[https://hector.tu.kielce.pl/przedmioty/ask-wyklady.html]]
+- ASK wyklady ::  [[https://hector.tu.kielce.pl/przedmioty/ask-wyklady.html]]
 ** Laboratoria
-[[https://weaii-moodle.tu.kielce.pl/course/view.php?id=416]]
-*** lab 01
+- ASK laboratoria :: [[https://weaii-moodle.tu.kielce.pl/course/view.php?id=416]]
+*** ASK lab 01
 - https://pl.wikibooks.org/wiki/Asembler_x86/Architektura
 - [[https://pl.wikipedia.org/wiki/Rejestr_procesora]]
 * Podstawy porgramowania 1
 ** wykłady
-[[https://achilles.tu.kielce.pl/portal/Members/84df831b59534bdc88bef09b15e73c99/podstawy-programowania-1]]
+- wyklad podstawy programowania achilles ::  [[https://achilles.tu.kielce.pl/portal/Members/84df831b59534bdc88bef09b15e73c99/podstawy-programowania-1]]
 ** laboratioria
 - moodle link podstawy programowania 1 :: https://weaii-moodle.tu.kielce.pl/course/view.php?id=149 kubit_12B
 * Teoria układów logicznych
