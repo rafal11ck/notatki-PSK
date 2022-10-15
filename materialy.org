@@ -12,8 +12,7 @@
 ** wykłady
 [[https://achilles.tu.kielce.pl/portal/Members/84df831b59534bdc88bef09b15e73c99/podstawy-programowania-1]]
 ** laboratioria
-- moodle link podstawy programowania 1 :: https://weaii-moodle.tu.kielce.pl/course/view.php?id=149
-kubit_12B
+- moodle link podstawy programowania 1 :: https://weaii-moodle.tu.kielce.pl/course/view.php?id=149 kubit_12B
 * Teoria układów logicznych
 ** laboratoria
 https://weaii-moodle.tu.kielce.pl/course/view.php?id=304 tul2022
