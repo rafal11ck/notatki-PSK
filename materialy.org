@@ -19,7 +19,7 @@ https://weaii-moodle.tu.kielce.pl/course/view.php?id=304 =tul2022=
 * Podstawy elektorniki
 ** wykłady
 [[https://weaii-moodle.tu.kielce.pl/course/view.php?id=26]]
-** laboratoria
+** TODO laboratoria
 Kij wie hasła nie dostaliśmy a przynajmniej nie zpaisalismy
 Chyba to bo się tematy pokrywają częsciowo.
 https://weaii-moodle.tu.kielce.pl/course/view.php?id=27
@@ -29,4 +29,4 @@ https://weaii-moodle.tu.kielce.pl/course/view.php?id=27
 * Fiziyka
 ** Wykłady
 [[https://weaii-moodle.tu.kielce.pl/enrol/index.php?id=233]] =ELFiz@w23=
-** Laboratioria
+** TODO Laboratioria
