@@ -12,10 +12,10 @@
 ** wykłady
 - wyklad podstawy programowania achilles ::  [[https://achilles.tu.kielce.pl/portal/Members/84df831b59534bdc88bef09b15e73c99/podstawy-programowania-1]]
 ** laboratioria
-- moodle link podstawy programowania 1 :: https://weaii-moodle.tu.kielce.pl/course/view.php?id=149 kubit\_12B
+- moodle link podstawy programowania 1 :: https://weaii-moodle.tu.kielce.pl/course/view.php?id=149 =kubit_12B=
 * Teoria układów logicznych
 ** laboratoria
-https://weaii-moodle.tu.kielce.pl/course/view.php?id=304 tul2022
+https://weaii-moodle.tu.kielce.pl/course/view.php?id=304 =tul2022=
 * Podstawy elektorniki
 ** wykłady
 [[https://weaii-moodle.tu.kielce.pl/course/view.php?id=26]]
@@ -28,5 +28,5 @@ https://weaii-moodle.tu.kielce.pl/course/view.php?id=27
 [[https://weaii-moodle.tu.kielce.pl/course/view.php?id=408]]
 * Fiziyka
 ** Wykłady
-[[https://weaii-moodle.tu.kielce.pl/enrol/index.php?id=233]] ELFiz@w23
+[[https://weaii-moodle.tu.kielce.pl/enrol/index.php?id=233]] =ELFiz@w23=
 ** Laboratioria
