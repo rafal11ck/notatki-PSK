@@ -1,0 +1,21 @@
+#+title: Fizyka Lab 01
+* Tematy
+- kinematyka
+- dynamika
+- jakies dziwne cos
+- jakies dziwne cos
+- jakies dziwne cos
+* wejściówki
+Na moodle test
+- max 8 pytań
+- 4 punkty
+- nie wyrzuca z sali
+* Sprawozdania
+- z każdych zajęć oddać przed kolejnymi zajęciami
+- oddanie po terminie lecą punkty
+- wszyskie oddać albo nie ma zaliczenia
+- do 10 punktów
+* Zaliczenie
+50 $\geq$ punktów.
+* Zajęcia zaczynają się 15 minut później
+Ustalone na 1 zajęciach
