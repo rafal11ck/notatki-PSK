@@ -55,4 +55,5 @@ To jest widza, którą się chowa przed konkuręcją.
 - patent daje silną pozycję na rynku i przewagę nad konkuręcją -- tj. wyklucza swobodne syoswanie tego wynalazku przez konkręcje.
 - patent pozwala przedsiębiorcy/-stru uzyskać dodatkowy dochód z licencji lub przeniesienia praw.
 - pozwala na dostę do cucdzej technologi przez licencję wzajemną.
-Jeżeli dla efektywnego korzystania z włanego wynalazku konieczne jest używanie technologi będącej własnością innego podmiotu, to istnieje możliwość zawarcia umowy wzajemniej ("kżyrzowej"), na podstawie któ©ej strony wzajemnie udzielają sobie upoważnienia do korzystania z jednego lub wielu patentów (na warunkach określonych w umowie).
+- Jeżeli dla efektywnego korzystania z włanego wynalazku konieczne jest używanie technologi będącej własnością innego podmiotu, to istnieje możliwość zawarcia umowy wzajemniej ("kżyrzowej"), na podstawie któ©ej strony wzajemnie udzielają sobie upoważnienia do korzystania z jednego lub wielu patentów (na warunkach określonych w umowie).
+- Bo patent może umożliwić przedziębiorstwu zaisnienie na rynkach, które dotychczas były dla niego niedostępne. /Wynalazek powinien być chroniony patentem lub przynajmniej zgłoszony w tych państwach w , których rynkami zbytu przedsiębiorca jest zainteresowany./
