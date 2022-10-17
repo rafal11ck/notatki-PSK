@@ -27,7 +27,7 @@ https://weaii-moodle.tu.kielce.pl/course/view.php?id=27
 ** Wykłady
 [[https://weaii-moodle.tu.kielce.pl/course/view.php?id=408]]
 ** Laboratoria
-- Wstęp do informatyki Moodle :: =wi2022=
+- Wstęp do informatyki Moodle :: [[https://weaii-moodle.tu.kielce.pl/course/view.php?id=493]] =wi2022=
 * Fiziyka
 ** Wykłady
 [[https://weaii-moodle.tu.kielce.pl/enrol/index.php?id=233]] =ELFiz@w23=
