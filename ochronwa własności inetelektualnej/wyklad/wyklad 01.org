@@ -1,0 +1,58 @@
+#+title: Wyklad 01
+
+- Podręcznik :: Prawo własności intelektualnej. Teoaria i praktyka. red. J.Sińczyło-chlabicz 2021 Warszawa
+- Pytania na koniec :: Zasada jej magnificenecja mówi, wy słucha.
+- Wykłady nieobowiązkowe
+- Prezentacja nie będzie dostępna.
+* zaliczenie
+- test wielokrotnego wyboru z treści wykładów lubtreści do których odsyłała.
+ + Mogą być pytania z prezentacji
+- Na przedostatnim wykładzie.
+* Pojęcie prawa włąsności inetelkulaneji jego miejsce w systemie prawnym
+** Źródła prawa własności inetlektualnej
+*** Unijne
+- Dyrektywa unijna :: Jest implementowana przez uchwalenie ustawy.
+*** międzynarodowe
+**** Konwncja betnejska o ochornie własności literackiej i artystycznej (1880r).
+Ochrona praw autorskich powstaja w momencie stworzenia utworu. Ma trwać co najmniej do końcazycia autora + 50 lat(praw autorskich majątkowych).
+*** Najważniejsze źródła prawa krajowego
+  Internetowy system aktów prawnych, dostępny ze stron sejmowych. Zawsze wchodzić w dokument z tekstem jednolitym.
+  + Ustawa z dn 4.02.1994r o prawei autorskim i prawach pokrewnych
+  + ustawa z dn 30.06.02.2000r prawo własności przemsyłowej :: Własność związana z porwadzeniem działalności gospodarczej np. patent("chroni" wynalazek). Znak towarowy
+  + ustawa z dn 16.04.1993r o zwalczaniu nieuczciwej konkurencji
+  + ustawa z dn 23.04.1964 r. kodesk cywilny
+Obecnie twaja prace nad ustwą "prawo własności przemysłowej".
+** Wiktor igo1
+jakiś frajer. Spłakany że jego prace były tłumaczone.
+* Właność intelektualna
+Dziedzina prawa, która dotyczy dóbr intelektualnych pierwotnie nazywanch niematerialnych.
+- intelektualna :: wskazuje na przedmiot ochrony
+** Własnść
+Wskazuje na sposób ochrony.
+Takzwany właścicielski sposób ochrony.
+** Sposoby ochrony dóbr inetelktualnych
+*** prawa podmiotowe
+Są to prawa wyłączne (dają one uprawnionemu wyłączność, do zarobkowego bądź zarobkowego korzystanai z danego dobra i rozporządzania nim, z regóły przez oznaczony czas na oznaczonym teretorium państwa).
+- Prawa wyłączne dają komercyjny monopol(np art 66 ust 1 pkt 1 pwp). :: "Uprawniony z patentu ma wyłączność wytwarzania, używanai, oferowania, wprowadzania do obrotu, przechowywania lub składowania produktów będących przedmiotem wynalazku."
+- Są chronione za pomocą cywilnych praw podmiotowych o charakterze bezwzględnym ::  całość praw autorskich, które przysługują zasadniczo twórcy.
+*** prawa terytorialne
+Obowiązuje na teretorium kraju, gdzie zostałą udzielona(własność przemysłowa). Dobro intelektualne moze w dwóch różnych krajach korzystać z ochrony w różny sposób, bądż ochrona może być w jednym kraju udzielona, a w innym nie.
+*** monopul uprawnionego
+Trwa makzymalnie 20 lat od daty złoźenia patentu.
+**** naruszenie
+Skutkuje odpowiedzialnością prawną.
+***** Przykład
+"Kto nei będąc uprawnionym do uzyskania patentu zgłasza cudzy wynalazek podlega grzywnie, karze ograniczenia wolności lub pozbawienia wolności do lat 2(art 304 pwp)."
+*** Po ustaniu ochrony
+Dobro intelektulane (np. wynalzaek) przechodzi do tzw. domeny publicznej.
+**** Domenta publczna
+To zasób dóbr intelektualnych, z których każdy możę swobodnie komercyjnie korzystać bez pytania o zgodę podmiotu uprawnionego
+* know-how
+Alternatywa do patentu. NP. coca-cola
+** Wiedza utajniona
+To jest widza, którą się chowa przed konkuręcją.
+* Dlaczego warto opatentować wynalazek
+- patent daje silną pozycję na rynku i przewagę nad konkuręcją -- tj. wyklucza swobodne syoswanie tego wynalazku przez konkręcje.
+- patent pozwala przedsiębiorcy/-stru uzyskać dodatkowy dochód z licencji lub przeniesienia praw.
+- pozwala na dostę do cucdzej technologi przez licencję wzajemną.
+Jeżeli dla efektywnego korzystania z włanego wynalazku konieczne jest używanie technologi będącej własnością innego podmiotu, to istnieje możliwość zawarcia umowy wzajemniej ("kżyrzowej"), na podstawie któ©ej strony wzajemnie udzielają sobie upoważnienia do korzystania z jednego lub wielu patentów (na warunkach określonych w umowie).
