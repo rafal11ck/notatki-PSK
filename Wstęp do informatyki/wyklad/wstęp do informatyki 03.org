@@ -3,7 +3,9 @@
 - liczby rzeczywiste
 * Operacje na liczbach całkowych
 ** Arytmetyczne
+#+begin_comment
 Wydaje mi się że to nie powinno być POW, bo POW to skrót od power, czyli potęgi po angielsku.
+#+end_comment
 | / | <c> | <c> | <c> | <c> | <c> |
 | / |  <  |  <  |  <  |  <  | <>  |
 |---+-----+-----+-----+-----+-----|

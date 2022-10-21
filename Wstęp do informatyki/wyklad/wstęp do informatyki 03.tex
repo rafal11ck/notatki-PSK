@@ -1,4 +1,4 @@
-% Created 2022-10-21 Fri 20:12
+% Created 2022-10-21 Fri 20:18
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -32,10 +32,9 @@
 \item liczby rzeczywiste
 \end{itemize}
 \section{Operacje na liczbach całkowych}
-\label{sec:org9347533}
+\label{sec:org4f25f3b}
 \subsection{Arytmetyczne}
-\label{sec:org9e78307}
-Wydaje mi się że to nie powinno być POW, bo POW to skrót od power, czyli potęgi po angielsku.
+\label{sec:org5c82d48}
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|}
 \hline
@@ -46,7 +45,7 @@ ADD & SUB & DIV & POW & MOD\\
 \end{tabular}
 \end{center}
 \subsubsection{+}
-\label{sec:org7879579}
+\label{sec:org549eae3}
 \begin{center}
 \begin{tabular}{lrrrrrrrll}
  & 1 & 1 & 1 & 1 & 1 & 1 & 1 &  & \\
@@ -58,7 +57,7 @@ ADD & SUB & DIV & POW & MOD\\
 \end{tabular}
 \end{center}
 \subsubsection{-}
-\label{sec:orgaf11008}
+\label{sec:orga25e5e1}
 \begin{center}
 \begin{tabular}{lrrrrrrrll}
  &  &  &  &  & 1 &  &  &  & \\
@@ -71,7 +70,7 @@ ADD & SUB & DIV & POW & MOD\\
 \end{tabular}
 \end{center}
 \subsection{Logiczne}
-\label{sec:org49bd977}
+\label{sec:org82a5c0d}
 \begin{center}
 \begin{tabular}{|c|c|c|}
 \hline
@@ -84,11 +83,11 @@ Koniunkcja & Alternatywa & \\
 \end{tabular}
 \end{center}
 \subsubsection{AND}
-\label{sec:org377d1b5}
+\label{sec:orgee73b52}
 
 \begin{enumerate}
 \item A=1, B=2
-\label{sec:orgaef7f71}
+\label{sec:org21ab1e3}
 
 \(A\) \&\& \(B =\) TRUE
 
@@ -105,17 +104,17 @@ int b = 2;
 if (a && b) {}
 \end{verbatim}
 \item \(A=0 , B=0\)
-\label{sec:orgf8faaa2}
+\label{sec:orgad82bb9}
 
 \(A\) \&\& \(B =\) FALSE \\
 FALSE \&\& FALSE \(=\) FALSE
 \end{enumerate}
 \subsubsection{OR}
-\label{sec:orga6abe60}
+\label{sec:org584a28a}
 \(A=1, B=2\) \\
 \(A\) || \(B\) = TRUE
 \subsubsection{NOT}
-\label{sec:org9713abf}
+\label{sec:org82f09de}
 
 \(A=0\) \\
 \(!A=\) TRUE\\
@@ -128,7 +127,7 @@ int b = true;
 a=0 \\
 b \(\neq\) 0
 \subsection{Bitowe}
-\label{sec:org9d4da66}
+\label{sec:org360cb66}
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|c|}
 \hline
@@ -139,7 +138,7 @@ AND & OR & NOT & SHL & SHR & XOR\\
 \end{tabular}
 \end{center}
 \subsubsection{AND}
-\label{sec:org6d99448}
+\label{sec:orge4fa76f}
 
 \(A=1\) \\
 \(B=2\) \\
@@ -163,7 +162,7 @@ if (a & b) {}  // źle
 \end{verbatim}
 
 \subsubsection{\(\ll\)}
-\label{sec:org2cc7a2c}
+\label{sec:org1d88cb0}
 
 \(A=1\) \\
 \(B=2\) \\
@@ -173,7 +172,7 @@ $$A= a_{N-1} a_{N-2} \dots a_1 a_0 $$
 $$A \ll B = \underbrace{a_{N-1} a_{N-2} \dots a_1 a_0}_{N-B \textit{bitów}} \underbrace{0 \dots 0}_{B \textit{bitów}}$$
 
 \subsubsection{\(\gg\)}
-\label{sec:orga1d8c77}
+\label{sec:org521bc7e}
 
 $$A \gg B = ?$$
 
@@ -218,7 +217,7 @@ char d = c;               // 63(DEC)
 \end{center}
 
 \subsubsection{Odczyt bitów (badanie bitów)}
-\label{sec:org266b739}
+\label{sec:org71109b2}
 \begin{verbatim}
 char A = 10;
 \end{verbatim}
@@ -230,7 +229,7 @@ char A = 10;
 
 \(A\) \& \(4\) = 00000000\textsubscript{\text{U2}} = 0\textsubscript{\text{DEC}} \(\to\) FAŁSZ
 \subsubsection{Ustawianie bitów}
-\label{sec:orgbcfc51f}
+\label{sec:org5689175}
 
 \(k=3\)
 
@@ -244,7 +243,7 @@ char A = 10;
 \end{center}
 
 \subsubsection{Zerowanie bitów}
-\label{sec:org8d250de}
+\label{sec:org4129e59}
 
 \(k=3\)
 
@@ -258,7 +257,7 @@ char A = 10;
 \end{center}
 
 \subsubsection{Negacja bitów}
-\label{sec:orgbeafb6d}
+\label{sec:org7bbe319}
 
 \(k=3\)
 
