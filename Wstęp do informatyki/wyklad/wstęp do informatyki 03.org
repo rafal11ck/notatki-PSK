@@ -118,12 +118,12 @@ $$A \ll B = \underbrace{a_{N-1} a_{N-2} \dots a_1 a_0}_{N-B \textit{bitów}} \un
 
 $$A \gg B = ?$$
 
-$$A= a_{N-1} a_{N-2} \dots a_1 a_0 _{\underset{\text{U2}}{\text{NKB}}} $$
+$$A= a_{N-1} a_{N-2} \dots a_1 a_0 _{ \underset{ \text{U2}}{\text{NKB}} } $$
 a) NKB
 $$A_{\text{NKB}} \gg B = \underbrace{0 \dots 0}_{B \textit{bitów}} \underbrace{a_{N-1} a_{N-2} \dots a_{N+1} a_{N}}_{ {N-B} \textit{bitów}} _\text{NKB} $$
 
 b) U2
-$$A_{\text{U2}} \gg B = \underbrace{0 \dots 0}_{B \textit{bitów}} \underbrace{a_{N-1} a_{N-2} \dots a_{N+1} a_{N}}_{ {N-B} \textit{bitów}} _\text{U2} $$
+$$A_{\text{U2}} \gg B = \underbrace{a_{N-1} \dots a_{N-1}}_{B \textit{bitów}} \underbrace{a_{N-1} a_{N-2} \dots a_{N+1} a_{N}}_{ {N-B} \textit{bitów}} _\text{U2} $$
 
 \hline
 

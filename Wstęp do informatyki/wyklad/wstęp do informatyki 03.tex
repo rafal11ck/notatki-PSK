@@ -1,4 +1,4 @@
-% Created 2022-10-21 Fri 20:18
+% Created 2022-10-21 Fri 20:45
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -32,9 +32,9 @@
 \item liczby rzeczywiste
 \end{itemize}
 \section{Operacje na liczbach całkowych}
-\label{sec:org4f25f3b}
+\label{sec:org66f0b51}
 \subsection{Arytmetyczne}
-\label{sec:org5c82d48}
+\label{sec:orgbd65d81}
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|}
 \hline
@@ -45,7 +45,7 @@ ADD & SUB & DIV & POW & MOD\\
 \end{tabular}
 \end{center}
 \subsubsection{+}
-\label{sec:org549eae3}
+\label{sec:org9e6c6c5}
 \begin{center}
 \begin{tabular}{lrrrrrrrll}
  & 1 & 1 & 1 & 1 & 1 & 1 & 1 &  & \\
@@ -57,7 +57,7 @@ ADD & SUB & DIV & POW & MOD\\
 \end{tabular}
 \end{center}
 \subsubsection{-}
-\label{sec:orga25e5e1}
+\label{sec:orgd445407}
 \begin{center}
 \begin{tabular}{lrrrrrrrll}
  &  &  &  &  & 1 &  &  &  & \\
@@ -70,7 +70,7 @@ ADD & SUB & DIV & POW & MOD\\
 \end{tabular}
 \end{center}
 \subsection{Logiczne}
-\label{sec:org82a5c0d}
+\label{sec:org638f27c}
 \begin{center}
 \begin{tabular}{|c|c|c|}
 \hline
@@ -83,11 +83,11 @@ Koniunkcja & Alternatywa & \\
 \end{tabular}
 \end{center}
 \subsubsection{AND}
-\label{sec:orgee73b52}
+\label{sec:org9ddde8a}
 
 \begin{enumerate}
 \item A=1, B=2
-\label{sec:org21ab1e3}
+\label{sec:org0d9ca59}
 
 \(A\) \&\& \(B =\) TRUE
 
@@ -104,17 +104,17 @@ int b = 2;
 if (a && b) {}
 \end{verbatim}
 \item \(A=0 , B=0\)
-\label{sec:orgad82bb9}
+\label{sec:org417534f}
 
 \(A\) \&\& \(B =\) FALSE \\
 FALSE \&\& FALSE \(=\) FALSE
 \end{enumerate}
 \subsubsection{OR}
-\label{sec:org584a28a}
+\label{sec:orgc88231a}
 \(A=1, B=2\) \\
 \(A\) || \(B\) = TRUE
 \subsubsection{NOT}
-\label{sec:org82f09de}
+\label{sec:org773df6a}
 
 \(A=0\) \\
 \(!A=\) TRUE\\
@@ -127,7 +127,7 @@ int b = true;
 a=0 \\
 b \(\neq\) 0
 \subsection{Bitowe}
-\label{sec:org360cb66}
+\label{sec:orgb3a24e2}
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|c|}
 \hline
@@ -138,7 +138,7 @@ AND & OR & NOT & SHL & SHR & XOR\\
 \end{tabular}
 \end{center}
 \subsubsection{AND}
-\label{sec:orge4fa76f}
+\label{sec:orge2a8ccf}
 
 \(A=1\) \\
 \(B=2\) \\
@@ -162,7 +162,7 @@ if (a & b) {}  // źle
 \end{verbatim}
 
 \subsubsection{\(\ll\)}
-\label{sec:org1d88cb0}
+\label{sec:orgb8c2a7a}
 
 \(A=1\) \\
 \(B=2\) \\
@@ -172,11 +172,11 @@ $$A= a_{N-1} a_{N-2} \dots a_1 a_0 $$
 $$A \ll B = \underbrace{a_{N-1} a_{N-2} \dots a_1 a_0}_{N-B \textit{bitów}} \underbrace{0 \dots 0}_{B \textit{bitów}}$$
 
 \subsubsection{\(\gg\)}
-\label{sec:org521bc7e}
+\label{sec:orgb22ff6c}
 
 $$A \gg B = ?$$
 
-$$A= a_{N-1} a_{N-2} \dots a_1 a_0 _{\underset{\text{U2}}{\text{NKB}}} $$
+$$A= a_{N-1} a_{N-2} \dots a_1 a_0 _{ \underset{ \text{U2}}{\text{NKB}} } $$
 \begin{enumerate}
 \item NKB
 \end{enumerate}
@@ -185,7 +185,7 @@ $$A_{\text{NKB}} \gg B = \underbrace{0 \dots 0}_{B \textit{bitów}} \underbrace{
 \begin{enumerate}
 \item U2
 \end{enumerate}
-$$A_{\text{U2}} \gg B = \underbrace{0 \dots 0}_{B \textit{bitów}} \underbrace{a_{N-1} a_{N-2} \dots a_{N+1} a_{N}}_{ {N-B} \textit{bitów}} _\text{U2} $$
+$$A_{\text{U2}} \gg B = \underbrace{a_{N-1} \dots a_{N-1}}_{B \textit{bitów}} \underbrace{a_{N-1} a_{N-2} \dots a_{N+1} a_{N}}_{ {N-B} \textit{bitów}} _\text{U2} $$
 
 \hline
 
@@ -217,7 +217,7 @@ char d = c;               // 63(DEC)
 \end{center}
 
 \subsubsection{Odczyt bitów (badanie bitów)}
-\label{sec:org71109b2}
+\label{sec:orgff816bc}
 \begin{verbatim}
 char A = 10;
 \end{verbatim}
@@ -229,7 +229,7 @@ char A = 10;
 
 \(A\) \& \(4\) = 00000000\textsubscript{\text{U2}} = 0\textsubscript{\text{DEC}} \(\to\) FAŁSZ
 \subsubsection{Ustawianie bitów}
-\label{sec:org5689175}
+\label{sec:org8bec393}
 
 \(k=3\)
 
@@ -243,7 +243,7 @@ char A = 10;
 \end{center}
 
 \subsubsection{Zerowanie bitów}
-\label{sec:org4129e59}
+\label{sec:org4b5d47a}
 
 \(k=3\)
 
@@ -257,7 +257,7 @@ char A = 10;
 \end{center}
 
 \subsubsection{Negacja bitów}
-\label{sec:org7bbe319}
+\label{sec:orgd5f9632}
 
 \(k=3\)
 
