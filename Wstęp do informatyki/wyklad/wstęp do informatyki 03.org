@@ -1,0 +1,234 @@
+#+title: Wstęp Do Informatyki 03. Podstawowe typy danych
+- Liczby całkowite
+- liczby rzeczywiste
+* Operacje na liczbach całkowych
+** Arytmetyczne
+Wydaje mi się że to nie powinno być POW, bo POW to skrót od power, czyli potęgi po angielsku.
+| / | <c> | <c> | <c> | <c> | <c> |
+| / |  <  |  <  |  <  |  <  | <>  |
+|---+-----+-----+-----+-----+-----|
+|   |  +  |  -  |  /  |  *  |  %  |
+|---+-----+-----+-----+-----+-----|
+|   | ADD | SUB | DIV | POW | MOD |
+|---+-----+-----+-----+-----+-----|
+*** +
+| / |   |   |   |   |   |   |   |   |            |                                  |
+|   |   | 1 | 1 | 1 | 1 | 1 | 1 | 1 |            |                                  |
+|   |   |   |   |   |   |   |   |   |            |                                  |
+|   |   | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 1_{NKB(8)} | =217_{DEC}                       |
+|   | + | 0 | 0 | 1 | 0 | 1 | 1 | 1 | 1_{NKB(8)} | =47_{DEC}                        |
+|---+---+---+---+---+---+---+---+---+------------+----------------------------------|
+|   |   | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0_{NKB(8)} | =264_{DEC} - 256_{DEC} = 8_{DEC} |
+*** -
+| / |   |   |   |   |   |   |   |   |            |            |
+|   |   |   |   |   |   | 1 |   |   |            |            |
+|   |   |   | 0 | 2 | 0 | 2 | 2 |   |            |            |
+|   |   |   |   |   |   |   |   |   |            |            |
+|   |   | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 1_{NKB(8)} | =217_{DEC} |
+|   | - | 0 | 0 | 1 | 0 | 1 | 1 | 1 | 1_{NKB(8)} | =47_{DEC}  |
+|---+---+---+---+---+---+---+---+---+------------+------------|
+|   |   | 1 | 0 | 1 | 0 | 1 | 0 | 1 | 0_{NKB(8)} | =170_{DEC} |
+** Logiczne
+| / |    <c>     |       <c>        | <c> |
+| / |     <>     |        >         | <>  |
+|---+------------+------------------+-----|
+|   |     &&     | \textbar\textbar |  !  |
+|---+------------+------------------+-----|
+|   |    AND     |        OR        | NOT |
+|---+------------+------------------+-----|
+|   | Koniunkcja |   Alternatywa    |     |
+|---+------------+------------------+-----|
+*** AND
+
+**** A=1, B=2
+
+$A$ && $B =$ TRUE
+
+*Bo*
+
+$A=1 \to A =$ TRUE
+
+$B=2 \to B =$ TRUE
+
+TRUE && TRUE $=$ TRUE
+#+begin_example c++
+int a = 1;
+int b = 2;
+if (a && b) {}
+#+end_example
+**** $A=0 , B=0$
+
+$A$ && $B =$ FALSE \\
+FALSE && FALSE $=$ FALSE
+*** OR
+$A=1, B=2$ \\
+$A$ || $B$ = TRUE
+*** NOT
+
+$A=0$ \\
+$!A=$ TRUE\\
+$A=$ FALSE
+
+#+begin_example c++
+int a = false;
+int b = true;
+#+end_example
+a=0 \\
+b $\neq$ 0
+** Bitowe
+| / | <c> | <c>      | <c>   | <c> | <c> | <c> |
+| / |  <  | <        | <     |  <  |  <  | <>  |
+|---+-----+----------+-------+-----+-----+-----|
+|   |  &  | \textbar | ~     | \ll | \gg |  ^  |
+|---+-----+----------+-------+-----+-----+-----|
+|   | AND | OR       | NOT   | SHL | SHR | XOR |
+|---+-----+----------+-------+-----+-----+-----|
+*** AND
+
+$A=1$ \\
+$B=2$ \\
+$A$ & $B=0$
+
+| / |        <r> | <c> | <c> | <c> | <c> |
+|   |       $A=$ |  0  |  0  |  0  |  1  |
+|   |       $B=$ |  0  |  0  |  1  |  0  |
+|---+------------+-----+-----+-----+-----|
+|   | $A$ & $B=$ |  0  |  0  |  0  |  0  |
+
+Częsty błąd:
+#+begin_example c++
+int a=1;
+int b=2;
+if (a && b) {} // dobrze
+if (a & b) {}  // źle
+#+end_example
+
+*** \ll
+
+$A=1$ \\
+$B=2$ \\
+$A \ll B = 4$
+
+$$A= a_{N-1} a_{N-2} \dots a_1 a_0 $$
+$$A \ll B = \underbrace{a_{N-1} a_{N-2} \dots a_1 a_0}_{N-B \textit{bitów}} \underbrace{0 \dots 0}_{B \textit{bitów}}$$
+
+*** \gg
+
+$$A \gg B = ?$$
+
+$$A= a_{N-1} a_{N-2} \dots a_1 a_0 _{\underset{\text{U2}}{\text{NKB}}} $$
+a) NKB
+$$A_{\text{NKB}} \gg B = \underbrace{0 \dots 0}_{B \textit{bitów}} \underbrace{a_{N-1} a_{N-2} \dots a_{N+1} a_{N}}_{ {N-B} \textit{bitów}} _\text{NKB} $$
+
+b) U2
+$$A_{\text{U2}} \gg B = \underbrace{0 \dots 0}_{B \textit{bitów}} \underbrace{a_{N-1} a_{N-2} \dots a_{N+1} a_{N}}_{ {N-B} \textit{bitów}} _\text{U2} $$
+
+\hline
+
+#+begin_example c++
+char a = -2;
+char b = 2;
+char c = a >> b;
+#+end_example
+| / |       |   |   |   |   |   |   |        |   |                     |
+|   | $a =$ | 1 | 1 | 1 | 1 | 1 | 1 | 0_{U2} | 1 |                     |
+|   | $c =$ | 1 | 1 | 1 | 1 | 1 | 1 | 1_{U2} | 1 | $= -1_{\text{DEC}}$ |
+
+\hline
+#+begin_example c++
+unsigned char a = -2;     // a=254(DEC)
+unsigned char b = 2;
+unsigned char c = a >> b; // 63(DEC)
+char d = c;               // 63(DEC)
+#+end_example
+
+|   | a = | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 0_{NKB} |        |
+|   | c = | 0 | 0 | 1 | 1 | 1 | 1 | 1 |       1 | $= 63$ |
+
+*** Odczyt bitów (badanie bitów)
+#+begin_example c++
+char A = 10;
+#+end_example
+$A=00001010_{U2}$ \\
+$k=3$ bit \\
+$B=00000100_{U2}$
+
+$A$ & $B$ = 00000000_{\text{U2}} = 0_{\text{DEC}} \to FAŁSZ
+
+$A$ & $4$ = 00000000_{\text{U2}} = 0_{\text{DEC}} \to FAŁSZ
+*** Ustawianie bitów
+
+$k=3$
+
+| / |              <r> | <l>                    | <l>                 |
+|   |             $A=$ | $00001010_{\text{U2}}$ | $= 10_{\text{DEC}}$ |
+|   |             $B=$ | $00000100_{\text{U2}}$ | $= -3_{\text{DEC}}$ |
+|---+------------------+------------------------+---------------------|
+|   | $A \textbar B =$ | $00001110_{\text{U2}}$ | $= 14_{\text{DEC}}$ |
+
+*** Zerowanie bitów
+
+$k=3$
+
+| / |        <r> | <l>                    | <l>                 |
+|   |       $A=$ | $00001010_{\text{U2}}$ | $= 10_{\text{DEC}}$ |
+|   |       $B=$ | $11111101_{\text{U2}}$ | $= -3_{\text{DEC}}$ |
+|---+------------+------------------------+---------------------|
+|   | $A \& B =$ | $00001000_{\text{U2}}$ | $= 8_{\text{DEC}}$  |
+
+*** Negacja bitów
+
+$k=3$
+
+| / |                      <r> | <l>                    | <l>                 |
+|   |                     $A=$ | $00001010_{\text{U2}}$ | $= 10_{\text{DEC}}$ |
+|   |                     $B=$ | $00000100_{\text{U2}}$ | $= 4_{\text{DEC}}$  |
+|---+--------------------------+------------------------+---------------------|
+|   | $A \textasciicircum B =$ | $00001110_{\text{U2}}$ |                     |
+
+
+\hline
+
+#+begin_lang c++ options
+int A = 256;
+#+end_lang
+
+| /        | <l> | <l> | <l> | <l> | <l> |
+| /        | <   | <   | <   | <   | <>  |
+|          |     | B   | G   | R   |     |
+|----------+-----+-----+-----+-----+-----|
+| bity \to |     |     |     |     |     |
+|----------+-----+-----+-----+-----+-----|
+|          | 32  | 24  | 16  | 8   | 0   |
+
+#+begin_example c++ options
+int R = A & 255;         // A & 0xFF
+int G = (A >> 8) & 255;
+int B = (A >> 16) & 255;
+#+end_example
+
+\hline
+
+#+begin_example c++
+int R = 5;
+int G = 10;
+int B = 20;
+int A = (A>>16) | (G<<8) | R;
+#+end_example
+
+\hline
+
+#+begin_example c++
+int a = 2;
+int b = a * 2;
+int c = a << 1 ; // 2^k
+#+end_example
+
+\hline
+
+#+begin_example c++
+if(a % 2 != 0) {} // Z automatu nizdany egzamin w tym semestrze
+if(a & 1) {}
+
+if(a > 0);
+#+end_example

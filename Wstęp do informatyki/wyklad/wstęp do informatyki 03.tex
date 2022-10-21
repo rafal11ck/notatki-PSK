@@ -1,0 +1,322 @@
+% Created 2022-10-21 Fri 20:12
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Rafał Grot}
+\date{\today}
+\title{Wstęp Do Informatyki 03. Podstawowe typy danych}
+\hypersetup{
+ pdfauthor={Rafał Grot},
+ pdftitle={Wstęp Do Informatyki 03. Podstawowe typy danych},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 28.2 (Org mode 9.6)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\begin{itemize}
+\item Liczby całkowite
+\item liczby rzeczywiste
+\end{itemize}
+\section{Operacje na liczbach całkowych}
+\label{sec:org9347533}
+\subsection{Arytmetyczne}
+\label{sec:org9e78307}
+Wydaje mi się że to nie powinno być POW, bo POW to skrót od power, czyli potęgi po angielsku.
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
++ & - & / & * & \%\\
+\hline
+ADD & SUB & DIV & POW & MOD\\
+\hline
+\end{tabular}
+\end{center}
+\subsubsection{+}
+\label{sec:org7879579}
+\begin{center}
+\begin{tabular}{lrrrrrrrll}
+ & 1 & 1 & 1 & 1 & 1 & 1 & 1 &  & \\
+ &  &  &  &  &  &  &  &  & \\
+ & 1 & 1 & 0 & 1 & 1 & 0 & 0 & 1\textsubscript{NKB(8)} & =217\textsubscript{DEC}\\
++ & 0 & 0 & 1 & 0 & 1 & 1 & 1 & 1\textsubscript{NKB(8)} & =47\textsubscript{DEC}\\
+\hline
+ & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0\textsubscript{NKB(8)} & =264\textsubscript{DEC} - 256\textsubscript{DEC} = 8\textsubscript{DEC}\\
+\end{tabular}
+\end{center}
+\subsubsection{-}
+\label{sec:orgaf11008}
+\begin{center}
+\begin{tabular}{lrrrrrrrll}
+ &  &  &  &  & 1 &  &  &  & \\
+ &  & 0 & 2 & 0 & 2 & 2 &  &  & \\
+ &  &  &  &  &  &  &  &  & \\
+ & 1 & 1 & 0 & 1 & 1 & 0 & 0 & 1\textsubscript{NKB(8)} & =217\textsubscript{DEC}\\
+- & 0 & 0 & 1 & 0 & 1 & 1 & 1 & 1\textsubscript{NKB(8)} & =47\textsubscript{DEC}\\
+\hline
+ & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 0\textsubscript{NKB(8)} & =170\textsubscript{DEC}\\
+\end{tabular}
+\end{center}
+\subsection{Logiczne}
+\label{sec:org49bd977}
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\&\& & \textbar\textbar & !\\
+\hline
+AND & OR & NOT\\
+\hline
+Koniunkcja & Alternatywa & \\
+\hline
+\end{tabular}
+\end{center}
+\subsubsection{AND}
+\label{sec:org377d1b5}
+
+\begin{enumerate}
+\item A=1, B=2
+\label{sec:orgaef7f71}
+
+\(A\) \&\& \(B =\) TRUE
+
+\textbf{Bo}
+
+\(A=1 \to A =\) TRUE
+
+\(B=2 \to B =\) TRUE
+
+TRUE \&\& TRUE \(=\) TRUE
+\begin{verbatim}
+int a = 1;
+int b = 2;
+if (a && b) {}
+\end{verbatim}
+\item \(A=0 , B=0\)
+\label{sec:orgf8faaa2}
+
+\(A\) \&\& \(B =\) FALSE \\
+FALSE \&\& FALSE \(=\) FALSE
+\end{enumerate}
+\subsubsection{OR}
+\label{sec:orga6abe60}
+\(A=1, B=2\) \\
+\(A\) || \(B\) = TRUE
+\subsubsection{NOT}
+\label{sec:org9713abf}
+
+\(A=0\) \\
+\(!A=\) TRUE\\
+\(A=\) FALSE
+
+\begin{verbatim}
+int a = false;
+int b = true;
+\end{verbatim}
+a=0 \\
+b \(\neq\) 0
+\subsection{Bitowe}
+\label{sec:org9d4da66}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+\& & \textbar & \textasciitilde{} & \(\ll\) & \(\gg\) & \^{}\\
+\hline
+AND & OR & NOT & SHL & SHR & XOR\\
+\hline
+\end{tabular}
+\end{center}
+\subsubsection{AND}
+\label{sec:org6d99448}
+
+\(A=1\) \\
+\(B=2\) \\
+\(A\) \& \(B=0\)
+
+\begin{center}
+\begin{tabular}{rcccc}
+\(A=\) & 0 & 0 & 0 & 1\\
+\(B=\) & 0 & 0 & 1 & 0\\
+\hline
+\(A\) \& \(B=\) & 0 & 0 & 0 & 0\\
+\end{tabular}
+\end{center}
+
+Częsty błąd:
+\begin{verbatim}
+int a=1;
+int b=2;
+if (a && b) {} // dobrze
+if (a & b) {}  // źle
+\end{verbatim}
+
+\subsubsection{\(\ll\)}
+\label{sec:org2cc7a2c}
+
+\(A=1\) \\
+\(B=2\) \\
+\(A \ll B = 4\)
+
+$$A= a_{N-1} a_{N-2} \dots a_1 a_0 $$
+$$A \ll B = \underbrace{a_{N-1} a_{N-2} \dots a_1 a_0}_{N-B \textit{bitów}} \underbrace{0 \dots 0}_{B \textit{bitów}}$$
+
+\subsubsection{\(\gg\)}
+\label{sec:orga1d8c77}
+
+$$A \gg B = ?$$
+
+$$A= a_{N-1} a_{N-2} \dots a_1 a_0 _{\underset{\text{U2}}{\text{NKB}}} $$
+\begin{enumerate}
+\item NKB
+\end{enumerate}
+$$A_{\text{NKB}} \gg B = \underbrace{0 \dots 0}_{B \textit{bitów}} \underbrace{a_{N-1} a_{N-2} \dots a_{N+1} a_{N}}_{ {N-B} \textit{bitów}} _\text{NKB} $$
+
+\begin{enumerate}
+\item U2
+\end{enumerate}
+$$A_{\text{U2}} \gg B = \underbrace{0 \dots 0}_{B \textit{bitów}} \underbrace{a_{N-1} a_{N-2} \dots a_{N+1} a_{N}}_{ {N-B} \textit{bitów}} _\text{U2} $$
+
+\hline
+
+\begin{verbatim}
+char a = -2;
+char b = 2;
+char c = a >> b;
+\end{verbatim}
+\begin{center}
+\begin{tabular}{lrrrrrrlrl}
+\(a =\) & 1 & 1 & 1 & 1 & 1 & 1 & 0\textsubscript{U2} & 1 & \\
+\(c =\) & 1 & 1 & 1 & 1 & 1 & 1 & 1\textsubscript{U2} & 1 & \(= -1_{\text{DEC}}\)\\
+\end{tabular}
+\end{center}
+
+\hline
+\begin{verbatim}
+unsigned char a = -2;     // a=254(DEC)
+unsigned char b = 2;
+unsigned char c = a >> b; // 63(DEC)
+char d = c;               // 63(DEC)
+\end{verbatim}
+
+\begin{center}
+\begin{tabular}{llrrrrrrrrl}
+ & a = & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 0\textsubscript{NKB} & \\
+ & c = & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 1 & \(= 63\)\\
+\end{tabular}
+\end{center}
+
+\subsubsection{Odczyt bitów (badanie bitów)}
+\label{sec:org266b739}
+\begin{verbatim}
+char A = 10;
+\end{verbatim}
+\(A=00001010_{U2}\) \\
+\(k=3\) bit \\
+\(B=00000100_{U2}\)
+
+\(A\) \& \(B\) = 00000000\textsubscript{\text{U2}} = 0\textsubscript{\text{DEC}} \(\to\) FAŁSZ
+
+\(A\) \& \(4\) = 00000000\textsubscript{\text{U2}} = 0\textsubscript{\text{DEC}} \(\to\) FAŁSZ
+\subsubsection{Ustawianie bitów}
+\label{sec:orgbcfc51f}
+
+\(k=3\)
+
+\begin{center}
+\begin{tabular}{rll}
+\(A=\) & \(00001010_{\text{U2}}\) & \(= 10_{\text{DEC}}\)\\
+\(B=\) & \(00000100_{\text{U2}}\) & \(= -3_{\text{DEC}}\)\\
+\hline
+\(A \textbar B =\) & \(00001110_{\text{U2}}\) & \(= 14_{\text{DEC}}\)\\
+\end{tabular}
+\end{center}
+
+\subsubsection{Zerowanie bitów}
+\label{sec:org8d250de}
+
+\(k=3\)
+
+\begin{center}
+\begin{tabular}{rll}
+\(A=\) & \(00001010_{\text{U2}}\) & \(= 10_{\text{DEC}}\)\\
+\(B=\) & \(11111101_{\text{U2}}\) & \(= -3_{\text{DEC}}\)\\
+\hline
+\(A \& B =\) & \(00001000_{\text{U2}}\) & \(= 8_{\text{DEC}}\)\\
+\end{tabular}
+\end{center}
+
+\subsubsection{Negacja bitów}
+\label{sec:orgbeafb6d}
+
+\(k=3\)
+
+\begin{center}
+\begin{tabular}{rll}
+\(A=\) & \(00001010_{\text{U2}}\) & \(= 10_{\text{DEC}}\)\\
+\(B=\) & \(00000100_{\text{U2}}\) & \(= 4_{\text{DEC}}\)\\
+\hline
+\(A \textasciicircum B =\) & \(00001110_{\text{U2}}\) & \\
+\end{tabular}
+\end{center}
+
+
+\hline
+
+\begin{lang}
+int A = 256;
+\end{lang}
+
+\begin{center}
+\begin{tabular}{l|l|l|l|l|l|}
+ &  & B & G & R & \\
+\hline
+bity \(\to\) &  &  &  &  & \\
+\hline
+ & 32 & 24 & 16 & 8 & 0\\
+\end{tabular}
+\end{center}
+
+\begin{verbatim}
+int R = A & 255;         // A & 0xFF
+int G = (A >> 8) & 255;
+int B = (A >> 16) & 255;
+\end{verbatim}
+
+\hline
+
+\begin{verbatim}
+int R = 5;
+int G = 10;
+int B = 20;
+int A = (A>>16) | (G<<8) | R;
+\end{verbatim}
+
+\hline
+
+\begin{verbatim}
+int a = 2;
+int b = a * 2;
+int c = a << 1 ; // 2^k
+\end{verbatim}
+
+\hline
+
+\begin{verbatim}
+if(a % 2 != 0) {} // Z automatu nizdany egzamin w tym semestrze
+if(a & 1) {}
+
+if(a > 0);
+\end{verbatim}
+\end{document}
