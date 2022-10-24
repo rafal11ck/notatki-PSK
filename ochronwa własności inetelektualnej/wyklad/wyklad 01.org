@@ -5,7 +5,7 @@
 - Wykłady nieobowiązkowe
 - Prezentacja nie będzie dostępna.
 * zaliczenie
-- test wielokrotnego wyboru z treści wykładów lubtreści do których odsyłała.
+- test wielokrotnego wyboru z treści wykładów lub treści do których odsyłała.
  + Mogą być pytania z prezentacji
 - Na przedostatnim wykładzie.
 * Pojęcie prawa włąsności inetelkulaneji jego miejsce w systemie prawnym
@@ -22,8 +22,8 @@ Ochrona praw autorskich powstaja w momencie stworzenia utworu. Ma trwać co najm
   + ustawa z dn 16.04.1993r o zwalczaniu nieuczciwej konkurencji
   + ustawa z dn 23.04.1964 r. kodesk cywilny
 Obecnie twaja prace nad ustwą "prawo własności przemysłowej".
-** Wiktor igo1
-jakiś frajer. Spłakany że jego prace były tłumaczone.
+** Victor Hugo
+Jakiś frajer. Spłakany że jego prace były tłumaczone.
 * Właność intelektualna
 Dziedzina prawa, która dotyczy dóbr intelektualnych pierwotnie nazywanch niematerialnych.
 - intelektualna :: wskazuje na przedmiot ochrony
