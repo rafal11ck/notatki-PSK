@@ -215,7 +215,7 @@ int B = (A >> 16) & 255;
 int R = 5;
 int G = 10;
 int B = 20;
-int A = (A>>16) | (G<<8) | R;
+int A = (A<<16) | (G<<8) | R;
 #+end_example
 
 \hline
