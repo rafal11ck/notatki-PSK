@@ -8,6 +8,8 @@
 *** ASK lab 01
 - https://pl.wikibooks.org/wiki/Asembler_x86/Architektura
 - [[https://pl.wikipedia.org/wiki/Rejestr_procesora]]
+- [[https://pl.wikibooks.org/wiki/Asembler_x86/Instrukcje]]
+
 * Podstawy porgramowania 1
 ** wykłady
 - wyklad podstawy programowania achilles ::  [[https://achilles.tu.kielce.pl/portal/Members/84df831b59534bdc88bef09b15e73c99/podstawy-programowania-1]]
