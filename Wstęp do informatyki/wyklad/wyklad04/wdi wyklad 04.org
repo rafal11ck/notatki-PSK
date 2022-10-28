@@ -1,0 +1,110 @@
+#+title: Wstęp do informatyki Wyklad 04, Złożone typy danych
+* Podstawowe typy danych -- przypomnienie (implementacja w C/C++)
+
+| / | >              | <         | <                   | <            | <       |
+|   | Słowo kluczowe |           | signed U2           | unsigned NKB | rozmiar |
+|---+----------------+-----------+---------------------+--------------+---------|
+|   | char           | =__int8=  | -2^7 -- -2^7-1      | 0 -- 2^8-1   | 8b      |
+|   | short          | =__int16= | 2^{15} -- -2^{15}-1 |              | 16b     |
+|   | int            | =__int32= | $\vdots$            |              | 32b     |
+|   | long           | =__int32= | $\vdots$            |              | 32b     |
+|   | long long int  | =__int64= | 2^{63} -- 2^{63}-1  |              | 64b     |
+|---+----------------+-----------+---------------------+--------------+---------|
+
+| /              | <                       | <       |
+| Słowo kluczowe |                         | rozmiar |
+|----------------+-------------------------+---------|
+| =wchar_t=      | UNICODE(0-2^{18}-1)     | 16b     |
+| bool           | ={0(flase)}, <>(true)}= | 8b      |
+* Złożone typy danych
+Tych rysunków brakuje ale mnie przerosły.
+** Tablice 1-wymiarowe (wektory), 1-diminsional tables
+*** Implementation in =C/C++= language
+#+begin_src cpp :exports all
+int A[10];
+int* B = new int[10]; //C+=
+int* C = (int*)malloc(10* sizeof(int)); //C
+#+end_src
+*obrazki*
+
+\hline
+#+begin_src cpp :exports all
+int* A = new int[10];
+char* B = (char*)A;
+#+end_src
+*obrazki*
+#+begin_src cpp
+string(B, "Ala ma kota");
+#+end_src
+
+\hline
+
+#+begin_src cpp
+void foo(char a);
+
+char b=0;
+foo(b);
+#+end_src
+
+\hline
+
+#+begin_src cpp
+void foo(char a[10]);
+
+char b[0] = {Ab}; //to niby jest string
+foo(b);
+#+end_src
+\hline
+
+#+begin_src cpp
+void foo(char a[]);
+foo(char* a);
+char* c=b;
+foo(c);
+#+end_src
+
+\hline
+#+begin_src
+void foo(const char* a);
+#+end_src
+
+\newpage
+\hline
+#+begin_src cpp
+int count(const char* a, char b)
+{
+  int n=0;
+  while(*a){
+    if(*a==b)++n;
+    ++a;
+    }
+  return n;
+
+  char A="Ala ma kota";
+  int n=count(A, 'k');
+  int n2=count(A, 'n');
+}
+#+end_src
+\hline
+#+begin_src cpp
+int n = 0;
+do { if (*a==b) ++n; } while(*a++);
+return n;
+#+end_src
+\hline
+#+begin_src cpp
+int sum(const int a*)
+int A[10];
+int S = Sum(A);
+#+end_src
+: N nieudanych prób studentów. (N=3)
+
+\hline
+#+begin_src cpp
+int Sum(int N, const int *A)
+{
+  int S = 0;
+  while(N--) S+=*A++;
+  return S;
+}
+#+end_src
