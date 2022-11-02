@@ -1,3 +1,47 @@
 #+title: Temp
-* Pytatania jakie mogą być na kolokwium
-- odpowiedzilność pracodawcy za nie przestrzeganie BHP?
+* Pytatania jakie mogą być na egzaminie
+** Oapowiedzilność pracodawcy za nie przestrzeganie BHP?
+- mandat od 500 do 5000zł
+- kara grzywny w wysokości od 1000zł do 30000zł
+- art 220 pozbawienie wolności do lat 3.
+** bezpczeństwo techniczne
+- obiekty, pomiesczenia pracy
+- maszyny, narzędzia, i urządzenia techniczne
+- energetyka, transport, procesy technologiczne
+- materiały i surowce
+- dokumentacja:
+  + budowlana
+  + techniczna
+  + ruchowa
+  + instrukcjie
+** Higiena pracy
+- higiena pomieszczeń pracy
+- higiena pomiesczeń technologicznych
+- higiena osobista pracowników
+- zaplecze sanitarno higieniczne
+- środki higieny i zapezpieczenia higieniczne
+** Prawna ochrona pracy
+- ochrona stosunku pracy
+- ochrona wynagrodzenia
+- ochrona warunków pracy
+- ochrona organizacji w pracy
+- ochrona pracy kobiet i młodocianych
+- ochrona świadczeń prcowniczych
+** Czym się różni European conformance CE mark od China export
+Trzeba narysować
+** Organy nadzoru nad warunkami pracy
+- Państowy
+  + sanepid
+  + państwowa inspekcja pracy
+  + urząd dozoru technicznego
+  + państwowa straż pożarna
+  + ochrona środowiska
+- Społeczny
+  + związki zawodowe
+  + społeczna inspekcja pracy -- zakładowy społeczny inspektor pracy
+* Trójkąt ochrony pracownika
+ /od najmniej ważnych/
+ 1. Środki ochrony indywidualnej
+ 2. środki chorny organizacyjnej
+ 3. środki ochrony zbiorowej
+ 4. środki techniczne
