@@ -1,0 +1,63 @@
+% Created 2022-11-04 Fri 12:57
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Rafał Grot}
+\date{\today}
+\title{Wstęp do informatyki wyklad05 dynamiczna alokacja pamięci}
+\hypersetup{
+ pdfauthor={Rafał Grot},
+ pdftitle={Wstęp do informatyki wyklad05 dynamiczna alokacja pamięci},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 28.2 (Org mode 9.6)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\begin{verbatim}
+#include <iostream>
+
+int main()
+{
+    int B[4] = {0,1,2,3};
+    int* A = B;
+    int** P = &A;
+    int*** Q = &P;
+    *(*P+1) = 5;
+    std::cout << B[1];
+    return 0;
+}
+\end{verbatim}
+
+\begin{verbatim}
+5
+\end{verbatim}
+
+
+\begin{verbatim}
+void foo(int A); //foo(B);
+
+void foo(int& A); //foo(B);
+
+void foo(int* A); //foo(&B);
+
+void foo(const int A); //foo(B);
+void foo(const int& A); //foo(B);
+void foo(const int* A); //foo(&B);
+void foo(int* const A); //foo(&B);
+void foo(const int* const A); //foo(&B);
+\end{verbatim}
+\end{document}
