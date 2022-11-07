@@ -1,4 +1,5 @@
 #+title: Wyklad 02
+#+author: \textcopyleft
 * Miejsce prawa autorekiego w systemie prawa
 - Pierwotne :: dział prawa cywilnego, dziś -- część prawa własności intelektualnej.
 - Prawo autorskie w znaczeniu przedmiotwym :: oznacza zespół norm prawnych regulujących stosunki związane z tworzenie, ekspolatacją i ochroną utworów, tzw. prawami pokrewnymi i niektórymi dobrami osobistymi.
