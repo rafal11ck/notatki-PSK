@@ -1,0 +1,15 @@
+#+title: Wstęp do informatyki, wyklad 06
+
+#+begin_src cpp
+#include <iostream>
+
+int main()
+{
+
+    std::cout << "HI noob\t";
+    return 0;
+}
+#+end_src
+
+#+RESULTS:
+: HI noob
