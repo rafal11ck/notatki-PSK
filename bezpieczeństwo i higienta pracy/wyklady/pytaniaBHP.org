@@ -39,9 +39,33 @@ Trzeba narysować
 - Społeczny
   + związki zawodowe
   + społeczna inspekcja pracy -- zakładowy społeczny inspektor pracy
-* Trójkąt ochrony pracownika
+** Trójkąt ochrony pracownika
  /od najmniej ważnych/
  1. Środki ochrony indywidualnej
  2. środki chorny organizacyjnej
  3. środki ochrony zbiorowej
  4. środki techniczne
+* Podstwowe parametry miejsca rpacy
+** wysokość
+co najmniej 330cm,
+- powieszchnia
+- dwa m^2 wolnej powiesznich podłogi
+** Oświetlenie
+*** Naturalne
+powieszchnia okna:powiszchnia podłogi
+- w pomiesczenieu przeznaczonym na pobyt ludzi 1:8.
+- w pomiesczeniach w, ktorych oświetlenie naturlane jest wymagane ze względu na przeznaczenie 1:12
+** Pomieszczenie bez okien wymagania:
+  + klimpatyzacja.
+  + zgoda sanepidu.
+  + zgoda inspekcji pracy.
+* Gdize nie wolno stosować wentylacji mechanicznej
+w pomieszczniach z paleńskiami na paliwo stałe, płynne lub urządzeniami gazowymi pobierające powietrze do spalania z pomieszczenia z grawitacyjnym odoprwadzeniem spalin przewodem stsowanie wentylacji mechanicznej jest zabronione.
+* Kiedy pracodwaca zapenia pracownikom pomiesczenie do ogrzwania się
+
+* Kiedy pracodwaca zapenia pracownikom pomiesczenie do odpoczynku
+- jeżeli zatrudnia pracowników w pomiesczeniach ciasnych lub niskich
+- jeżeli zatrudnia pracowników w 30+ s c
+** jakie warunki spełnia
+ - klimatyzownae
+ - mieć miejsca siedzące
