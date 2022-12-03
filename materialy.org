@@ -13,6 +13,7 @@
 * Podstawy porgramowania 1
 ** wykłady
 - wyklad podstawy programowania achilles ::  [[https://achilles.tu.kielce.pl/portal/Members/84df831b59534bdc88bef09b15e73c99/podstawy-programowania-1]]
+- Konsulatcje :: poniedziałki 20:00--13:30 3.23D
 ** laboratioria
 - moodle link podstawy programowania 1 :: https://weaii-moodle.tu.kielce.pl/course/view.php?id=149 =kubit_12B=
 * Teoria układów logicznych
@@ -33,6 +34,7 @@ https://weaii-moodle.tu.kielce.pl/course/view.php?id=27
 * Fiziyka
 ** Wykłady
 [[https://weaii-moodle.tu.kielce.pl/enrol/index.php?id=233]] =ELFiz@w23=
+- konsulatcje środy 10.00--11.30 2.20D
 ** Laboratioria
 [[https://weaii-moodle.tu.kielce.pl/course/view.php?id=457]] =eFizyka@12B=
-
+- konsulatcje środy 10.00--11.30 2.20D
