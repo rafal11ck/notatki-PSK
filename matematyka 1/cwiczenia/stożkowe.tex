@@ -1,4 +1,4 @@
-% Created 2022-12-04 Sun 12:32
+% Created 2022-12-04 Sun 17:29
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -15,29 +15,38 @@
 \author{Rafał Grot}
 \date{\today}
 \title{Stożkowe}
-\hypersetup{
- pdfauthor={Rafał Grot},
- pdftitle={Stożkowe},
- pdfkeywords={},
- pdfsubject={},
- pdfcreator={Emacs 28.2.50 (Org mode 9.6)}, 
- pdflang={English}}
 \begin{document}
 
 \maketitle
 \tableofcontents
 
-\(\hline\)
-\([M]\) -- Macierz formy kwadratowej
+\begin{latex}
+\[Q(\vec{x}) = a_{11}x_1^2 + 2a_{12}x_1x_2+a_{22}x_2^}
+\to M =
+\begin{bmatrix}
+    a_{11} & a_{12}\\
+    a_{21} & a_{22}\\
+\end{bmatrix}\]
 
-\section{Typ w zalżeności od wyznacznika}
-\label{sec:org3e58e21}
-\begin{itemize}
-\item \(\det{[M]}=0\) -- typ paraboliczny
-\end{itemize}
+\(\det{M}\) -- wyróżnik formy kwadratowej \(Q(\vec{x})\)
 
-\section{Równanie charakterystczne}
-\label{sec:org3ff2cde}
-Wchodzi z \(|M| \cdot I \lambda\), gdzie \(I\) jest macierzą jednostkową tego samego wymiaru co macież \(M\).
-Potrzebne do obliczenia wartości własnych.
+\begin{align*}
+  \det{M} &> 0 && \text{forma kwadratowa typu eliptycznego}\\
+  \det{M} &= 0 && \text{forma kwadratowa typu parabolicznego}\\
+  \det{M} &< 0 && \text{forma kwadratowa typu hiperbolicznego}\\
+\end{align*}
+
+Sprowadzanie formy kwadratowej do postaci kwadratowej
+
+
+\[Q(\vec{x}) = a_{11}x_1^2 + 2a_{12}x_1x_2+a_{22}x_2^}
+\to
+ Q(\vec{x}) = a_{1} \hat{x}_{1}^{2} + a_{2}\hat{x}_2^{2}\]
+
+, gdzie \(a_{1}, a_{2}\) -- wartości własne macierzy \(M\)
+
+\(\hat{x}_1,\hat{x}_{2}\) -- współżędne wektora \(\vec{x}\) w nowej baze ortonormalnej \(\vec{v_{1}}, \vec{v_{2}}\) złożonej z wersorów własnych macierzy \(M\).
+
+wersor własny -- wektor własny o długości 1.
+\end{latex}
 \end{document}

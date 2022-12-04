@@ -1,11 +1,31 @@
 #+title: Stożkowe
 
-$\hline$
-$[M]$ -- Macierz formy kwadratowej
+#+begin_latex
+\[Q(\vec{x}) = a_{11}x_1^2 + 2a_{12}x_1x_2+a_{22}x_2^}
+\to M =
+\begin{bmatrix}
+    a_{11} & a_{12}\\
+    a_{21} & a_{22}\\
+\end{bmatrix}\]
 
-* Typ w zalżeności od wyznacznika
-- $\det{[M]}=0$ -- typ paraboliczny
+$\det{M}$ -- wyróżnik formy kwadratowej $Q(\vec{x})$
 
-* Równanie charakterystczne
-Wchodzi z $|M| \cdot I \lambda$, gdzie $I$ jest macierzą jednostkową tego samego wymiaru co macież $M$.
-Potrzebne do obliczenia wartości własnych.
+\begin{align*}
+  \det{M} &> 0 && \text{forma kwadratowa typu eliptycznego}\\
+  \det{M} &= 0 && \text{forma kwadratowa typu parabolicznego}\\
+  \det{M} &< 0 && \text{forma kwadratowa typu hiperbolicznego}\\
+\end{align*}
+
+Sprowadzanie formy kwadratowej do postaci kwadratowej
+
+
+\[Q(\vec{x}) = a_{11}x_1^2 + 2a_{12}x_1x_2+a_{22}x_2^}
+\to
+ Q(\vec{x}) = a_{1} \hat{x}_{1}^{2} + a_{2}\hat{x}_2^{2}\]
+
+ , gdzie $a_{1}, a_{2}$ -- wartości własne macierzy $M$
+
+$\hat{x}_1,\hat{x}_{2}$ -- współżędne wektora $\vec{x}$ w nowej baze ortonormalnej $\vec{v_{1}}, \vec{v_{2}}$ złożonej z wersorów własnych macierzy $M$.
+
+wersor własny -- wektor własny o długości 1.
+#+end_latex
