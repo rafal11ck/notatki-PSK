@@ -1,0 +1,11 @@
+#+title: Stożkowe
+
+$\hline$
+$[M]$ -- Macierz formy kwadratowej
+
+* Typ w zalżeności od wyznacznika
+- $\det{[M]}=0$ -- typ paraboliczny
+
+* Równanie charakterystczne
+Wchodzi z $|M| \cdot I \lambda$, gdzie $I$ jest macierzą jednostkową tego samego wymiaru co macież $M$.
+Potrzebne do obliczenia wartości własnych.
