@@ -45,27 +45,47 @@ Trzeba narysować
  2. środki chorny organizacyjnej
  3. środki ochrony zbiorowej
  4. środki techniczne
-* Podstwowe parametry miejsca rpacy
-** wysokość
+** Podstwowe parametry miejsca pracy
+*** wysokość
 co najmniej 330cm,
 - powieszchnia
 - dwa m^2 wolnej powiesznich podłogi
-** Oświetlenie
-*** Naturalne
+*** Oświetlenie
+**** Naturalne
 powieszchnia okna:powiszchnia podłogi
 - w pomiesczenieu przeznaczonym na pobyt ludzi 1:8.
 - w pomiesczeniach w, ktorych oświetlenie naturlane jest wymagane ze względu na przeznaczenie 1:12
-** Pomieszczenie bez okien wymagania:
+*** Pomieszczenie bez okien wymagania:
   + klimpatyzacja.
   + zgoda sanepidu.
   + zgoda inspekcji pracy.
-* Gdize nie wolno stosować wentylacji mechanicznej
+*** Gdize nie wolno stosować wentylacji mechanicznej
 w pomieszczniach z paleńskiami na paliwo stałe, płynne lub urządzeniami gazowymi pobierające powietrze do spalania z pomieszczenia z grawitacyjnym odoprwadzeniem spalin przewodem stsowanie wentylacji mechanicznej jest zabronione.
-* Kiedy pracodwaca zapenia pracownikom pomiesczenie do ogrzwania się
+*** Kiedy pracodwaca zapenia pracownikom pomiesczenie do ogrzwania się
 
-* Kiedy pracodwaca zapenia pracownikom pomiesczenie do odpoczynku
+** Kiedy pracodwaca zapenia pracownikom pomiesczenie do odpoczynku
 - jeżeli zatrudnia pracowników w pomiesczeniach ciasnych lub niskich
 - jeżeli zatrudnia pracowników w 30+ s c
-** jakie warunki spełnia
+*** jakie warunki spełnia
  - klimatyzownae
  - mieć miejsca siedzące
+** Efekty z ergonomii
+- zmniejszenie znaczenia różnic indywidualnych, tzn. im bardziej cechy maszyn, urządzeń i narzędia są przystosowane do możliwości człowieka.
+- zmniejszenie zmęczenia pracą
+- zwiększenie wydajności pracy
+- zapobieganie patologicznym skutkom wykonywania pracy, ograniczenie ilości chorób zawodowych.
+- zmniejszenie liczby wypadków przy pracy
+** Czynniki materialnego środowiska pracy
+- Oświetlenie
+- Hałas, Drgania
+- Mikroklimat :: temperatura, wlgotność, ciśnienie, ruch powietrza, promieniowanie cieplne
+- Zaniczyszczenia powietrza :: pył albo związek chemiczny
+* Czynniki antroptechniczne
+- Postwa przy pracy.
+- Rytm i tempo pracy.
+- Przerwy w pracy.
+* Na podstawie czego rozróżnami elementy sterownicze
+- kształt
+- rozmiar
+- umejscowienie
+- barwa
