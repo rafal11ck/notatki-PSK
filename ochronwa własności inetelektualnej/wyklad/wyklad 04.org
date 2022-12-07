@@ -1,0 +1,2 @@
+#+title: Wyklad 04
+#+author: \textcopyleft

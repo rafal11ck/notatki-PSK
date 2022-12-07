@@ -1,0 +1,77 @@
+#+title: Wskazniki
+
+#+begin_src cpp :results output
+#include <iostream>
+
+int main()
+{
+    int a{3};
+    int* b{&a};
+
+    std::cout << "&a =\t" << &a << "\ta\t" << a << '\n';
+    std::cout << "b =\t" << b << "\t*b = " << *b << '\n';
+
+    std::cout << "*b = 4;\n";
+    *b = 4;
+    std::cout << "&a =\t" << &a << "\ta\t" << a << '\n';
+    std::cout << "b =\t" << b << "\t*b = " << *b << '\n';
+
+    std::cout << "a = 5;\n";
+    a = 5;
+    std::cout << "&a =\t" << &a << "\ta\t" << a << '\n';
+    std::cout << "b =\t" << b << "\t*b = " << *b << '\n';
+
+    std::cout << "int c = 1;\n b = &c;\n";
+    int c = 1;
+    b = &c;
+    std::cout << "&a =\t" << &a << "\ta\t" << a << '\n';
+    std::cout << "b =\t" << b << "\t*b = " << *b << '\n';
+    std::cout << "&c =\t" << &c << "\tc\t" << c << '\n';
+}
+#+end_src
+
+#+RESULTS:
+#+begin_example
+&a =	0x7fff3f7a80c8	a	3
+b =	0x7fff3f7a80c8	*b = 3
+,*b = 4;
+&a =	0x7fff3f7a80c8	a	4
+b =	0x7fff3f7a80c8	*b = 4
+a = 5;
+&a =	0x7fff3f7a80c8	a	5
+b =	0x7fff3f7a80c8	*b = 5
+int c = 1;
+ b = &c;
+&a =	0x7fff3f7a80c8	a	5
+b =	0x7fff3f7a80cc	*b = 1
+&c =	0x7fff3f7a80cc	c	1
+#+end_example
+
+#+begin_src cpp
+#include <iostream>
+#include <string>
+
+int main()
+{
+    int a = 'b';
+    std::cout << a << '\n';
+    char b = 'b'+1; //b+1 // 99
+    std::cout << b << '\n';
+
+    char c[] = "abc";
+    std::cout << c << '\n';
+
+    char* d = "cba";
+    std::cout << d << '\n';
+
+    std::string e {"AAAAA"};
+    std::cout << e << '\n';
+}
+#+end_src
+
+#+RESULTS:
+| 98    |
+| c     |
+| abc   |
+| cba   |
+| AAAAA |
