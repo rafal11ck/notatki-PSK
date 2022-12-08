@@ -1,6 +1,11 @@
-#+title: Wyklad08
+#+title: Wykład 08
+#+options: toc:nil
+#+LATEX_HEADER: \renewcommand\maketitle{}
+#+latex_header: \usepackage[polish]{babel}
+#+language: pl
 
-* Stack
+* Sport
+** Stack
 #+begin_src cpp :tangle stack.cpp :results output :exports both
 #include <iostream>
 /*
@@ -90,7 +95,7 @@ int main()
 : 1
 : stack empty
 : 0
-* Queue
+** Queue
 
 #+begin_src cpp :tangle queue.cpp :results output :exports both
 #include <iostream>
