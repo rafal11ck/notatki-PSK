@@ -1,4 +1,4 @@
-% Created 2022-12-08 Thu 23:40
+% Created 2022-12-09 Fri 15:53
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -17,21 +17,14 @@
 \author{Rafał Grot}
 \date{\today}
 \title{Wykład 08}
-\hypersetup{
- pdfauthor={Rafał Grot},
- pdftitle={Wykład 08},
- pdfkeywords={},
- pdfsubject={},
- pdfcreator={Emacs 28.2.50 (Org mode 9.6)}, 
- pdflang={Polish}}
 \begin{document}
 
 \maketitle
 
 \section{Sport}
-\label{sec:orgc412c9f}
+\label{sec:org50f0f58}
 \subsection{Stack}
-\label{sec:org8ff4dfd}
+\label{sec:orgf70f6f0}
 \begin{verbatim}
 #include <iostream>
 /*
@@ -123,7 +116,7 @@ stack empty
 0
 \end{verbatim}
 \subsection{Queue}
-\label{sec:org6a0d895}
+\label{sec:orgaf8ea2c}
 
 \begin{verbatim}
 #include <iostream>
@@ -220,4 +213,153 @@ int main()
 queue empty
 0
 \end{verbatim}
+\section{Wyklad}
+\label{sec:orge655db7}
+\subsection{Implementacja Stosu}
+\label{sec:orgd67858b}
+\begin{verbatim}
+class IStack //stack.h
+{
+public:
+    virtual void Put(void* Data)=0;
+    virtual void Get(void*& Data)=0;
+    __property int Count = {read:GetCout};
+    void Free(void);
+protected:
+    virtual int GetCount(void)=0;
+};
+
+class TStack::public IStack //DLL
+{
+    struct TStackItem
+    {
+        void* FData;
+        TStackItem* FNext;
+    };
+
+    TStackItem* FFirst;
+    int FCount;
+protected:
+    void Put(void* AData);
+    void Get(void*& AData)
+    int GetCount(void)
+    void Free(void);
+public:
+    IStack(void);
+    ~IStack(void);
+}
+
+IStack* CreateStack(void) //DLL // <- Factory (Export)
+{
+    return new TStack();
+}
+//extern "C" IStack __export CreateStack(void);
+
+void TStack::Free(void)
+{
+    delete this;
+}
+
+TStack::TStack(void)
+{
+    FFirst=NULL;
+    FCount=0;
+}
+
+TStack::~TStack(void)
+{
+    void* Data;
+    while(FCount) Get(Data);
+}
+
+int TStack GetCount(void)
+{
+    return FCount;
+}
+
+void TStack::Put(void* AData)
+{
+    TStackItem* Item = new TStackItem;
+    Item->FData=AData
+    Item->FNext=FFirst;
+    FFirst=Item
+    return ++FCount;
+}
+
+void TStack::Get(void*& AData)
+{
+    TStackItem* Item = FFirst;
+    FFirst = Item->Next;
+    AData=Item->FData;
+    delete Item;
+    --FCount;
+}
+
+int main(void)
+{
+
+    IStack* S = new TStack;
+    //IStack* S = CreateStack(); //DLL
+    /*
+    S->Put(...);
+    .;
+    .;
+    .;
+    S->Get(...);
+    cout << S->Count; //S->GetCount();
+    delete S; // Nie możliwe
+    S->Free();
+    */
+}
+\end{verbatim}
+
+$$\text{DLL} \overrightarrow{"Interface, Factory"} \text{APP}$$
+\section{Listy dwukierunkowe}
+\label{sec:org0e18fe6}
+\subsection{Logiczna postać}
+\label{sec:orge99c45f}
+\begin{description}
+\item[{N}] -- next
+\item[{P}] -- previous
+\item[{F}] -- First
+\item[{L}] -- Last
+\begin{center}
+\includegraphics[width=.9\linewidth]{2kierunkowalista.png}
+\end{center}
+\end{description}
+\subsection{Fizyczna}
+\label{sec:org9d2b265}
+\begin{center}
+\includegraphics[width=.9\linewidth]{2kierunkowalistafizyczna.png}
+\end{center}
+\section{Potok}
+\label{sec:orgfb9cbc0}
+\subsection{1-kier}
+\label{sec:org8a2a201}
+\begin{itemize}
+\item Put
+\item Get
+\end{itemize}
+\subsection{2-kier}
+\label{sec:orgf72b046}
+\begin{itemize}
+\item \texttt{Add}
+\item \texttt{Insert(Inode)}
+\item \texttt{Delete}
+\item \texttt{\_\_propiety Item[Index]};
+\end{itemize}
+\section{Drzewa binarne}
+\label{sec:orgdd43d66}
+\subsection{Postać logiczna}
+\label{sec:org0deca6a}
+\begin{description}
+\item[{R}] --root
+\item[{L}] --left
+\item[{R}] --right
+\item[{wyszukwianie}] \(O(\log_{A}N)\)
+\end{description}
+\section{Drzewa (ogólna postać)}
+\label{sec:org9c59ad6}
+\section{Grafy}
+\label{sec:org5b722c3}
 \end{document}
