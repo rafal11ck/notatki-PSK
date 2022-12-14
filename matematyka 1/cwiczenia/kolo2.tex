@@ -1,0 +1,68 @@
+% Created 2022-12-14 Wed 13:12
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Rafał Grot}
+\date{\today}
+\title{Kolo2}
+\hypersetup{
+ pdfauthor={Rafał Grot},
+ pdftitle={Kolo2},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 28.2 (Org mode 9.6)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\section{t}
+\label{sec:org4e65c04}
+
+$$\frac{11}{2} x_1^2 + 7 \sqrt{3} x_1 x_2 + \frac{25}{2} x_2^2 - 32 = 0$$
+
+$$M = \begin{bmatrix} \frac{11}{2} & \frac{7\sqrt{3}}{2} \\
+\frac{7\sqrt{3}}{2} & \frac{25}{2}\\
+\end{bmatrix}$$
+
+\begin{latex}
+\begin{align*}
+  \det{M} &= \frac{11 \cdot 25}{4} - \frac{49 \cdot 3}{4}\\
+  &= \frac{275}{4}-\frac{147}{3}\\
+  &= 32 \implies \text{eliptyczny}
+\end{align*}
+\end{latex}
+
+\textbf{Wartości włsne}
+\begin{latex}
+M =
+\begin{vmatrix}
+  \frac{11}{2}-\lambda & \frac{7\sqrt{3}}{2} \\
+  \frac{7\sqrt{3}}{2} & \frac{25}{2}-\lambda\\
+\end{vmatrix}
+
+\begin{align*}
+  0 &= (\frac{11}{2}-\lambda) \cdot (\frac{25}{2}-\lambda) - \frac{49 \cdot 3}{4}\\
+  &= \lambda^2 - \frac{36}{2}\lambda + 32
+\end{align*}
+
+\begin{align*}
+\delta = 324 - 128 = 136 && \sqrt{\delta} = 14
+\end{align*}
+
+\begin{align*}
+\delta_1 = \frac{18-14}{2}=2 && \delta_2 = \frac{32}{2}=16
+\end{align*}
+\end{latex}
+\end{document}
