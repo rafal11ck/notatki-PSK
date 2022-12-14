@@ -74,6 +74,22 @@ gdzie $a_{1}, a_{2}$ -- wartości własne macierzy $M$
 $\hat{x}_1,\hat{x}_{2}$ -- współżędne wektora $\vec{x}$ w nowej baze ortonormalnej $\vec{v_{1}}, \vec{v_{2}}$ złożonej z wersorów własnych macierzy $M$.
 
 wersor własny -- wektor własny o długości 1.
+** Elipsa
+- Wzór ogólny ::
+$$\frac{x_1^2}{a^2}+\frac{x_2^2}{b^2}=1$$
+- Promienie ::
+$a,b$
+** Parabola
+- Wzór ogólny ::
+  $$x_1=ax_2^2$$
+** Hiperbola
+- Wzór ogólny ::
+$$\frac{x_1^2}{a^2}-\frac{x_2^2}{b^2}=1$$
+- Wieszchołki ::
+  $$x_1 = \pm a$$
+- Asymptoty ::
+  $$x_2 = \pm \frac{b}{a}x_1$$
+
 * $\mathbb{R}^3$
 ** Równianie ogólne płaszczyzny
 
