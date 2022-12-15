@@ -1,4 +1,5 @@
 #+title: Kolokwium1
+#+author: \textcopyleft
 1. Nazwij dwa naturalne materiały półprzewdnikowe:\\
    Krzem, german
 2. Co to jest elektron wlanecyjny?\\
