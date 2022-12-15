@@ -1,0 +1,44 @@
+#+title: Kolokwium1
+1. Nazwij dwa naturalne materiały półprzewdnikowe:\\
+   Krzem, german
+2. Co to jest elektron wlanecyjny?\\
+   Elekton znajdujący się na ostatniej, najbardziej zewnętrznej warstwie atomu.
+3. Rodzaje diod
+   Uniwerslane, prostownicze, impulsowe
+4. Co to jest rekombinacja?\\
+   Połączenie się pary cząstek lub jonów o prezeciwnych ładunkach elektrycznych, proces odwrotny do jonizacji.
+5. harakterystka cześtotliwościowo ampitudową wzmacniacza tranzystorowego [[file:charakterystkaczestotliwosociowamipitudowa.png]]
+6. W jakim paśmie energetycznym występują elektrony swobodne?\\
+   W paśmie przewodzenia
+7. Rezystor w obwodzie emitera obniża wzmocninie napięciowe wzmcniacza w układzie? (Tak/Nie)
+8. Narysuj energetyczne modele pasmowe półprzewdnika, izolatora i przewodnika [[file:modelepasmowe.png]]
+9. Co to jest rezystancja dynamiczna (definicja i wzór)?\\
+   Rezystancja jaką wnosi dioda w obwód prądu zmiennego, gdzie występuja niewielkie wzrosty składowej. $R_d=\frac{U_2-U_1}{I_2-I_1}$
+10. Jak uzyskać półprzewdnik typu n?\\
+    Poprzez domieszkowanie donorowe
+11. Narysuj symbol diody zenera i oznacz końcowki\\
+   [[file:diodazenera.png]]
+12. Jakie nośniki są więkoszościowe w połprzewodniku typu p?\\
+    Dziury
+13. Bariera potencjału jest większa dla krzemu czy germanu?\\
+    Krzemu.
+14. Jaka jest przybliżna wartość wzmocnienia napięciowego wtórnika emiterowego?
+15. Podaj określenie mocy admisyjnej\\
+    Maksymalna moc strat. Maksymalna wartość iloczynu prądu i napięcia stałego, przy którym dioda może pracować.
+16. Nazwij rodzaje przebica złącza p--n przy polaryzacji zaporowej.\\
+    Zenera, elektryczne
+17. Jakie daw podstawowe tory (obwody) wyróznia się we wzacniaczu trazystorowym?
+18. Przy jakiej polaryzacji złącz bramka--kanał pracuje tranzystor polowy złączowy?\\
+    Polaryzacja zaporowa.
+19. Transport nośników w obszarze kanału tranzystora polowego musi sie odbywać w kierunku od *źródła* do *drenu*.
+20. Wymień przynajmniej dwa układy polaryzxacji tranzystora bipolarnego.\\
+    Stałym prądem baazy, emitera
+21. Narysuj symbol tranzystora biploarnego i oznacz końcówki.\\
+    #+attr_latex: :float left :width 50
+    [[file:tranzystorBipolaarny.png]]
+22. Wymień prznajmniej dwa zakresy pracy tranzystora bipolarnego.\\
+    0E, 0B, 0C
+23. Aby tranzystor biploarny posiadał zdolności wzmacniające, złącze BE musi być spolaryzowane w kierunku *przewodzenia*, a złącze BC musi być spolaryzowane w kierunku *zaporowym*.
+24. $I_B = 8\mu A$ oraz $I_C = 0.64mA$, Wyznacz $B_N$
+25. Nazwij ikłady włączenia tranzystora bipolarnego.\\
+    Ze wspólnym emiterem, kolektorem, bazą
