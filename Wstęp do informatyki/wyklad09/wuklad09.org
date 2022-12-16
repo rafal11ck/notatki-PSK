@@ -1,0 +1,45 @@
+#+title: Wprowadzenie do złożoności obliczeniowej algorytmów
+#+begin_comment
+Wyzwanie
+#+end_comment
+* Algorytm
+- nie to :: START->Instrukcja#1->Instrukcja#2->...->stop, N operacji
+- diagram przepływu sterownia w algorytmie :: START->przepis->stop
+* Symbole
+- Początek
+  a) kolko z napisem start
+- Koniec
+  a) kolko z napisem STOP
+  b) kolko z napisem RET X
+- blok programowy (instrukcji)
+ a) chmurka z jednym wejściem i jednym wyjsciem
+
+#+begin_src cpp :tangle iloczyn.cpp
+#include <iostream>
+
+int main() {
+  int a{};
+  int s{1};
+  std::cin >> a;
+  while (a!=0){
+    s *= a;
+    std::cin >> a;
+  };
+  std::cout << s << '\n';
+}
+#+end_src
+* Wyzwanie do domu
+#+begin_src C
+typedef double TPoint[2]; // współżędne punktu x y na płaszczźnie
+typedef TPoint Tpoints[]; //Tablica 1wymiarowa punktów
+typedef int TRoad[]; // tablica numerow miasta
+
+//N punktów
+TROAD=[1,2,3,4,5,6,7];
+
+//Zbudować bibliotekę DLL
+extern "C"__Export void__stdcall FindRoad(int N, TPoints P, TRoad R)
+    {
+//... zwracać przez TRoad
+    };
+#+end_src
