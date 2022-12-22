@@ -80,12 +80,18 @@ w pomieszczniach z paleńskiami na paliwo stałe, płynne lub urządzeniami gazo
 - Hałas, Drgania
 - Mikroklimat :: temperatura, wlgotność, ciśnienie, ruch powietrza, promieniowanie cieplne
 - Zaniczyszczenia powietrza :: pył albo związek chemiczny
-* Czynniki antroptechniczne
+** Czynniki antroptechniczne
 - Postwa przy pracy.
 - Rytm i tempo pracy.
 - Przerwy w pracy.
-* Na podstawie czego rozróżnami elementy sterownicze
+** Na podstawie czego rozróżnami elementy sterownicze
 - kształt
 - rozmiar
 - umejscowienie
 - barwa
+** Co to jest centyl? / co student rozimie przez stosowanie zasad mair ograniczających
+Centyl -- jest to punkt dla skali ocen, poniżej którego leży $N$ % wynikoów.
+** Jakim wymiarom odpowiada 50 centylowa kobieta w stosunku do męszczyzn?
+** Co to jest dobrostan?
+Stan odczuwalny przez operatora podczas zgodnego z porzenaczeniem użytkowania maszyny, jeżeli dsykomofort, zmęcznie fizyczne i obicazenie psychidczne ograniczono do możliwego minimum dzięki uwzględnieniu zasad ergonomicznych
+** Maksylamny wydatek energetyczny u kobiety, u męsczyzny.
