@@ -1,0 +1,9 @@
+#+title: Wejscowki
+* Tranzystor bipolarny
+** poprawa 1
+1. Układy pracy tranzystora bioplarnego. narysować i podpisać
+2. charakterystki w układzie wspólnego emitera
+* Tranzystor polowy
+** poprawa 1
+ 1. charakterystki tranzystora polowego
+ 2. transkonduktacnja wzór i wyznaczanie z charakterysyk
