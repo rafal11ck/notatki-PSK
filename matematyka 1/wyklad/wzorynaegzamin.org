@@ -1,31 +1,35 @@
-#+options: toc:nil
+#+options: todo:nil toc:nil
+
+#+LATEX_HEADER: \renewcommand\maketitle{}
+#+latex_header: \usepackage[polish]{babel}
+#+LATEX_HEADER: \usepackage[margin=3cm]{geometry}
+#+language: pl
 
 * Wzory na pochodne wybranych funkcji
-
 \begin{align*}
 c \in \mathbb{R} && \alpha \in \mathbb{R}
 \end{align*}
-
-\begin{align}
-  & c' = 0,\\
-  & \left( x^\alpha \right)' = \alpha x^{\alpha - 1},\\
-  & \left( a^{x} \right)' = a^{x} \ln a ,\\
-  & \left( e^{x} \right)' = e^{x},\\
-  & \left( \log_{a}x \right)'= \frac{1}{x \cdot \ln a},\\
-  & \left( \ln x \right)' = \frac{1}{x},\\
-  & \left( \sin x \right)' = \cos x,\\
-  & \left( \cos x \right)' = - \sin x,\\
-  & \left( \text{tg } x \right)' = \frac{1}{\cos^{2} x},\\
-  & \left( \text{ctg } x  \right)' = \frac{-1}{\sin^{2} x},\\
-  & \left( \arcsin x \right)' = \frac{1}{\sqrt{1-x^{2}}},\\
-  & \left( \arccos x \right)' = \frac{-1}{\sqrt{1-x^{2}}},\\
-  & \left( \arctan \right)' = \frac{1}{1+x^{2}},\\
-  & \left( \text{arcctg } x \right)' = \frac{-1}{1+x^{2}},\\
-  & \left( \sinh x \right)' = \cosh x,\\
-  & \left( \cosh x \right)' = \sinh x,\\
-  & \left( \text{tgh } x \right)' = \frac{ 1 }{ \cosh^{2} x},\\
-  & \left( \text{ctgh } x \right)' = \frac{-1}{ \sinh^{2} x}
-\end{align}
+\begin{align*}
+  & c' = 0,
+  \\ \left( x^a \right)' &= a x^{a - 1},
+                              & \left( a^{x} \right)' &= a^{x} \ln a ,
+                                                      & \left( e^{x} \right)' &= e^{x},
+  \\  \left( \log_{a}x \right)'&= \frac{1}{x \cdot \ln a},
+                              & \left( \ln x \right)' &= \frac{1}{x}
+                                                      & \left( \sin x \right)' &= \cos x,
+  \\   \left( \cos x \right)' &= - \sin x,
+                              & \left( \text{tg } x \right)' &= \frac{1}{\cos^{2} x},
+                                                      & \left( \text{ctg } x  \right)' &= \frac{-1}{\sin^{2} x},
+  \\
+  \left( \arcsin x \right)' &= \frac{1}{\sqrt{1-x^{2}}},
+                              & \left( \arccos x \right)' &= \frac{-1}{\sqrt{1-x^{2}}},
+                                                      & \left( \arctan \right)' &= \frac{1}{1+x^{2}},\\
+  \left( \text{arcctg } x \right)' &= \frac{-1}{1+x^{2}},
+                              & \left( \sinh x \right)' &= \cosh x,
+                                                      & \left( \cosh x \right)' &= \sinh x,
+  \\ \left( \text{tgh } x \right)' &= \frac{ 1 }{ \cosh^{2} x},
+                              &  \left( \text{ctgh } x \right)' &= \frac{-1}{ \sinh^{2} x}
+\end{align*}
 * Pochodna sumy, różnicy, iloczynu, ilorazu funkcji
 
 \begin{align}
@@ -34,5 +38,19 @@ c \in \mathbb{R} && \alpha \in \mathbb{R}
   & \left( f(x) \cdot g(x) \right) ' = f'(x) \cdot g(x) + f(x) \cdot g'(x)\\
   & \left( \frac{f(x)}{g(x)} \right) ' = \frac{f'(x) \cdot g(x) - f(x) \cdot g'(x)}{g^{2}(x)}, & \text{o ile } g \neq 0\\
 \end{align}
+\newpage
 * Pochodna funkcji złożonej
-Dana jest funkcja złozona $y = g^\circ w$
+Dana jest funkcja złozona $y = (g^\circ w)(x)$ czyli $y = g(w(x))$.
+
+$w = w(x)$ - funkcja wewnętrzna
+
+$y = g(w)$ - funkcja zewnętrzna
+
+** Wzory na pochodne funkcji złożonych
+\begin{align*}
+c \in \mathbb{R} && \alpha \in \mathbb{R}
+\end{align*}
+\begin{align*}
+  & c' = 0,
+  \\ \left(w^{a}\right)'
+\end{align*}

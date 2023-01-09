@@ -1,4 +1,4 @@
-% Created 2023-01-05 Thu 15:27
+% Created 2023-01-09 Mon 17:09
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -12,6 +12,9 @@
 \usepackage{amssymb}
 \usepackage{capt-of}
 \usepackage{hyperref}
+\renewcommand\maketitle{}
+\usepackage[polish]{babel}
+\usepackage[margin=3cm]{geometry}
 \author{Rafał Grot}
 \date{\today}
 \title{}
@@ -21,39 +24,38 @@
  pdfkeywords={},
  pdfsubject={},
  pdfcreator={Emacs 30.0.50 (Org mode 9.6)}, 
- pdflang={English}}
+ pdflang={Polish}}
 \begin{document}
 
 
 \section{Wzory na pochodne wybranych funkcji}
-\label{sec:orga8ed568}
-
+\label{sec:orgc4e0b92}
 \begin{align*}
 c \in \mathbb{R} && \alpha \in \mathbb{R}
 \end{align*}
-
-\begin{align}
-  & c' = 0,\\
-  & \left( x^\alpha \right)' = \alpha x^{\alpha - 1},\\
-  & \left( a^{x} \right)' = a^{x} \ln a ,\\
-  & \left( e^{x} \right)' = e^{x},\\
-  & \left( \log_{a}x \right)'= \frac{1}{x \cdot \ln a},\\
-  & \left( \ln x \right)' = \frac{1}{x},\\
-  & \left( \sin x \right)' = \cos x,\\
-  & \left( \cos x \right)' = - \sin x,\\
-  & \left( \text{tg } x \right)' = \frac{1}{\cos^{2} x},\\
-  & \left( \text{ctg } x  \right)' = \frac{-1}{\sin^{2} x},\\
-  & \left( \arcsin x \right)' = \frac{1}{\sqrt{1-x^{2}}},\\
-  & \left( \arccos x \right)' = \frac{-1}{\sqrt{1-x^{2}}},\\
-  & \left( \arctan \right)' = \frac{1}{1+x^{2}},\\
-  & \left( \text{arcctg } x \right)' = \frac{-1}{1+x^{2}},\\
-  & \left( \sinh x \right)' = \cosh x,\\
-  & \left( \cosh x \right)' = \sinh x,\\
-  & \left( \text{tgh } x \right)' = \frac{ 1 }{ \cosh^{2} x},\\
-  & \left( \text{ctgh } x \right)' = \frac{-1}{ \sinh^{2} x}
-\end{align}
+\begin{align*}
+  & c' = 0,
+  \\ \left( x^a \right)' &= a x^{a - 1},
+                              & \left( a^{x} \right)' &= a^{x} \ln a ,
+                                                      & \left( e^{x} \right)' &= e^{x},
+  \\  \left( \log_{a}x \right)'&= \frac{1}{x \cdot \ln a},
+                              & \left( \ln x \right)' &= \frac{1}{x}
+                                                      & \left( \sin x \right)' &= \cos x,
+  \\   \left( \cos x \right)' &= - \sin x,
+                              & \left( \text{tg } x \right)' &= \frac{1}{\cos^{2} x},
+                                                      & \left( \text{ctg } x  \right)' &= \frac{-1}{\sin^{2} x},
+  \\
+  \left( \arcsin x \right)' &= \frac{1}{\sqrt{1-x^{2}}},
+                              & \left( \arccos x \right)' &= \frac{-1}{\sqrt{1-x^{2}}},
+                                                      & \left( \arctan \right)' &= \frac{1}{1+x^{2}},\\
+  \left( \text{arcctg } x \right)' &= \frac{-1}{1+x^{2}},
+                              & \left( \sinh x \right)' &= \cosh x,
+                                                      & \left( \cosh x \right)' &= \sinh x,
+  \\ \left( \text{tgh } x \right)' &= \frac{ 1 }{ \cosh^{2} x},
+                              &  \left( \text{ctgh } x \right)' &= \frac{-1}{ \sinh^{2} x}
+\end{align*}
 \section{Pochodna sumy, różnicy, iloczynu, ilorazu funkcji}
-\label{sec:orga963977}
+\label{sec:org8a20702}
 
 \begin{align}
   & \left( f(x) + g(x) \right)' = f'(x) + g'(x)\\
@@ -61,4 +63,22 @@ c \in \mathbb{R} && \alpha \in \mathbb{R}
   & \left( f(x) \cdot g(x) \right) ' = f'(x) \cdot g(x) + f(x) \cdot g'(x)\\
   & \left( \frac{f(x)}{g(x)} \right) ' = \frac{f'(x) \cdot g(x) - f(x) \cdot g'(x)}{g^{2}(x)}, & \text{o ile } g \neq 0\\
 \end{align}
+\newpage
+\section{Pochodna funkcji złożonej}
+\label{sec:org8868872}
+Dana jest funkcja złozona \(y = (g^\circ w)(x)\) czyli \(y = g(w(x))\).
+
+\(w = w(x)\) - funkcja wewnętrzna
+
+\(y = g(w)\) - funkcja zewnętrzna
+
+\subsection{Wzory na pochodne funkcji złożonych}
+\label{sec:org89f464c}
+\begin{align*}
+c \in \mathbb{R} && \alpha \in \mathbb{R}
+\end{align*}
+\begin{align*}
+  & c' = 0,
+  \\ \left(w^{a}\right)'
+\end{align*}
 \end{document}
