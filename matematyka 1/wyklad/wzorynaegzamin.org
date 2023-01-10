@@ -62,7 +62,7 @@ c \in \mathbb{R} && \alpha \in \mathbb{R}
   \\ \left( \text{tg } w \right)' &= \frac{1}{\cos^{2} w} \cdot w' ,
                         & \left( \arcsin w \right)' &= \frac{1}{\sqrt{1-w^{2}} \cdot w'}
                                                & \left( \text{arcctg } w \right)' &= \frac{1}{1+w^{2}} \cdot w',
-  \\ \left( \sinh w \right )' &=  (\cosh w) \ cdot w' ,
+  \\ \left( \sinh w \right )' &=  (\cosh w) \cdot w' ,
                         & \left( \cosh w \right )' &= (\sinh w) \cdot w',
                                                & \left( \text{tgh } w \right )' &= \frac{1}{\cosh^{2} w} \cdot w',
   \\ \left( \text{ctgh } w \right ) &= \frac{-1}{\cosh ^{2} w} \cdot w',
