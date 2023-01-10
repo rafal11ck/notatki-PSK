@@ -1,4 +1,4 @@
-% Created 2023-01-10 Tue 18:23
+% Created 2023-01-10 Tue 18:37
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -29,7 +29,7 @@
 
 
 \section{Wzory na pochodne wybranych funkcji}
-\label{sec:orgd280b6b}
+\label{sec:orgdd15489}
 \begin{align*}
 c \in \mathbb{R} && \alpha \in \mathbb{R}
 \end{align*}
@@ -55,7 +55,7 @@ c \in \mathbb{R} && \alpha \in \mathbb{R}
                               &  \left( \text{ctgh } x \right)' &= \frac{-1}{ \sinh^{2} x}
 \end{align*}
 \section{Pochodna sumy, różnicy, iloczynu, ilorazu funkcji}
-\label{sec:org1cbb706}
+\label{sec:org1da3d8f}
 
 \begin{align}
   & \left( f(x) + g(x) \right)' = f'(x) + g'(x)\\
@@ -65,14 +65,14 @@ c \in \mathbb{R} && \alpha \in \mathbb{R}
 \end{align}
 \newpage
 \section{Pochodna funkcji złożonej}
-\label{sec:orgca5629e}
+\label{sec:orgff80f60}
 Dana jest funkcja złozona \(y = (g^\circ w)(x)\) czyli \(y = g(w(x))\).
 
 \(w = w(x)\) - funkcja wewnętrzna
 
 \(y = g(w)\) - funkcja zewnętrzna
 \subsection{Wzory na pochodne funkcji złożonych}
-\label{sec:org949e727}
+\label{sec:org74f976d}
 \begin{align*}
 c \in \mathbb{R} && \alpha \in \mathbb{R}
 \end{align*}
@@ -82,16 +82,18 @@ c \in \mathbb{R} && \alpha \in \mathbb{R}
                         & \left(a^{w} \right)' &= a  \cdot w^{a-1} \cdot w',
                                                & \left( e^{w} \right)' &= e^{w} \cdot w',
   \\ \left(\log_{a}w \right)' &= \frac{1}{w \cdot \ln a} \cdot w',
-                        & \left( \ln \right)' &= \frac{1}{w} \cdot w',
+                        & \left( \ln w \right)' &= \frac{1}{w} \cdot w',
   \\ \left( \sin w \right)' &= (\cos w) \cdot w',
                         & \left( \cos w \right)' &= (- \sin w) \cdot w',
-                                               & \left(\text{ctg } w \right)' &= \frac{1}{\sin^{2} w} \cdot w',
-  \\ \left( \text{tg } w \right)' &= \frac{1}{\cos^{2} w} \cdot w' ,
-                        & \left( \arcsin w \right)' &= \frac{1}{\sqrt{1-w^{2}} \cdot w'}
-                                               & \left( \text{arcctg } w \right)' &= \frac{1}{1+w^{2}} \cdot w',
-  \\ \left( \sinh w \right )' &=  (\cosh w) \cdot w' ,
+                                               & \left( \text{tg } w \right)' &= \frac{1}{\cos^{2} w} \cdot w' ,
+  \\ \left(\text{ctg } w \right)' &= \frac{1}{\sin^{2} w} \cdot w',
+  \\  \left( \arcsin w \right)' &= \frac{1}{\sqrt{1-w^{2}} \cdot w'}
+                        & \left(\arccos w \right)' &=\frac{1}{\sqrt{1+w^{2}}} \cdot w'
+                                               & \left( \text{arctg } w \right)' &= \frac{1}{1+w^{2}} \cdot w',
+  \\ \left( \text{arcctg } w \right)' &= \frac{-1}{1+w^{2}} \cdot w',
+  \\  \left( \sinh w \right )' &=  (\cosh w) \cdot w' ,
                         & \left( \cosh w \right )' &= (\sinh w) \cdot w',
                                                & \left( \text{tgh } w \right )' &= \frac{1}{\cosh^{2} w} \cdot w',
-  \\ \left( \text{ctgh } w \right ) &= \frac{-1}{\cosh ^{2} w} \cdot w',
+  \\ \left( \text{ctgh } w \right ) &= \frac{-1}{\sinh ^{2} w} \cdot w',
 \end{align*}
 \end{document}
