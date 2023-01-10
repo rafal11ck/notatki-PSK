@@ -46,7 +46,7 @@ $w = w(x)$ - funkcja wewnętrzna
 
 $y = g(w)$ - funkcja zewnętrzna
 
-** Wzory na pochodne funkcji złożonych
+** COMMENT Wzory na pochodne funkcji złożonych
 \begin{align*}
 c \in \mathbb{R} && \alpha \in \mathbb{R}
 \end{align*}
@@ -59,8 +59,8 @@ c \in \mathbb{R} && \alpha \in \mathbb{R}
                         & \left( \ln \right)' &= \frac{1}{w} \cdot w',
   \\ \left( \sin w \right)' &= (\cos w) \cdot w',
                         & \left( \cos w \right)' &= (- \sin w) \cdot w',
-                                               & \left(\text{ctg} w \right)' &= \frac{1}{\sin^{2} w} \cdot w',
-  \\ \left( \right)' &= ,
+                                               & \left(\text{ctg } w \right)' &= \farac{1}{\sin^{2} w} \cdot w',
+  \\ \left( \text{tg } w \right)' &= \frac{1}{\cos^{2} w} \cdot w' ,
                         & \left(\right)' &=,
                                                & \left(\right)' &=,
 \end{align*}
