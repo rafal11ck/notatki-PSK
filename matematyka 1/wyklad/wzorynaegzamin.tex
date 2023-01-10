@@ -1,4 +1,4 @@
-% Created 2023-01-09 Mon 17:09
+% Created 2023-01-10 Tue 11:52
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -29,7 +29,7 @@
 
 
 \section{Wzory na pochodne wybranych funkcji}
-\label{sec:orgc4e0b92}
+\label{sec:org3228076}
 \begin{align*}
 c \in \mathbb{R} && \alpha \in \mathbb{R}
 \end{align*}
@@ -55,7 +55,7 @@ c \in \mathbb{R} && \alpha \in \mathbb{R}
                               &  \left( \text{ctgh } x \right)' &= \frac{-1}{ \sinh^{2} x}
 \end{align*}
 \section{Pochodna sumy, różnicy, iloczynu, ilorazu funkcji}
-\label{sec:org8a20702}
+\label{sec:orgcf0fa82}
 
 \begin{align}
   & \left( f(x) + g(x) \right)' = f'(x) + g'(x)\\
@@ -65,7 +65,7 @@ c \in \mathbb{R} && \alpha \in \mathbb{R}
 \end{align}
 \newpage
 \section{Pochodna funkcji złożonej}
-\label{sec:org8868872}
+\label{sec:org5481ad9}
 Dana jest funkcja złozona \(y = (g^\circ w)(x)\) czyli \(y = g(w(x))\).
 
 \(w = w(x)\) - funkcja wewnętrzna
@@ -73,12 +73,22 @@ Dana jest funkcja złozona \(y = (g^\circ w)(x)\) czyli \(y = g(w(x))\).
 \(y = g(w)\) - funkcja zewnętrzna
 
 \subsection{Wzory na pochodne funkcji złożonych}
-\label{sec:org89f464c}
+\label{sec:org14ec3af}
 \begin{align*}
 c \in \mathbb{R} && \alpha \in \mathbb{R}
 \end{align*}
 \begin{align*}
   & c' = 0,
-  \\ \left(w^{a}\right)'
+  \\ \left(w^{a}\right)'&= a w^{a-1} \cdot w',
+                        & \left(a^{w} \right)' &= a  \cdot w^{a-1} \cdot w',
+                                               & \left( e^{w} \right)' &= e^{w} \cdot w',
+  \\ \left(\log_{a}w \right)' &= \frac{1}{w \cdot \ln a} \cdot w',
+                        & \left( \ln \right)' &= \frac{1}{w} \cdot w',
+  \\ \left( \sin w \right)' &= (\cos w) \cdot w',
+                        & \left( \cos w \right)' &= (- \sin w) \cdot w',
+                                               & \left(\text{ctg} w \right)' &= \frac{1}{\sin^{2} w} \cdot w',
+  \\ \left( \right)' &= ,
+                        & \left(\right)' &=,
+                                               & \left(\right)' &=,
 \end{align*}
 \end{document}

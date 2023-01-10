@@ -52,5 +52,15 @@ c \in \mathbb{R} && \alpha \in \mathbb{R}
 \end{align*}
 \begin{align*}
   & c' = 0,
-  \\ \left(w^{a}\right)'
+  \\ \left(w^{a}\right)'&= a w^{a-1} \cdot w',
+                        & \left(a^{w} \right)' &= a  \cdot w^{a-1} \cdot w',
+                                               & \left( e^{w} \right)' &= e^{w} \cdot w',
+  \\ \left(\log_{a}w \right)' &= \frac{1}{w \cdot \ln a} \cdot w',
+                        & \left( \ln \right)' &= \frac{1}{w} \cdot w',
+  \\ \left( \sin w \right)' &= (\cos w) \cdot w',
+                        & \left( \cos w \right)' &= (- \sin w) \cdot w',
+                                               & \left(\text{ctg} w \right)' &= \frac{1}{\sin^{2} w} \cdot w',
+  \\ \left( \right)' &= ,
+                        & \left(\right)' &=,
+                                               & \left(\right)' &=,
 \end{align*}
