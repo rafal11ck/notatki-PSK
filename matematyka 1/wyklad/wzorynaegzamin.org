@@ -45,8 +45,7 @@ Dana jest funkcja złozona $y = (g^\circ w)(x)$ czyli $y = g(w(x))$.
 $w = w(x)$ - funkcja wewnętrzna
 
 $y = g(w)$ - funkcja zewnętrzna
-
-** COMMENT Wzory na pochodne funkcji złożonych
+** Wzory na pochodne funkcji złożonych
 \begin{align*}
 c \in \mathbb{R} && \alpha \in \mathbb{R}
 \end{align*}
@@ -59,8 +58,12 @@ c \in \mathbb{R} && \alpha \in \mathbb{R}
                         & \left( \ln \right)' &= \frac{1}{w} \cdot w',
   \\ \left( \sin w \right)' &= (\cos w) \cdot w',
                         & \left( \cos w \right)' &= (- \sin w) \cdot w',
-                                               & \left(\text{ctg } w \right)' &= \farac{1}{\sin^{2} w} \cdot w',
+                                               & \left(\text{ctg } w \right)' &= \frac{1}{\sin^{2} w} \cdot w',
   \\ \left( \text{tg } w \right)' &= \frac{1}{\cos^{2} w} \cdot w' ,
-                        & \left(\right)' &=,
-                                               & \left(\right)' &=,
+                        & \left( \arcsin w \right)' &= \frac{1}{\sqrt{1-w^{2}} \cdot w'}
+                                               & \left( \text{arcctg } w \right)' &= \frac{1}{1+w^{2}} \cdot w',
+  \\ \left( \sinh w \right )' &=  (\cosh w) \ cdot w' ,
+                        & \left( \cosh w \right )' &= (\sinh w) \cdot w',
+                                               & \left( \text{tgh } w \right )' &= \frac{1}{\cosh^{2} w} \cdot w',
+  \\ \left( \text{ctgh } w \right ) &= \frac{-1}{\cosh ^{2} w} \cdot w',
 \end{align*}
