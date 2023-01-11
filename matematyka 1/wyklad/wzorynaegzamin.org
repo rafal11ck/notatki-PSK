@@ -52,7 +52,7 @@ c \in \mathbb{R} && \alpha \in \mathbb{R}
 \begin{align*}
   & c' = 0,
   \\ \left(w^{a}\right)'&= a w^{a-1} \cdot w',
-                        & \left(a^{w} \right)' &= a  \cdot w^{a-1} \cdot w',
+                        & \left(a^{w} \right)' &= a^{w} \ln a \cdot w',
                                                & \left( e^{w} \right)' &= e^{w} \cdot w',
   \\ \left(\log_{a}w \right)' &= \frac{1}{w \cdot \ln a} \cdot w',
                         & \left( \ln w \right)' &= \frac{1}{w} \cdot w',
