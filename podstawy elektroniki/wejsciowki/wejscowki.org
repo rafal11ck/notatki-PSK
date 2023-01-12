@@ -3,6 +3,9 @@
 ** poprawa 1
 1. Układy pracy tranzystora bioplarnego. narysować i podpisać
 2. charakterystki w układzie wspólnego emitera
+** poprawa 2
+1. charakterystki w układzie wspólnego emitera
+2. zakresy pracy i warunki ich uzyskania.
 * Tranzystor polowy
 ** poprawa 1
  1. charakterystki tranzystora polowego
