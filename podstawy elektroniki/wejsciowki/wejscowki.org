@@ -1,12 +1,22 @@
-#+title: Wejscowki
+#+author: nil
+#+language: pl
+#+latex_header: \usepackage[polish]{babel}
+#+LATEX_HEADER: \usepackage[margin=3cm]{geometry}
+\newpage
 * Tranzystor bipolarny
-** poprawa 1
-1. Układy pracy tranzystora bioplarnego. narysować i podpisać
-2. charakterystki w układzie wspólnego emitera
-** poprawa 2
-1. charakterystki w układzie wspólnego emitera
-2. zakresy pracy i warunki ich uzyskania.
+** Poprawa 1
+**** Układy pracy tranzystora bioplarnego. narysować i podpisać.
+**** Charakterystki w układzie wspólnego emitera
+** Poprawa 2
+**** Charakterystki w układzie wspólnego emitera
+**** Zakresy pracy i warunki ich uzyskania.
+#+caption: Z prezentacji z moodla
+  [[file:img/tranzystorBipolarny/zakresy.png]]
+\newpage
 * Tranzystor polowy
-** poprawa 1
- 1. charakterystki tranzystora polowego
- 2. transkonduktacnja wzór i wyznaczanie z charakterysyk
+** Poprawa 1
+**** charakterystki tranzystora polowego
+#+caption: Z prezentacji z moodla
+[[file:img/tranzystorPolowy/charakterystykaN.png]]
+**** transkonduktacnja wzór i wyznaczanie z charakterysyk
+* Zasilacze jakieśtam (5)
