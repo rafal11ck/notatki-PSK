@@ -1,0 +1,112 @@
+% Created 2023-01-13 Fri 11:17
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Rafał Grot}
+\date{\today}
+\title{Wyklad10, złożoność obliczeniowa algorytmów}
+\hypersetup{
+ pdfauthor={Rafał Grot},
+ pdftitle={Wyklad10, złożoność obliczeniowa algorytmów},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 30.0.50 (Org mode 9.6)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+
+\section{DLL TSP}
+\label{sec:org8d67b2b}
+\texttt{Nazwisko\_Imię\_GRXXX.dll}
+\begin{description}
+\item[{Tabelka eksportu}] \texttt{FindRoad}.
+\end{description}
+
+A nie:
+\begin{itemize}
+\item \texttt{\_FindRoad}
+\item \texttt{\_FindRoad@12}
+\item \texttt{FindRoad@12}
+\end{itemize}
+
+Przed deklracją funkcji exportowej
+\texttt{extern "C" void \_\_stdcall FindRoad}\ldots{}
+\begin{itemize}
+\item w zależności od kompilatora \texttt{\_\_stdcall} trzeba wywalić.
+\end{itemize}
+
+\texttt{tdumb -ee nazwa.dll}
+\section{Złożoność obliczeniowa algorytmów}
+\label{sec:orgff4d80b}
+\subsection{Złożoność pamięciowa}
+\label{sec:org1439f05}
+
+\subsection{Złożoność czasowa}
+\label{sec:orga1c56ba}
+Jak szybko rośnie zapotrzebowanie algorytmu wraz ze wzrostem rozmiaru zadania.\\\empty
+\(N\) -- rozmiar zadania algortymicznego.\\\empty
+\(f(N)\) -- funkcja złożoności obliczeniowej.
+\subsection{Typowe funkcjie złożoności obliczeniowej}
+\label{sec:org4f5afdd}
+\subsubsection{Funkcja Stała}
+\label{sec:org7dfb15c}
+\(F(N) = A, A  =const\) \\\empty
+\(O(1)\)
+\begin{enumerate}
+\item \(O(1)\)
+\label{sec:orgddd4efd}
+$$O(1) = O(1) + O(1) + \dots + O(1)$$
+$$O(1) = A+ O(1)$$
+\end{enumerate}
+\subsubsection{Funkcja liniowa}
+\label{sec:org84351a8}
+$$F(N) = A \cdot N + B, A,B = const$$
+\(\alpha = \text{tg } A\)
+\begin{enumerate}
+\item O(N)
+\label{sec:orgd201d99}
+$$O(N) = A \cdot O(N)$$
+$$O(N) = O(N) + O(N) + \dots + O(N)$$
+$$O(N) = O(1) \cdot O(N)$$
+$$O(N) = N \cdot O(1)$$
+\end{enumerate}
+\subsubsection{Funkcja kwadratowa}
+\label{sec:org5b92f4d}
+\(F(N)=A \cdot N^2 + B \cdot N + C\)
+\begin{enumerate}
+\item \(O(N^2)\)
+\label{sec:org632f5a9}
+$$O(N^2) = A \cdot O(N^{2})$$
+$$O(N^2) = O(N^{2}) + O(N^{2}) + \dots + O(N^{2})$$
+$$O(N^2) = O(N^{2}) + O(N)$$
+$$O(N^2) = O(N^{2}) + O(1)$$
+$$O(N^2) = N \cdot O(N)$$
+$$O(N^2) = O(1) \cdot O(N^2)$$
+$$O(N^2) = O(N) \cdot O(N)$$
+\end{enumerate}
+\subsubsection{Funkcja wielomianowa}
+\label{sec:org8c65f68}
+$$F(N) = A \cdot N^{B} + \cdots + X, A,B,\cdots,X = const $$
+\subsubsection{Funkcja wykłatnicza}
+\label{sec:org1064eec}
+$$F(N) = A^{N} + B^{B_{1}} + \dots + X}$$
+\subsubsection{Funkcja silnia wykładnicza}
+\label{sec:org227f6a6}
+\(f(N) = N!\)
+\section{\(P, NP\)}
+\label{sec:org7fdb91b}
+Zadania klasy \(P\), są to zadania które są rozwiązywalne przez algorytm w czasie wielominaowym, przez deterministyczną maszynę Turinga.
+\end{document}
