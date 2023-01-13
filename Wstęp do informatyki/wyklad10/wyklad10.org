@@ -1,19 +1,24 @@
 #+title: Wyklad10, złożoność obliczeniowa algorytmów
 
 * DLL TSP
-=Nazwisko_Imię_GRXXX.dll=
-- Tabelka eksportu :: =FindRoad=.
+Prznieść na pendrive z systemem plików obsługiwanym przez M$ bloatOS \to =FAT=
 
-A nie:
+=tdumb -ee nazwa.dll=
+
+=Nazwisko_Imię_GRXXX.dll=
+** Tabelka eksportu
+   =FindRoad=
+
+*** A nie:
 - =_FindRoad=
 - =_FindRoad@12=
 - =FindRoad@12=
 
-Przed deklracją funkcji exportowej
+* Przed deklracją funkcji exportowej
 =extern "C" void __stdcall FindRoad=...
 - w zależności od kompilatora =__stdcall= trzeba wywalić.
 
-=tdumb -ee nazwa.dll=
+
 * Złożoność obliczeniowa algorytmów
 ** Złożoność pamięciowa
 
@@ -48,12 +53,12 @@ $$O(N^2) = O(1) \cdot O(N^2)$$
 $$O(N^2) = O(N) \cdot O(N)$$
 *** Funkcja wielomianowa
 $$F(N) = A \cdot N^{B} + \cdots + X, A,B,\cdots,X = const $$
-*** Funkcja wykłatnicza
+*** Funkcja wykłdnicza
 $$F(N) = A^{N} + B^{B_{1}} + \dots + X}$$
 *** Funkcja silnia wykładnicza
 $f(N) = N!$
 * Klasy
-** $P, NP$
+** $P$
 Zadania klasy $P$, są to zadania które są rozwiązywalne przez algorytm w czasie wielominaowym, przez deterministyczną maszynę Turinga.
 
 ** $NP$
