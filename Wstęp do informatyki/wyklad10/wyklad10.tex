@@ -1,4 +1,4 @@
-% Created 2023-01-13 Fri 11:17
+% Created 2023-01-13 Fri 14:28
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -29,7 +29,7 @@
 
 
 \section{DLL TSP}
-\label{sec:org8d67b2b}
+\label{sec:orgf0ffcaa}
 \texttt{Nazwisko\_Imię\_GRXXX.dll}
 \begin{description}
 \item[{Tabelka eksportu}] \texttt{FindRoad}.
@@ -50,45 +50,45 @@ Przed deklracją funkcji exportowej
 
 \texttt{tdumb -ee nazwa.dll}
 \section{Złożoność obliczeniowa algorytmów}
-\label{sec:orgff4d80b}
+\label{sec:org8d7a141}
 \subsection{Złożoność pamięciowa}
-\label{sec:org1439f05}
+\label{sec:orgb8a5d8a}
 
 \subsection{Złożoność czasowa}
-\label{sec:orga1c56ba}
+\label{sec:org89c64fa}
 Jak szybko rośnie zapotrzebowanie algorytmu wraz ze wzrostem rozmiaru zadania.\\\empty
 \(N\) -- rozmiar zadania algortymicznego.\\\empty
 \(f(N)\) -- funkcja złożoności obliczeniowej.
 \subsection{Typowe funkcjie złożoności obliczeniowej}
-\label{sec:org4f5afdd}
+\label{sec:org6556dbb}
 \subsubsection{Funkcja Stała}
-\label{sec:org7dfb15c}
+\label{sec:orgbc81672}
 \(F(N) = A, A  =const\) \\\empty
 \(O(1)\)
 \begin{enumerate}
 \item \(O(1)\)
-\label{sec:orgddd4efd}
+\label{sec:org6d67e2c}
 $$O(1) = O(1) + O(1) + \dots + O(1)$$
 $$O(1) = A+ O(1)$$
 \end{enumerate}
 \subsubsection{Funkcja liniowa}
-\label{sec:org84351a8}
+\label{sec:org808352c}
 $$F(N) = A \cdot N + B, A,B = const$$
 \(\alpha = \text{tg } A\)
 \begin{enumerate}
 \item O(N)
-\label{sec:orgd201d99}
+\label{sec:org09d22ea}
 $$O(N) = A \cdot O(N)$$
 $$O(N) = O(N) + O(N) + \dots + O(N)$$
 $$O(N) = O(1) \cdot O(N)$$
 $$O(N) = N \cdot O(1)$$
 \end{enumerate}
 \subsubsection{Funkcja kwadratowa}
-\label{sec:org5b92f4d}
+\label{sec:org2bc76db}
 \(F(N)=A \cdot N^2 + B \cdot N + C\)
 \begin{enumerate}
 \item \(O(N^2)\)
-\label{sec:org632f5a9}
+\label{sec:org0e06d35}
 $$O(N^2) = A \cdot O(N^{2})$$
 $$O(N^2) = O(N^{2}) + O(N^{2}) + \dots + O(N^{2})$$
 $$O(N^2) = O(N^{2}) + O(N)$$
@@ -98,15 +98,21 @@ $$O(N^2) = O(1) \cdot O(N^2)$$
 $$O(N^2) = O(N) \cdot O(N)$$
 \end{enumerate}
 \subsubsection{Funkcja wielomianowa}
-\label{sec:org8c65f68}
+\label{sec:orge6962cd}
 $$F(N) = A \cdot N^{B} + \cdots + X, A,B,\cdots,X = const $$
 \subsubsection{Funkcja wykłatnicza}
-\label{sec:org1064eec}
+\label{sec:org53647e7}
 $$F(N) = A^{N} + B^{B_{1}} + \dots + X}$$
 \subsubsection{Funkcja silnia wykładnicza}
-\label{sec:org227f6a6}
+\label{sec:org2025af4}
 \(f(N) = N!\)
-\section{\(P, NP\)}
-\label{sec:org7fdb91b}
+\section{Klasy}
+\label{sec:orgceb8ed1}
+\subsection{\(P, NP\)}
+\label{sec:org6cb14f0}
 Zadania klasy \(P\), są to zadania które są rozwiązywalne przez algorytm w czasie wielominaowym, przez deterministyczną maszynę Turinga.
+
+\subsection{\(NP\)}
+\label{sec:orgaf14442}
+Są to zadnia dla których instnieją algorytmy które dają przybliżone rozwiązanie w czasie wielomianowym na niedetermistycznej maszynie Turinga.
 \end{document}

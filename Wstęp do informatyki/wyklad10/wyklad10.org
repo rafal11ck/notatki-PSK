@@ -52,5 +52,9 @@ $$F(N) = A \cdot N^{B} + \cdots + X, A,B,\cdots,X = const $$
 $$F(N) = A^{N} + B^{B_{1}} + \dots + X}$$
 *** Funkcja silnia wykładnicza
 $f(N) = N!$
-* $P, NP$
+* Klasy
+** $P, NP$
 Zadania klasy $P$, są to zadania które są rozwiązywalne przez algorytm w czasie wielominaowym, przez deterministyczną maszynę Turinga.
+
+** $NP$
+Są to zadnia dla których instnieją algorytmy które dają przybliżone rozwiązanie w czasie wielomianowym na niedetermistycznej maszynie Turinga.
