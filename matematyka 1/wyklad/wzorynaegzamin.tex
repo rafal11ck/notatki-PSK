@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 % Created 2023-01-18 Wed 22:45
+=======
+% Created 2023-01-11 Wed 11:31
+>>>>>>> origin/main
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -28,6 +32,12 @@
  pdflang={Polish}}
 \begin{document}
 
+<<<<<<< HEAD
+=======
+
+\section{Wzory na pochodne wybranych funkcji}
+\label{sec:org3bc2af9}
+>>>>>>> origin/main
 \begin{align*}
 c \in \mathbb{R} && a \in \mathbb{R}
 \end{align*}
@@ -54,12 +64,35 @@ c \in \mathbb{R} && a \in \mathbb{R}
   \\ \left( \text{ctgh } x \right)' &= \frac{-1}{ \sinh^{2} x}
 \end{align*}
 \section{Pochodna sumy, różnicy, iloczynu, ilorazu funkcji}
+<<<<<<< HEAD
 \label{sec:org115eab6}
 \begin{align*}
   & \left( f(x) + g(x) \right)' = f'(x) + g'(x)\\
   & \left( c \cdot f(x) \right) ' = c \cdot f'(x),& c \text{ -- liczba }\\
   & \left( f(x) \cdot g(x) \right) ' = f'(x) \cdot g(x) + f(x) \cdot g'(x)\\
   & \left( \frac{f(x)}{g(x)} \right) ' = \frac{f'(x) \cdot g(x) - f(x) \cdot g'(x)}{g^{2}(x)}, & \text{o ile } g \neq 0
+=======
+\label{sec:orgb2a4827}
+
+\begin{align}
+  & \left( f(x) + g(x) \right)' = f'(x) + g'(x)\\
+  & \left( c \cdot f(x) \right) ' = c \cdot f'(x),& c \text{ -- liczba }\\
+  & \left( f(x) \cdot g(x) \right) ' = f'(x) \cdot g(x) + f(x) \cdot g'(x)\\
+  & \left( \frac{f(x)}{g(x)} \right) ' = \frac{f'(x) \cdot g(x) - f(x) \cdot g'(x)}{g^{2}(x)}, & \text{o ile } g \neq 0\\
+\end{align}
+\newpage
+\section{Pochodna funkcji złożonej}
+\label{sec:org816a2f5}
+Dana jest funkcja złozona \(y = (g^\circ w)(x)\) czyli \(y = g(w(x))\).
+
+\(w = w(x)\) - funkcja wewnętrzna
+
+\(y = g(w)\) - funkcja zewnętrzna
+\subsection{Wzory na pochodne funkcji złożonych}
+\label{sec:org7ff0a53}
+\begin{align*}
+c \in \mathbb{R} && \alpha \in \mathbb{R}
+>>>>>>> origin/main
 \end{align*}
 \section{Pochodna funkcji złożonej}
 \label{sec:org65a5e34}
@@ -72,7 +105,7 @@ Dana jest funkcja złozona \(y = (g^\circ w)(x)\) czyli \(y = g(w(x))\).
 \begin{align*}
   & c' = 0,
   \\ \left(w^{a}\right)'&= a w^{a-1} \cdot w',
-                        & \left(a^{w} \right)' &= a  \cdot w^{a-1} \cdot w',
+                        & \left(a^{w} \right)' &= a^{w} \ln a \cdot w',
                                                & \left( e^{w} \right)' &= e^{w} \cdot w',
   \\ \left(\log_{a}w \right)' &= \frac{1}{w \cdot \ln a} \cdot w',
                         & \left( \ln w \right)' &= \frac{1}{w} \cdot w',

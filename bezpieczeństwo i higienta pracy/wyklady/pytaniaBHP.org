@@ -1,4 +1,3 @@
-#+title: Temp
 * Pytatania jakie mogą być na egzaminie
 ** Oapowiedzilność pracodawcy za nie przestrzeganie BHP?
 - mandat od 500 do 5000zł
@@ -96,4 +95,8 @@ Centyl -- jest to punkt dla skali ocen, poniżej którego leży $N$ % wynikoów.
 ** Jakim wymiarom odpowiada 50 centylowa kobieta w stosunku do męszczyzn?
 ** Co to jest dobrostan?
 Stan odczuwalny przez operatora podczas zgodnego z porzenaczeniem użytkowania maszyny, jeżeli dsykomofort, zmęcznie fizyczne i obicazenie psychidczne ograniczono do możliwego minimum dzięki uwzględnieniu zasad ergonomicznych
-** Maksylamny wydatek energetyczny u kobiety, u męsczyzny.
+** Maksylamny wydatek energetyczny u kobiety, u mężczyzny.
+** Podaj przykład pracy z obciązeniem statycznym
+** Podstawowe parametry stanowiska pracy
+- 500 lux, biorowe
+- pani sprzątająca 100
