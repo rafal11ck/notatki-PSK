@@ -28,6 +28,8 @@
 - ochrona świadczeń prcowniczych
 ** Czym się różni European conformance CE mark od China export
 Trzeba narysować
+#+caption: Po lewej EU, po prawej China export
+[[file:images/europeanConformanceCEChinaExport.jpg]]
 ** Organy nadzoru nad warunkami pracy
 - Państowy
   + sanepid
