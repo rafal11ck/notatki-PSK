@@ -3,7 +3,10 @@
 #+latex_header: \usepackage[polish]{babel}
 #+LATEX_HEADER: \usepackage[margin=3cm]{geometry}
 #+latex_header: \newgeometry{vmargin={5mm}, hmargin={20mm,20mm}}
+#+begin_comment
 #+latex_header: \usepackage{showframe}
+#+end_comment
+
 #+language: pl
 \begin{align*}
 c \in \mathbb{R} && a \in \mathbb{R}
