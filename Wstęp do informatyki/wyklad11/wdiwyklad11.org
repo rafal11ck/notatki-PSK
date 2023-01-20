@@ -1,0 +1,40 @@
+#+title: Wyklad 11 Generatory liczb pseudolosowych
+#+date: 1.20.2023
+
+$$R = \{\underbrace{a_0, a_{1}, \ldots , a_{N-1}}_{N \text{ liczb} }\}, a \in N$$
+* Generator liniowy kongruencyjny (G.L.K)
+$$x_{i+1} = (a \cdot x_{i} ;+b ) \text{ mod } N, x_0 = C \text{ -- seed}$$
+2^{31} \cdot 1, 2^{32}
+-----
+$$x_{i+M} = ( \underbrace{ a_{M} x_{i+M-1} + a_{M-2}x_{i+M-2} \ldots + a_{0}x_{i} }_{M \text{ składników }}) \text{ mod } N$$
+
+* Okres generatora
+$L = N^{M} -1$ -- ogólnie dla G.L.K
+$L = N -1$
+** Np.
+$$x_{i+1} = (3 x_; +1) \mod 7$$
+$$\underbrace{x_0 = 0,x_1=1, x_2 =4 , x_3=6, x_4 = 5, x_5 = 2}_{L = 6}, x_6 = 0$$
+* Prawdopodobieństwo wystąpienia liczby $x_{I+1}$ w sekwencji R to p:
+$p_i = \frac{1}{L}$ -- przypadek idelny
+** generator o rozkladzie gęstości pradopodobieństwa $p_i$ równomiernym
+  $$U[0,L] \to \sum_{i=0}^{L}p_{i} =1, p_{i} = p_{j}, i \neq j, i,j \in {[0,L]} $$
+** Test wartosci średniej
+*** Dla gen. o rozkładzie $U[0,1]$
+ $$\frac{1}{L} \sum_{i=0}^{L} x_{i} = 0.5$$
+** Test wriacji
+ $$\frac{1}{L} \sum_{i=0}^{L} (x_{i} -\bar{x})^{2}; = 0$$
+** Test PI
+$$P_i[x_i, x_{i+1}]$$
+$L_{\square} =$ liczba $P_i$, wnętrza$_{\square}$
+$L_{\circ} =$ liczba $P_i$, wnętrza$_{\circ}$
+
+$$\frac{L_{\square}}{L_{\circ}} = \frac{P_{\square}}{P_{\circ}}$$
+$$P_{\square} = a \cdot a$$
+
+$$P_{\circ} = \pi(\frac{a}^{2} })^2
+= \pi \frac{a^2}{4}$$
+
+$$\frac{P_{\square}}{P_{\circ}}
+= \frac{a^2}{\pi \frac{a^2}{4}}
+= \frac{4}{\pi} \to \frac{L_{\square}}{L_{\circ}}
+= \frac{4}{\pi}$$

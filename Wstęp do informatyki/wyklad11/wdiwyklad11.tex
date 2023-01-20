@@ -1,0 +1,77 @@
+% Created 2023-01-20 Fri 11:07
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Rafał Grot}
+\date{1.20.2023}
+\title{Wyklad 11 Generatory liczb pseudolosowych}
+\hypersetup{
+ pdfauthor={Rafał Grot},
+ pdftitle={Wyklad 11 Generatory liczb pseudolosowych},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 30.0.50 (Org mode 9.6)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+$$R = \{\underbrace{a_0, a_{1}, \ldots , a_{N-1}}_{N \text{ liczb} }\}, a \in N$$
+\section{Generator liniowy kongruencyjny (G.L.K)}
+\label{sec:org14f8ad7}
+$$x_{i+1} = (a \cdot x_{i} ;+b ) \text{ mod } N, x_0 = C \text{ -- seed}$$
+2\textsuperscript{31} \(\cdot\) 1, 2\textsuperscript{32}
+
+\noindent\rule{\textwidth}{0.5pt}
+$$x_{i+M} = ( \underbrace{ a_{M} x_{i+M-1} + a_{M-2}x_{i+M-2} \ldots + a_{0}x_{i} }_{M \text{ składników }}) \text{ mod } N$$
+
+\section{Okres generatora}
+\label{sec:orga356c1b}
+\(L = N^{M} -1\) -- ogólnie dla G.L.K
+\(L = N -1\)
+\subsection{Np.}
+\label{sec:orgea7a155}
+$$x_{i+1} = (3 x_; +1) \mod 7$$
+$$\underbrace{x_0 = 0,x_1=1, x_2 =4 , x_3=6, x_4 = 5, x_5 = 2}_{L = 6}, x_6 = 0$$
+\section{Prawdopodobieństwo wystąpienia liczby \(x_{I+1}\) w sekwencji R to p:}
+\label{sec:org7c025b1}
+\(p_i = \frac{1}{L}\) -- przypadek idelny
+\subsection{generator o rozkladzie gęstości pradopodobieństwa \(p_i\) równomiernym}
+\label{sec:org33dc136}
+$$U[0,L] \to \sum_{i=0}^{L}p_{i} =1, p_{i} = p_{j}, i \neq j, i,j \in {[0,L]} $$
+\subsection{Test wartosci średniej}
+\label{sec:org54f1d57}
+\subsubsection{Dla gen. o rozkładzie \(U[0,1]\)}
+\label{sec:orgb2678b7}
+$$\frac{1}{L} \sum_{i=0}^{L} x_{i} = 0.5$$
+\subsection{Test wriacji}
+\label{sec:orgb4f4f41}
+$$\frac{1}{L} \sum_{i=0}^{L} (x_{i} -\bar{x})^{2}; = 0$$
+\subsection{Test PI}
+\label{sec:org961223a}
+$$P_i[x_i, x_{i+1}]$$
+\(L_{\square} =\) liczba \(P_i\), wnętrza\(_{\square}\)
+\(L_{\circ} =\) liczba \(P_i\), wnętrza\(_{\circ}\)
+
+$$\frac{L_{\square}}{L_{\circ}} = \frac{P_{\square}}{P_{\circ}}$$
+$$P_{\square} = a \cdot a$$
+
+$$P_{\circ} = \pi(\frac{a}^{2} })^2
+= \pi \frac{a^2}{4}$$
+
+$$\frac{P_{\square}}{P_{\circ}}
+= \frac{a^2}{\pi \frac{a^2}{4}}
+= \frac{4}{\pi} \to \frac{L_{\square}}{L_{\circ}}
+= \frac{4}{\pi}$$
+\end{document}
