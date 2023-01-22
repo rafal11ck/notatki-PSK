@@ -1,5 +1,5 @@
 #+title: Wyklad 01
-
+#+author:
 - Podręcznik :: Prawo własności intelektualnej. Teoaria i praktyka. red. J.Sińczyło-chlabicz 2021 Warszawa
 - Pytania na koniec :: Zasada jej magnificenecja mówi, wy słucha.
 - Wykłady nieobowiązkowe
