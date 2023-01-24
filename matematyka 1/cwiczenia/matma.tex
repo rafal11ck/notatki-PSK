@@ -1,4 +1,4 @@
-% Created 2022-12-13 Tue 20:59
+% Created 2023-01-24 Tue 18:10
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -12,11 +12,10 @@
 \usepackage{amssymb}
 \usepackage{capt-of}
 \usepackage{hyperref}
-\author{Rafał Grot}
 \date{\today}
 \title{Matma}
 \hypersetup{
- pdfauthor={Rafał Grot},
+ pdfauthor={},
  pdftitle={Matma},
  pdfkeywords={},
  pdfsubject={},
@@ -29,7 +28,7 @@
 
 
 \section{liczby zespolone}
-\label{sec:org160acdc}
+\label{sec:org0f29a95}
 \begin{itemize}
 \item \(\mathbb{Z}\) -- zbiór liczb całkowitych
 \item \(\mathbb{R}\) -- zboór liczb rzeczywistych
@@ -37,7 +36,7 @@
 \end{itemize}
 $$\mathbb{Z} \subset \mathbb{R} \subset \mathbb{C}$$
 \subsection{postać algerbraiczna liczby zespolonej}
-\label{sec:org9e7f625}
+\label{sec:org2fcaeef}
 $$z=a+bi$$
 
 \begin{itemize}
@@ -46,7 +45,7 @@ $$z=a+bi$$
 \item \(i\) - jednostka urojona \(i^2=-1\)
 \end{itemize}
 \subsubsection{sprzężenie liczby zespolonej}
-\label{sec:org6d817cd}
+\label{sec:orgce89dda}
 \begin{latex}
 \begin{align*}
   z=a+bi && \overline{z}=a-bi \\
@@ -55,13 +54,13 @@ $$z=a+bi$$
 \end{latex}
 
 \subsection{postać trygonometryczna liczby zespolonej}
-\label{sec:org82a7530}
+\label{sec:orgd0b4ae9}
 $$z=(z)(\cos\varphi \cdot \sin\varphi)$$
 \subsection{postać wykładnicza liczby zespolonej}
-\label{sec:orga50e210}
+\label{sec:org14e1897}
 $$z=(z) \cdot e^{i\varphi}$$
 \subsection{moduł liczby zespolonej}
-\label{sec:orgc7079ab}
+\label{sec:org9543127}
 
 \begin{center}
 \includegraphics[width=.9\linewidth]{lzespolona.png}
@@ -72,11 +71,11 @@ $$|z|=\sqrt{a^2+b^2}$$
 \(\varphi\) -- argument
 
 \subsection{Potęgowanie liczby zespolonej}
-\label{sec:orgcfc7dcc}
+\label{sec:orga74aba7}
 $$z=a+bi \to z=|z|(\cos \varphi + i \sin \varphi)^n \to |z|^n(\cos n \varphi + i \sin n \varphi)$$
 
 \subsection{funkcja kwadratowa}
-\label{sec:org501a720}
+\label{sec:org74efac1}
 $$z^2+z+1=0$$
 \(\Delta = b^2-4ac = -3\) -- brak rozwiązań w \(\mathbb{R}\)
 $$\sqrt{\Delta} = \sqrt{-3} = \sqrt{(-1)3} = \sqrt{-1}  \sqrt{3} = \sqrt{i^2}\sqrt{3} = i \sqrt{3} $$
@@ -84,7 +83,7 @@ $$z_1 = \frac{-b - \sqrt{\Delta} }{2a} \lor z_2=\frac{-b + \sqrt{\Delta} }{2a}$$
 $$z_1 = \frac{-1-i\sqrt{3}}{2} = -\frac{1}{2} + \frac{\sqrt{3}}{2}i \lor
 z_2 = \frac{-1 + i\sqrt{3}}{2} = - \frac{1}{2}+ \frac{\sqrt{3}}{2}i $$
 \section{Stożkowe}
-\label{sec:orgead48ff}
+\label{sec:org94e4f4e}
 \[Q(\vec{x}) = a_{11}x_1^2 + 2a_{12}x_1x_2+a_{22}x_2^2
 \to M =
 \begin{bmatrix}
@@ -103,7 +102,7 @@ z_2 = \frac{-1 + i\sqrt{3}}{2} = - \frac{1}{2}+ \frac{\sqrt{3}}{2}i $$
 \end{latex}
 
 \subsection{Sprowadzanie do postaci kwadratowej}
-\label{sec:org38b11cc}
+\label{sec:orgab7b622}
 
 \[Q(\vec{x}) = a_{11}x_1^2 + 2a_{12}x_1x_2+a_{22}x_2^}
 \to
@@ -115,7 +114,7 @@ gdzie \(a_{1}, a_{2}\) -- wartości własne macierzy \(M\)
 
 wersor własny -- wektor własny o długości 1.
 \subsection{Elipsa}
-\label{sec:org122e980}
+\label{sec:org3d1a653}
 \begin{description}
 \item[{Wzór ogólny}] 
 \end{description}
@@ -125,12 +124,12 @@ $$\frac{x_1^2}{a^2}+\frac{x_2^2}{b^2}=1$$
 \end{description}
 \(a,b\)
 \subsection{Parabola}
-\label{sec:orgdecd631}
+\label{sec:orgb80818b}
 \begin{description}
 \item[{Wzór ogólny}] $$x_1=ax_2^2$$
 \end{description}
 \subsection{Hiperbola}
-\label{sec:org06e9153}
+\label{sec:org5a02068}
 \begin{description}
 \item[{Wzór ogólny}] 
 \end{description}
@@ -141,9 +140,9 @@ $$\frac{x_1^2}{a^2}-\frac{x_2^2}{b^2}=1$$
 \end{description}
 
 \section{\(\mathbb{R}^3\)}
-\label{sec:org7937507}
+\label{sec:org660e62d}
 \subsection{Równianie ogólne płaszczyzny}
-\label{sec:org72c3aeb}
+\label{sec:orge3e2e57}
 
 \begin{center}
 \includegraphics[width=.9\linewidth]{figures/plaszczyzna.png}
@@ -156,4 +155,27 @@ $$\frac{x_1^2}{a^2}-\frac{x_2^2}{b^2}=1$$
 \end{latex}
 
 $$A(x - x_{0}) + B(y-y_{0}) + C(z - z_{0}) = 0$$
+\section{Analiza}
+\label{sec:orge3e7acb}
+\subsection{Asymptoty}
+\label{sec:org4258be9}
+\subsubsection{Poziome}
+\label{sec:org23fef1b}
+\begin{itemize}
+\item Prawostronna w punkcie \(p\)
+jeżeli \(\lim_{x \to p^+} = - \infty\).
+\item Lewostronna w punkcie \(p\)
+jeżeli \(\lim_{x \to p^-} = + \infty\).
+\item Obustronna  jeżeli oba powyższe.
+\end{itemize}
+\subsubsection{Ukośne}
+\label{sec:org74cc247}
+\begin{latex}
+\begin{align*}
+  & y = ax +b
+  && a = \lim_{x \to \pm \infty} \frac{f(x)}{x}
+  && b = \lim_{x \to \pm \infty } \left( f(x) -ax \right)
+\end{align*}
+\end{latex}
+Jeżeli \(a = 0\) jest to asymptota pozioma.
 \end{document}

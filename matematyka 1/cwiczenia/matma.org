@@ -102,3 +102,20 @@ $$\frac{x_1^2}{a^2}-\frac{x_2^2}{b^2}=1$$
 #+end_latex
 
 $$A(x - x_{0}) + B(y-y_{0}) + C(z - z_{0}) = 0$$
+* Analiza
+** Asymptoty
+*** Poziome
+- Prawostronna w punkcie $p$
+  jeżeli $\lim_{x \to p^+} = - \infty$.
+- Lewostronna w punkcie $p$
+  jeżeli $\lim_{x \to p^-} = + \infty$.
+- Obustronna  jeżeli oba powyższe.
+*** Ukośne
+#+begin_latex
+\begin{align*}
+  & y = ax +b
+  && a = \lim_{x \to \pm \infty} \frac{f(x)}{x}
+  && b = \lim_{x \to \pm \infty } \left( f(x) -ax \right)
+\end{align*}
+#+end_latex
+Jeżeli $a = 0$ jest to asymptota pozioma.
