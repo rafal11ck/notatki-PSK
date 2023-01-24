@@ -104,7 +104,7 @@ $$\frac{x_1^2}{a^2}-\frac{x_2^2}{b^2}=1$$
 $$A(x - x_{0}) + B(y-y_{0}) + C(z - z_{0}) = 0$$
 * Analiza
 ** Asymptoty
-*** Poziome
+*** Pionowe
 - Prawostronna w punkcie $p$
   jeżeli $\lim_{x \to p^+} = - \infty$.
 - Lewostronna w punkcie $p$
