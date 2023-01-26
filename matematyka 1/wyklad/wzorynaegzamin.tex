@@ -1,4 +1,4 @@
-% Created 2023-01-19 Thu 13:40
+% Created 2023-01-26 Thu 15:22
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -14,12 +14,11 @@
 \usepackage{hyperref}
 \usepackage[polish]{babel}
 \usepackage[margin=3cm]{geometry}
-\newgeometry{vmargin={1mm}, hmargin={20mm,20mm}}
-\author{Rafał Grot}
+\newgeometry{vmargin={5mm}, hmargin={20mm,20mm}}
 \date{\today}
 \title{}
 \hypersetup{
- pdfauthor={Rafał Grot},
+ pdfauthor={},
  pdftitle={},
  pdfkeywords={},
  pdfsubject={},
@@ -31,7 +30,7 @@
 c \in \mathbb{R} && a \in \mathbb{R}
 \end{align*}
 \section{Wzory na pochodne wybranych funkcji}
-\label{sec:org7f62e14}
+\label{sec:org6fe08dd}
 \begin{latex}
 \begin{align*}
   & c' = 0,
@@ -55,7 +54,7 @@ c \in \mathbb{R} && a \in \mathbb{R}
 \end{align*}
 \end{latex}
 \section{Pochodna sumy, różnicy, iloczynu, ilorazu funkcji}
-\label{sec:org56f5d32}
+\label{sec:orgd2767c0}
 \begin{align*}
   & \left( f(x) + g(x) \right)' = f'(x) + g'(x)\\
   & \left( c \cdot f(x) \right) ' = c \cdot f'(x),& c \text{ -- liczba }\\
@@ -63,13 +62,13 @@ c \in \mathbb{R} && a \in \mathbb{R}
   & \left( \frac{f(x)}{g(x)} \right) ' = \frac{f'(x) \cdot g(x) - f(x) \cdot g'(x)}{g^{2}(x)}, & \text{o ile } g \neq 0
 \end{align*}
 \section{Pochodna funkcji złożonej}
-\label{sec:org29d0832}
+\label{sec:org089992a}
 Dana jest funkcja złozona \(y = (g^\circ w)(x)\) czyli \(y = g(w(x))\).
 \begin{center}
 \(w = w(x)\) - funkcja wewnętrzna, \qquad \(y = g(w)\) - funkcja zewnętrzna
 \end{center}
 \subsection{Wzory na pochodne funkcji złożonych}
-\label{sec:org643b240}
+\label{sec:org6c56ba1}
 \begin{align*}
   & c' = 0,
   \\ \left(w^{a}\right)'&= a w^{a-1} \cdot w',
@@ -90,4 +89,26 @@ Dana jest funkcja złozona \(y = (g^\circ w)(x)\) czyli \(y = g(w(x))\).
                                                & \left( \text{tgh } w \right )' &= \frac{1}{\cosh^{2} w} \cdot w',
   \\ \left( \text{ctgh } w \right )' &= \frac{-1}{\sinh ^{2} w} \cdot w',
 \end{align*}
+
+\section{Całki Oznaczone}
+\label{sec:org959efb5}
+\subsection{Własności}
+\label{sec:orgac6c7e3}
+Jeżeli \(\int_{0}^{1} x^2 dx\) istnieje, to \(f(x)\) nazywa się funkcją całkowalną w przedziale \(<a,b>\).
+\begin{align*}
+  \int_{a}^{b}\left( f(x) + g(x) \right)dx &= \int_a^b f(x)dx + \int_a^b g(x)dx
+  & \int_{a}^{b} \lambda f(x)dx &= \lambda \int_{a}^{b}f(x)dx, \lambda \in \mathbb{R}
+\\ \int_a^b f(x)dx &= - \int_b^a f(x)dx
+\end{align*}
+Niech \(c \in <a,b>\) wtedy \(\int_a^b f(x)dx = \int_a^c f(x)dx + \int_c^b+f(x)dx\).\\\empty
+Niech \(f(x) \le g(x)\) w \(<a, b>\) wtedy \(\int_a^b f(x)dx \le \int_a^b g(x)dx\).
+\subsection{Twierdzenie o wratości średniej}
+\label{sec:orgbe43564}
+Dla dowolonej funkcji ciągłej f(x) w przedziale \(<a,b>\) istnieje taka liczba \(h \in <a,b>\), że
+$$\int_a^b f(x)dx = (b-a)f(h)$$
+\section{Całki nieoznaczone}
+\label{sec:orgb53e5bd}
+Funkcja \(F\) jest \textbf{funkcją pierwotną} funkcji \(f\) na przedziale \(I\) , jeżeli \(F'(x) = f(x)\) dla każdego \(x \in I\).
+\\\empty
+\textbf{Twierdzenie} (warunek wystrczający instnienia funkcji pierwotnej) Jeżeli funkcja jest ciagłą na przedzale to, ma funkcję pierwotną  na tym przedziale.
 \end{document}

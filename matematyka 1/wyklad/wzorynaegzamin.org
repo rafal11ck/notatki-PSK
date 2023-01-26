@@ -1,7 +1,7 @@
 #+options: todo:nil toc:nil
 #+latex_header: \usepackage[polish]{babel}
 #+LATEX_HEADER: \usepackage[margin=3cm]{geometry}
-#+latex_header: \newgeometry{vmargin={1mm}, hmargin={20mm,20mm}}
+#+latex_header: \newgeometry{vmargin={5mm}, hmargin={20mm,20mm}}
 #+begin_comment
 #+latex_header: \usepackage{showframe}
 #+end_comment
@@ -65,3 +65,21 @@ $w = w(x)$ - funkcja wewnętrzna, \qquad $y = g(w)$ - funkcja zewnętrzna
                                                & \left( \text{tgh } w \right )' &= \frac{1}{\cosh^{2} w} \cdot w',
   \\ \left( \text{ctgh } w \right )' &= \frac{-1}{\sinh ^{2} w} \cdot w',
 \end{align*}
+
+* Całki Oznaczone
+** Własności
+Jeżeli $\int_{0}^{1} x^2 dx$ istnieje, to $f(x)$ nazywa się funkcją całkowalną w przedziale $<a,b>$.
+\begin{align*}
+  \int_{a}^{b}\left( f(x) + g(x) \right)dx &= \int_a^b f(x)dx + \int_a^b g(x)dx
+  & \int_{a}^{b} \lambda f(x)dx &= \lambda \int_{a}^{b}f(x)dx, \lambda \in \mathbb{R}
+\\ \int_a^b f(x)dx &= - \int_b^a f(x)dx
+\end{align*}
+Niech $c \in <a,b>$ wtedy $\int_a^b f(x)dx = \int_a^c f(x)dx + \int_c^b+f(x)dx$.\\
+Niech $f(x) \le g(x)$ w $<a, b>$ wtedy $\int_a^b f(x)dx \le \int_a^b g(x)dx$.
+** Twierdzenie o wratości średniej
+Dla dowolonej funkcji ciągłej f(x) w przedziale $<a,b>$ istnieje taka liczba $h \in <a,b>$, że
+$$\int_a^b f(x)dx = (b-a)f(h)$$
+* Całki nieoznaczone
+Funkcja $F$ jest *funkcją pierwotną* funkcji $f$ na przedziale $I$ , jeżeli $F'(x) = f(x)$ dla każdego $x \in I$.
+\\
+*Twierdzenie* (warunek wystrczający instnienia funkcji pierwotnej) Jeżeli funkcja jest ciagłą na przedzale to, ma funkcję pierwotną  na tym przedziale.
