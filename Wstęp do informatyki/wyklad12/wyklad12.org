@@ -1,2 +1,25 @@
-#+title: Wyklad12
-
+#+title: Strategie algorytmiczne
+* Strategie algorytmiczne
+A) strategia "wędrój i sprawdzaj"
+B) strategia "dziel i zwyciężaj"
+C) strategia "pogramowanie genetyczne"
+D) strategia "Przeszukiwanie losowe"(stochastyczna)
+E) strategia "ewolucyjne"(stochastyczna)
+* Funckja celu
+** Cel
+Poszukiwanie exktremóœ funkcji celu
+$$x_0 \to f(x_0) = \begin{cases}
+                     \min f(x) & \text{minimalizacja f.celu}\\
+                     \max f(x) & \text{minimalizacja f.celu}
+\end{cases}$$
+$$f(x_0) = \max f(x) \Rightarrow f(x_0) = 0 - \min f(x)$$
+* Ewolucjne
+$x \in \mathbb{R}, x \in [a,b]$
+\\
+$L_{NKB(64)} \to 0 \div 2^{64}-1$
+\\
+$x \to x', x'\in [0,1]$
+\\
+$x'= \frac{x-a}{b-a}$
+\\
+$L' = x' \cdot 2^{64}-1$
