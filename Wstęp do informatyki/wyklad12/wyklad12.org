@@ -23,3 +23,6 @@ $x \to x', x'\in [0,1]$
 $x'= \frac{x-a}{b-a}$
 \\
 $L' = x' \cdot 2^{64}-1$
+** Przyklad
+- NSGA-II
+- SPEA2
