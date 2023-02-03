@@ -100,3 +100,7 @@ Stan odczuwalny przez operatora podczas zgodnego z porzenaczeniem użytkowania m
 ** Podstawowe parametry stanowiska pracy
 - 500 lux, biorowe
 - pani sprzątająca 100
+** Co to jest ergonomia
+Wojciech Jastrzębowski 1857r.
+Ergonomia to nauka interdyscpilnarna zajmująca się przystowoswaniem narzędzi, maszyn, środowiska i warunków pracy do autonomicznych i psychofizycznych cech i możliwości człowieka.
+Zapewniając sprawne wydajne i bezpieczne wykonywanie pracy przy stosunkowo niskim koszczie biologicznym.
