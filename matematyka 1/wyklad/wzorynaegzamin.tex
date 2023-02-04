@@ -1,4 +1,4 @@
-% Created 2023-01-26 Thu 15:22
+% Created 2023-02-04 Sat 13:34
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -15,10 +15,11 @@
 \usepackage[polish]{babel}
 \usepackage[margin=3cm]{geometry}
 \newgeometry{vmargin={5mm}, hmargin={20mm,20mm}}
+\author{placeholder}
 \date{\today}
 \title{}
 \hypersetup{
- pdfauthor={},
+ pdfauthor={placeholder},
  pdftitle={},
  pdfkeywords={},
  pdfsubject={},
@@ -30,7 +31,7 @@
 c \in \mathbb{R} && a \in \mathbb{R}
 \end{align*}
 \section{Wzory na pochodne wybranych funkcji}
-\label{sec:org6fe08dd}
+\label{sec:orgf6dabe6}
 \begin{latex}
 \begin{align*}
   & c' = 0,
@@ -54,7 +55,7 @@ c \in \mathbb{R} && a \in \mathbb{R}
 \end{align*}
 \end{latex}
 \section{Pochodna sumy, różnicy, iloczynu, ilorazu funkcji}
-\label{sec:orgd2767c0}
+\label{sec:org5e1c076}
 \begin{align*}
   & \left( f(x) + g(x) \right)' = f'(x) + g'(x)\\
   & \left( c \cdot f(x) \right) ' = c \cdot f'(x),& c \text{ -- liczba }\\
@@ -62,13 +63,13 @@ c \in \mathbb{R} && a \in \mathbb{R}
   & \left( \frac{f(x)}{g(x)} \right) ' = \frac{f'(x) \cdot g(x) - f(x) \cdot g'(x)}{g^{2}(x)}, & \text{o ile } g \neq 0
 \end{align*}
 \section{Pochodna funkcji złożonej}
-\label{sec:org089992a}
+\label{sec:orgdf8dbb2}
 Dana jest funkcja złozona \(y = (g^\circ w)(x)\) czyli \(y = g(w(x))\).
 \begin{center}
 \(w = w(x)\) - funkcja wewnętrzna, \qquad \(y = g(w)\) - funkcja zewnętrzna
 \end{center}
 \subsection{Wzory na pochodne funkcji złożonych}
-\label{sec:org6c56ba1}
+\label{sec:org0aa40b4}
 \begin{align*}
   & c' = 0,
   \\ \left(w^{a}\right)'&= a w^{a-1} \cdot w',
@@ -91,24 +92,76 @@ Dana jest funkcja złozona \(y = (g^\circ w)(x)\) czyli \(y = g(w(x))\).
 \end{align*}
 
 \section{Całki Oznaczone}
-\label{sec:org959efb5}
-\subsection{Własności}
-\label{sec:orgac6c7e3}
-Jeżeli \(\int_{0}^{1} x^2 dx\) istnieje, to \(f(x)\) nazywa się funkcją całkowalną w przedziale \(<a,b>\).
+\label{sec:org84e08d6}
+\textbf{Definicja całki oznaczonej z funkcji \(f(x) \ge 0\) w przedziale \(<a,b>\)}
+\\\empty
+Dla każdej z lcizb \(n = 1,2,3, \ldots\) postępujemy następująco:
+\\\empty
+Przedział \(<a,b>\) dzielmy na podprzedziały punktami \(x_0 , x_1, x_2, \ldots x_n\).
+\\\empty
+Punkty \(u_1, u_2 , \ldots , u_n\) nazywamy \textbf{punktami podziału}.
+\\\empty
+Długości kolejnych podprzdziałów \(<x_0, x_1>, <x_1, x_2>, \ldots , <x_{n-1}, x_n>\) oznaczamy przez \(\Delta x_1, \Delta x_2 , \ldots ,\Delta x_n\).
+\\\empty
+Największą z tych liczb nazywamy \textbf{punktami pośrednimi}.
+\\\empty
+Tworzymy sumę, zwaną \textbf{sumą całkową}
+\\\empty
+\displaystyle
+\(\sigma_n = f(u_1) \cdot \Delta x_1 +
+f(u_2) \cdot \Delta x_2 +
+\ldots
+f(u_2) \cdot \Delta x_2
+= \sum_{k=1}^n f(u_k) \cdot \Delta x_k\)
+\\\empty
+Jeśli istnieje i jest skończona granica sum całkowych \(\sigma_n\) przy \(n \to \infty\) oraz gdy zachodzą poniższe założenia 1-3, to granice tę nazywamy całką oznaczoną funkcji f(x) w przedziale \(<a,b>\).
+\\\empty
+Oznaczamy ją symbolem \displaystyle\(\int_a^b f(x) dx\) .
+\begin{enumerate}
+\item Średnica podzału musić zmierzać do 0, gdy n zmierza do \(\infty\).
+\item Granica nie może zależeć od wyboru punktów podziału \(x_0, x_1, x_2, \ldots ,x_n\) dla \(n = 1,2,3,\ldots\)
+\item Granica nie może zależeć od wyboru punktów pośrednich \(u_0, u_1, u_2, \ldots ,u_n\) dla \(n = 1,2,3,\ldots\)
+\end{enumerate}
+
+\textbf{krótko:}
+\(\displaystyle\lim_{n\to \infty} \sigma_n = \int_a^b f(x) dx\) jeżeli granica ta jest skończona i zachodzą założenia 1-3.
+Jeżeli \(\int_{a}^{b} f(x) dx\) istnieje, to \(f(x)\) nazywa się funkcją \textbf{całkowalną} w przedziale \(<a,b>\).\\\empty
+Funkcja ciągła w przedziale domkniętym jest w tym przedziale całkowalna.
 \begin{align*}
   \int_{a}^{b}\left( f(x) + g(x) \right)dx &= \int_a^b f(x)dx + \int_a^b g(x)dx
   & \int_{a}^{b} \lambda f(x)dx &= \lambda \int_{a}^{b}f(x)dx, \lambda \in \mathbb{R}
 \\ \int_a^b f(x)dx &= - \int_b^a f(x)dx
 \end{align*}
-Niech \(c \in <a,b>\) wtedy \(\int_a^b f(x)dx = \int_a^c f(x)dx + \int_c^b+f(x)dx\).\\\empty
-Niech \(f(x) \le g(x)\) w \(<a, b>\) wtedy \(\int_a^b f(x)dx \le \int_a^b g(x)dx\).
+\subsection{Właściowści}
+\label{sec:org114fa90}
+Załóżmy, że funkcjie f(x), g(x) to funkcjie całkowalne w przedziale \(<a,b>\)
+\begin{enumerate}
+\item \(\displaystyle\int_a^b( f(x) + g(x) )dx
+   = \int_a^b f(x) dx + \int_a^b g(x)dx\)
+\item \(\displaystyle \int_a^b \lambda f(x) dx = \lambda \int_a^b f(x)dx, \lambda \in \mathbb{R}\)
+\item \(\displaystyle \int_a^b f(x) dx = - \int_b^a f(x) dx\).
+\item Niech \(c \in <a,b>\) wtedy \(\displaystyle \int_a^b f(x)dx = \int_a^c f(x)dx + \int_c^b+f(x)dx\).
+\item Niech \(f(x) \le g(x)\) w \(<a, b>\) wtedy \(\displaystyle \int_a^b f(x)dx \le \int_a^b g(x)dx\).
+\end{enumerate}
 \subsection{Twierdzenie o wratości średniej}
-\label{sec:orgbe43564}
+\label{sec:org1436705}
 Dla dowolonej funkcji ciągłej f(x) w przedziale \(<a,b>\) istnieje taka liczba \(h \in <a,b>\), że
 $$\int_a^b f(x)dx = (b-a)f(h)$$
+\newpage
 \section{Całki nieoznaczone}
-\label{sec:orgb53e5bd}
+\label{sec:org4825044}
 Funkcja \(F\) jest \textbf{funkcją pierwotną} funkcji \(f\) na przedziale \(I\) , jeżeli \(F'(x) = f(x)\) dla każdego \(x \in I\).
-\\\empty
-\textbf{Twierdzenie} (warunek wystrczający instnienia funkcji pierwotnej) Jeżeli funkcja jest ciagłą na przedzale to, ma funkcję pierwotną  na tym przedziale.
+\subsection{Twierdzenie (warunek wystrczający instnienia funkcji pierwotnej)}
+\label{sec:org99fab2c}
+Jeżeli funkcja jest ciagłą na przedzale to, ma funkcję pierwotną na tym przedziale.
+\subsection{Definicja}
+\label{sec:orga18286d}
+\textbf{Całkę nieoznaczoną} funkcji \(f\) zapisujemy w postaci \(\int f(x)dx\) i definiujemy następująco:
+$$\int f(x) dx = F(x) + c, \text{ gdy }F'(x) = f(x)$$
+\(c\) -- stała całkowania
+\subsection{Całki nioznaczone pewnych funkcji elementarnych}
+\label{sec:orge189057}
+\begin{enumerate}
+\item \[\int\]
+\end{enumerate}
 \end{document}

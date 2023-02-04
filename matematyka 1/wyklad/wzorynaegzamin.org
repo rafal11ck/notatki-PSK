@@ -67,19 +67,62 @@ $w = w(x)$ - funkcja wewnętrzna, \qquad $y = g(w)$ - funkcja zewnętrzna
 \end{align*}
 
 * Całki Oznaczone
-** Własności
-Jeżeli $\int_{0}^{1} x^2 dx$ istnieje, to $f(x)$ nazywa się funkcją całkowalną w przedziale $<a,b>$.
+*Definicja całki oznaczonej z funkcji $f(x) \ge 0$ w przedziale $<a,b>$*
+\\
+Dla każdej z lcizb $n = 1,2,3, \ldots$ postępujemy następująco:
+\\
+Przedział $<a,b>$ dzielmy na podprzedziały punktami $x_0 , x_1, x_2, \ldots x_n$.
+\\
+Punkty $u_1, u_2 , \ldots , u_n$ nazywamy *punktami podziału*.
+\\
+Długości kolejnych podprzdziałów $<x_0, x_1>, <x_1, x_2>, \ldots , <x_{n-1}, x_n>$ oznaczamy przez $\Delta x_1, \Delta x_2 , \ldots ,\Delta x_n$.
+\\
+Największą z tych liczb nazywamy *punktami pośrednimi*.
+\\
+Tworzymy sumę, zwaną *sumą całkową*
+\\
+\displaystyle
+$\sigma_n = f(u_1) \cdot \Delta x_1 +
+f(u_2) \cdot \Delta x_2 +
+\ldots
+f(u_2) \cdot \Delta x_2
+= \sum_{k=1}^n f(u_k) \cdot \Delta x_k$
+\\
+Jeśli istnieje i jest skończona granica sum całkowych $\sigma_n$ przy $n \to \infty$ oraz gdy zachodzą poniższe założenia 1-3, to granice tę nazywamy całką oznaczoną funkcji f(x) w przedziale $<a,b>$.
+\\
+Oznaczamy ją symbolem \displaystyle$\int_a^b f(x) dx$ .
+1. Średnica podzału musić zmierzać do 0, gdy n zmierza do $\infty$.
+2. Granica nie może zależeć od wyboru punktów podziału $x_0, x_1, x_2, \ldots ,x_n$ dla $n = 1,2,3,\ldots$
+3. Granica nie może zależeć od wyboru punktów pośrednich $u_0, u_1, u_2, \ldots ,u_n$ dla $n = 1,2,3,\ldots$
+
+*krótko:*
+$\displaystyle\lim_{n\to \infty} \sigma_n = \int_a^b f(x) dx$ jeżeli granica ta jest skończona i zachodzą założenia 1-3.
+Jeżeli $\int_{a}^{b} f(x) dx$ istnieje, to $f(x)$ nazywa się funkcją *całkowalną* w przedziale $<a,b>$.\\
+Funkcja ciągła w przedziale domkniętym jest w tym przedziale całkowalna.
 \begin{align*}
   \int_{a}^{b}\left( f(x) + g(x) \right)dx &= \int_a^b f(x)dx + \int_a^b g(x)dx
   & \int_{a}^{b} \lambda f(x)dx &= \lambda \int_{a}^{b}f(x)dx, \lambda \in \mathbb{R}
 \\ \int_a^b f(x)dx &= - \int_b^a f(x)dx
 \end{align*}
-Niech $c \in <a,b>$ wtedy $\int_a^b f(x)dx = \int_a^c f(x)dx + \int_c^b+f(x)dx$.\\
-Niech $f(x) \le g(x)$ w $<a, b>$ wtedy $\int_a^b f(x)dx \le \int_a^b g(x)dx$.
+** Właściowści
+Załóżmy, że funkcjie f(x), g(x) to funkcjie całkowalne w przedziale $<a,b>$
+1. $\displaystyle\int_a^b( f(x) + g(x) )dx
+   = \int_a^b f(x) dx + \int_a^b g(x)dx$
+2. $\displaystyle \int_a^b \lambda f(x) dx = \lambda \int_a^b f(x)dx, \lambda \in \mathbb{R}$
+3. $\displaystyle \int_a^b f(x) dx = - \int_b^a f(x) dx$.
+4. Niech $c \in <a,b>$ wtedy $\displaystyle \int_a^b f(x)dx = \int_a^c f(x)dx + \int_c^b+f(x)dx$.
+5. Niech $f(x) \le g(x)$ w $<a, b>$ wtedy $\displaystyle \int_a^b f(x)dx \le \int_a^b g(x)dx$.
 ** Twierdzenie o wratości średniej
 Dla dowolonej funkcji ciągłej f(x) w przedziale $<a,b>$ istnieje taka liczba $h \in <a,b>$, że
 $$\int_a^b f(x)dx = (b-a)f(h)$$
+\newpage
 * Całki nieoznaczone
 Funkcja $F$ jest *funkcją pierwotną* funkcji $f$ na przedziale $I$ , jeżeli $F'(x) = f(x)$ dla każdego $x \in I$.
-\\
-*Twierdzenie* (warunek wystrczający instnienia funkcji pierwotnej) Jeżeli funkcja jest ciagłą na przedzale to, ma funkcję pierwotną  na tym przedziale.
+** Twierdzenie (warunek wystrczający instnienia funkcji pierwotnej)
+Jeżeli funkcja jest ciagłą na przedzale to, ma funkcję pierwotną na tym przedziale.
+** Definicja
+*Całkę nieoznaczoną* funkcji $f$ zapisujemy w postaci $\int f(x)dx$ i definiujemy następująco:
+$$\int f(x) dx = F(x) + c, \text{ gdy }F'(x) = f(x)$$
+$c$ -- stała całkowania
+** Całki nioznaczone pewnych funkcji elementarnych
+1. \[\int\]
