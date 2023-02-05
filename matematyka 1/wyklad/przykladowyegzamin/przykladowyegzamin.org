@@ -1,6 +1,6 @@
 #+title: Przykladowyegzamin
 
-* Zad 1
+* DONE Zad 1
 \begin{align*}
 \Im \left(\frac{1+3i}{3-2i} + i^{3} + 5\right)
  &=\Im \left(\frac{1+3i}{3-2i} + \frac{i^{3}(3-2i)}{3-2i} + \frac{5(3-2i)}{3-2i}\right)\\
@@ -12,7 +12,7 @@
  &= \Im \left(\frac{62 - 2i }{13}\right)\\
  &= \frac{-2}{13}
 \end{align*}
-* Zad 2
+* DONE Zad 2
 \begin{align*}
   \frac{ { (3 - 3i)}^{14} }
   { { (-1+i\sqrt{3}) }^{11} }
@@ -59,3 +59,43 @@ w^{11} &= 2^{11} \left( \cos \left(11 \cdot \frac{2}{3} \pi \right)
 &=\frac{ ((3\sqrt{2})^{14} i)(-1 + i\sqrt{3}) }
 {-2^{11}}
 \end{align*}
+* PROJ Zad 3
+Wyznacznik macierzy głownej $= 20$.
+\\
+$A = \begin{bmatrix}
+3  & -2 & 1 & 0 \\
+2  & -1 & 3 & 1 \\
+2 & -1 & 3 & 4 \\
+0 & 1 & 3 & -1 \\
+\end{bmatrix}$,
+$X = \begin{bmatrix}
+4\\
+1\\
+-2\\
+3
+\end{bmatrix}$
+** DONE $A_4$
+\begin{align*}A_4 &= \begin{vmatrix}
+                       3  & -2 & 1 & 4 \\
+                       2  & -1 & 3 & 1 \\
+                       2 & -1 & 3 & -2 \\
+                       0 & 1 & 3 & 3 \\
+                     \end{vmatrix}
+  \xrightarrow[k_3 = k_3 - k4]{k_4 = k_4 - 3k_2}
+  \begin{vmatrix}
+    3 & -2 & -3  & 10 \\
+    2 & -1 &  2  & 4 \\
+    2 & -1 & 5   & 1 \\
+    0 & 1  & 0   & 0 \\
+  \end{vmatrix}\\
+                  &= 1 \cdot (-1)^{6} \cdot \begin{vmatrix}
+                                              3 & -3 & 10 \\
+                                              2 & 2  & 4  \\
+                                              2 & 5  & 1\\
+                                              \end{vmatrix}\\
+                  &=1 \cdot (6 + 100 - 24) - (40 + 60 -6)\\
+                  &=82 - 94\\
+                  &= - 12
+\end{align*}
+** DONE Podstawianie
+$$x_4 = \frac{-12}{20} = \frac{-3}{5}$$
