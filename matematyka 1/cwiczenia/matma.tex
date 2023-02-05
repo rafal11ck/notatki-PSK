@@ -1,4 +1,4 @@
-% Created 2023-01-24 Tue 21:40
+% Created 2023-02-05 Sun 21:57
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -12,10 +12,11 @@
 \usepackage{amssymb}
 \usepackage{capt-of}
 \usepackage{hyperref}
+\author{placeholder}
 \date{\today}
 \title{Matma}
 \hypersetup{
- pdfauthor={},
+ pdfauthor={placeholder},
  pdftitle={Matma},
  pdfkeywords={},
  pdfsubject={},
@@ -28,7 +29,7 @@
 
 
 \section{liczby zespolone}
-\label{sec:org859d6f4}
+\label{sec:org857af50}
 \begin{itemize}
 \item \(\mathbb{Z}\) -- zbiór liczb całkowitych
 \item \(\mathbb{R}\) -- zboór liczb rzeczywistych
@@ -36,7 +37,7 @@
 \end{itemize}
 $$\mathbb{Z} \subset \mathbb{R} \subset \mathbb{C}$$
 \subsection{postać algerbraiczna liczby zespolonej}
-\label{sec:orgc484035}
+\label{sec:org75e7cb2}
 $$z=a+bi$$
 
 \begin{itemize}
@@ -45,7 +46,7 @@ $$z=a+bi$$
 \item \(i\) - jednostka urojona \(i^2=-1\)
 \end{itemize}
 \subsubsection{sprzężenie liczby zespolonej}
-\label{sec:org23c4343}
+\label{sec:org4dd9afa}
 \begin{latex}
 \begin{align*}
   z=a+bi && \overline{z}=a-bi \\
@@ -54,13 +55,13 @@ $$z=a+bi$$
 \end{latex}
 
 \subsection{postać trygonometryczna liczby zespolonej}
-\label{sec:org77b1aca}
+\label{sec:orgb9e8e59}
 $$z=(z)(\cos\varphi \cdot \sin\varphi)$$
 \subsection{postać wykładnicza liczby zespolonej}
-\label{sec:org5a77591}
+\label{sec:orgf7b4168}
 $$z=(z) \cdot e^{i\varphi}$$
 \subsection{moduł liczby zespolonej}
-\label{sec:org7107239}
+\label{sec:orgea9cf99}
 
 \begin{center}
 \includegraphics[width=.9\linewidth]{lzespolona.png}
@@ -71,19 +72,28 @@ $$|z|=\sqrt{a^2+b^2}$$
 \(\varphi\) -- argument
 
 \subsection{Potęgowanie liczby zespolonej}
-\label{sec:org79427dc}
+\label{sec:org686a251}
 $$z=a+bi \to z=|z|(\cos \varphi + i \sin \varphi)^n \to |z|^n(\cos n \varphi + i \sin n \varphi)$$
 
 \subsection{funkcja kwadratowa}
-\label{sec:orgb08379f}
+\label{sec:org0873e89}
 $$z^2+z+1=0$$
 \(\Delta = b^2-4ac = -3\) -- brak rozwiązań w \(\mathbb{R}\)
 $$\sqrt{\Delta} = \sqrt{-3} = \sqrt{(-1)3} = \sqrt{-1}  \sqrt{3} = \sqrt{i^2}\sqrt{3} = i \sqrt{3} $$
 $$z_1 = \frac{-b - \sqrt{\Delta} }{2a} \lor z_2=\frac{-b + \sqrt{\Delta} }{2a}$$
 $$z_1 = \frac{-1-i\sqrt{3}}{2} = -\frac{1}{2} + \frac{\sqrt{3}}{2}i \lor
 z_2 = \frac{-1 + i\sqrt{3}}{2} = - \frac{1}{2}+ \frac{\sqrt{3}}{2}i $$
+\section{Wektory}
+\label{sec:org420b8c0}
+\subsection{Macierz obrotu}
+\label{sec:orgaf86042}
+$$A = \begin{bmatrix}
+        \cos \alpha & - \sin \alpha\\
+        \sin \alpha & \cos \alpha\\
+      \end{bmatrix}$$
+
 \section{Stożkowe}
-\label{sec:org8d3e14b}
+\label{sec:org5b361e8}
 \[Q(\vec{x}) = a_{11}x_1^2 + 2a_{12}x_1x_2+a_{22}x_2^2
 \to M =
 \begin{bmatrix}
@@ -102,7 +112,7 @@ z_2 = \frac{-1 + i\sqrt{3}}{2} = - \frac{1}{2}+ \frac{\sqrt{3}}{2}i $$
 \end{latex}
 
 \subsection{Sprowadzanie do postaci kwadratowej}
-\label{sec:orgc8139f6}
+\label{sec:org87ff318}
 
 \[Q(\vec{x}) = a_{11}x_1^2 + 2a_{12}x_1x_2+a_{22}x_2^}
 \to
@@ -114,7 +124,7 @@ gdzie \(a_{1}, a_{2}\) -- wartości własne macierzy \(M\)
 
 wersor własny -- wektor własny o długości 1.
 \subsection{Elipsa}
-\label{sec:orgae001ea}
+\label{sec:org09e4835}
 \begin{description}
 \item[{Wzór ogólny}] 
 \end{description}
@@ -124,12 +134,12 @@ $$\frac{x_1^2}{a^2}+\frac{x_2^2}{b^2}=1$$
 \end{description}
 \(a,b\)
 \subsection{Parabola}
-\label{sec:org6dae4b8}
+\label{sec:org3f9a693}
 \begin{description}
 \item[{Wzór ogólny}] $$x_1=ax_2^2$$
 \end{description}
 \subsection{Hiperbola}
-\label{sec:org7f4d07e}
+\label{sec:orgbd46be7}
 \begin{description}
 \item[{Wzór ogólny}] 
 \end{description}
@@ -140,9 +150,9 @@ $$\frac{x_1^2}{a^2}-\frac{x_2^2}{b^2}=1$$
 \end{description}
 
 \section{\(\mathbb{R}^3\)}
-\label{sec:orga974fe9}
+\label{sec:org4f20072}
 \subsection{Równianie ogólne płaszczyzny}
-\label{sec:org72c87fc}
+\label{sec:org7e56fb6}
 
 \begin{center}
 \includegraphics[width=.9\linewidth]{figures/plaszczyzna.png}
@@ -156,11 +166,11 @@ $$\frac{x_1^2}{a^2}-\frac{x_2^2}{b^2}=1$$
 
 $$A(x - x_{0}) + B(y-y_{0}) + C(z - z_{0}) = 0$$
 \section{Analiza}
-\label{sec:org6ade12a}
+\label{sec:org26b2d8a}
 \subsection{Asymptoty}
-\label{sec:org0073234}
+\label{sec:org28784e0}
 \subsubsection{Pionowe}
-\label{sec:org32ff780}
+\label{sec:org29e8fa1}
 \begin{itemize}
 \item Prawostronna w punkcie \(p\)
 jeżeli \(\lim_{x \to p^+} = - \infty\).
@@ -169,7 +179,7 @@ jeżeli \(\lim_{x \to p^-} = + \infty\).
 \item Obustronna  jeżeli oba powyższe.
 \end{itemize}
 \subsubsection{Ukośne}
-\label{sec:orgab29641}
+\label{sec:org71f7709}
 \begin{latex}
 \begin{align*}
   & y = ax +b
