@@ -99,3 +99,181 @@ $X = \begin{bmatrix}
 \end{align*}
 ** DONE Podstawianie
 $$x_4 = \frac{-12}{20} = \frac{-3}{5}$$
+* DONE Zad 4
+:przeksz:
+\begin{align*}
+  \left[
+  \begin{array}{cccc|c}
+    3  & -2 & 1 & 0 & 4\\
+    2  & -1 & 3 & 1 & 1 \\
+    2 & -1 & 3 & 4  & -2\\
+    x_1 & x_2 & x_3 & x_4  & y\\
+  \end{array}
+  \right]
+  \xrightarrow[w_{1} = w_{1} - w_{2}]{}
+       & \left[
+         \begin{array}{cccc|c}
+           1  & -1 & -2 & -1 & 3\\
+           2  & -1 & 3 & 1 & 1 \\
+           2 & -1 & 3 & 4  & -2\\
+           x_1 & x_2 & x_3 & x_4  & y\\
+         \end{array}
+  \right]
+  \\
+  \xrightarrow[w_{2} = w_{2} - 2 w_{1} ]{w_3 = w_3 - 2 w_1}
+       & \left[
+         \begin{array}{cccc|c}
+           1  & -1 & -2 & -1 & 3\\
+           0  & 1 & 7 & 3 & -5 \\
+           0 & 1 & 7  & 6 & -8 \\
+           x_1 & x_2 & x_3 & x_4  & y\\
+         \end{array}
+  \right]
+  \\
+  \xrightarrow[w_{3} = w_{3} - w_{2}]{w_{1} = w_{1} + w_{2}}
+       &\left[
+         \begin{array}{cccc|c}
+           1 & 0 & 5 & 2 & -2\\
+           0 & 1 & 7 & 3 & -5\\
+           0 & 0 & 0 & 3 & -3\\
+           x_1 & x_2 & x_3 & x_4  & y\\
+         \end{array}
+  \right]
+  \\
+  \xrightarrow[k_{4} = k_{3}]{k_{3} = k_{4}}
+       &\left[
+         \begin{array}{cccc|c}
+           1 & 0 & 2 & 5 & -2\\
+           0 & 1 & 3 & 7 & -5\\
+           0 & 0 & 3 & 0 & -3\\
+           x_1 & x_2 & x_4 & x_3  & y\\
+         \end{array}
+  \right]
+  \\
+  \xrightarrow[w_{3} = w_{3} \cdot \frac{1}{3}]{}
+       &\left[
+         \begin{array}{cccc|c}
+           1 & 0 & 2 & 5 & -2\\
+           0 & 1 & 3 & 7 & -5\\
+           0 & 0 & 1 & 0 & -1\\
+           x_1 & x_2 & x_4 & x_3  & y\\
+         \end{array}
+  \right]
+  \\
+  \xrightarrow[w_{2} = w_{2} - 3 \cdot w_{3}]{w_1 = w_1 - 2 \cdot w_3}
+       &\left[
+         \begin{array}{cccc|c}
+           1 & 0  & 0 & 5 & 0\\
+           0 & 1  & 0 & 7 & -2\\
+           0 & 0 & 1 & 0 & -1\\
+           x_1 & x_2 & x_4 & x_3  & y\\
+         \end{array}
+  \right]
+\end{align*}
+:end:
+$x_1 = -5 x_3$
+\\
+$x_2 = -7x_3 -2$
+\\
+$x_3 \in \mathbb{R}$
+\\
+$x_4 = -1$
+* PROJ ZAD 5
+$$XA = B \xrightarrow[\text{prawostronnie } A^{-1}]{} X A A^{-1} = BA^{-1} \to X = B A^{-1}$$
+$A = \begin{bmatrix}
+       1 & 2 & -3 \\
+       3 & 0 & -2 \\
+       -1 & -4 & 5\\
+     \end{bmatrix}$,
+     $B= \begin{bmatrix}
+     4 & 2 & -5\\
+     3 & 0 & -2\\
+     \end{bmatrix}$
+
+$\det A = (36 + 4) - (8 + 30) = 40 - 38 = 2$
+:macierzodwortna:
+\begin{align*}
+  A^{-1} &= \frac{1}{2} \begin{bmatrix}
+                          &\begin{vmatrix}
+                             0 & -2\\
+                             -4 & 5\\
+                           \end{vmatrix}
+                          &- \begin{vmatrix}
+                               3 & -2 \\
+                               -1 & 5 \\
+                             \end{vmatrix}
+                          &\begin{vmatrix}
+                             3 & 0 \\
+                             -1 & -4\\
+                           \end{vmatrix}
+                          \\
+                          &- \begin{vmatrix}
+                               2 & -3 \\
+                               -4 & 5 \\
+                             \end{vmatrix}
+                          &\begin{vmatrix}
+                             1 & -3\\
+                             -1 & 5 \\
+                           \end{vmatrix}
+                          &- \begin{vmatrix}
+                               1 & 2 \\
+                               -1 & -4\\
+                             \end{vmatrix}
+                          \\
+                          &\begin{vmatrix}
+                             2 & -3\\
+                             0 & -2 \\
+                           \end{vmatrix}
+                          &- \begin{vmatrix}
+                               1 & -3 \\
+                               3 & -2\\
+                             \end{vmatrix}
+                          &\begin{vmatrix}
+                             1 & 2\\
+                             3 & 0\\
+                           \end{vmatrix}
+                        \end{bmatrix}^{T}
+  \\
+         &=\frac{1}{2}
+           \begin{bmatrix}
+             -8 & -13 & -12\\
+             2 & 2 & 2\\
+             -4 & -7 & -6\\
+           \end{bmatrix}^{T}
+\\
+         &=\frac{1}{2}
+           \begin{bmatrix}
+             -8 &  2 & -4\\
+             -13 & 2 & -7\\
+             -12 & 2 & -6\\
+           \end{bmatrix}
+  \\
+         &= \begin{bmatrix}
+              -4 & 1 & -2\\
+              -\frac{13}{2} & 1 & - \frac{7}{2}\\
+              -6 & 1 & -3\\
+            \end{bmatrix}
+\end{align*}
+:end:
+
+\begin{align*}
+  X = BA^{-1} &= \begin{bmatrix}
+                   4 & 2 & -5\\
+                   3 & 0 & -2\\
+                 \end{bmatrix}
+  \begin{bmatrix}
+    -4 & 1 & -2\\
+    -\frac{13}{2} & 1 & - \frac{7}{2}\\
+    -6 & 1 & -3\\
+  \end{bmatrix}
+  \\
+              &= \begin{bmatrix}
+                   -16 - 13 + 30 & 4 + 2 - 5 & - 8 - 7 + 15\\
+                   -12 + 0 + 12  & 3 + 0 - 2 & - 6 +0 +6 \\
+                 \end{bmatrix}
+  \\
+              &= \begin{bmatrix}
+                   1 & 1 & 0\\
+                   0 & 1 & 0\\
+                 \end{bmatrix}
+\end{align*}

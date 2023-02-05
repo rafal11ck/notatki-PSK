@@ -1,4 +1,4 @@
-% Created 2023-02-05 Sun 17:46
+% Created 2023-02-05 Sun 21:51
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -29,7 +29,7 @@
 
 
 \section{{\bfseries\sffamily DONE} Zad 1}
-\label{sec:orgcbb3986}
+\label{sec:org852d1dd}
 \begin{align*}
 \Im \left(\frac{1+3i}{3-2i} + i^{3} + 5\right)
  &=\Im \left(\frac{1+3i}{3-2i} + \frac{i^{3}(3-2i)}{3-2i} + \frac{5(3-2i)}{3-2i}\right)\\
@@ -42,14 +42,14 @@
  &= \frac{-2}{13}
 \end{align*}
 \section{{\bfseries\sffamily DONE} Zad 2}
-\label{sec:org973fd11}
+\label{sec:orgd164d3b}
 \begin{align*}
   \frac{ { (3 - 3i)}^{14} }
   { { (-1+i\sqrt{3}) }^{11} }
   &= \frac{z^{14}}{w^{11}}
 \end{align*}
 \subsection{\(z\)}
-\label{sec:org282dc4f}
+\label{sec:orgda57a52}
 $$\sin(\varphi_z) = \frac{-3}{3\sqrt{2}}
  = \frac{-1}{\sqrt{2}}
  = \frac{-\sqrt{2}}{2} \to \varphi_z = \frac{7}{4}\pi$$
@@ -65,7 +65,7 @@ $$\sin(\varphi_z) = \frac{-3}{3\sqrt{2}}
   &= {(3\sqrt{2})}^{14}i
 \end{align*}
 \subsection{\(w\)}
-\label{sec:org5b83ee3}
+\label{sec:org95cc5fd}
 $$\sin(\varphi_w) = \frac{\sqrt{3}}{\sqrt{4}} = \frac{\sqrt{3}}{2}
 \to \varphi_w = \frac{2}{3} \pi$$
 
@@ -78,7 +78,7 @@ w^{11} &= 2^{11} \left( \cos \left(11 \cdot \frac{2}{3} \pi \right)
 &= 2^{10} \left(-1 - i \sqrt{3} \right)
 \end{align*}
 \subsection{Podstawiamy}
-\label{sec:orge1521f7}
+\label{sec:org44e8188}
 \begin{align*}
 \frac{ { (3 - 3i)}^{14} }
 { { (-1+i\sqrt{3}) }^{11} }
@@ -93,7 +93,7 @@ w^{11} &= 2^{11} \left( \cos \left(11 \cdot \frac{2}{3} \pi \right)
 {-2^{11}}
 \end{align*}
 \section{{\bfseries\sffamily DONE} Zad 3}
-\label{sec:orgd0e2a50}
+\label{sec:orgc483e9a}
 Wyznacznik macierzy głownej \(= 20\).
 \\\empty
 \(A = \begin{bmatrix}
@@ -109,7 +109,7 @@ Wyznacznik macierzy głownej \(= 20\).
 3
 \end{bmatrix}\)
 \subsection{{\bfseries\sffamily DONE} \(A_4\)}
-\label{sec:org083aa34}
+\label{sec:orgf061d22}
 \begin{align*}A_4 &= \begin{vmatrix}
                        3  & -2 & 1 & 4 \\
                        2  & -1 & 3 & 1 \\
@@ -133,6 +133,182 @@ Wyznacznik macierzy głownej \(= 20\).
                   &= - 12
 \end{align*}
 \subsection{{\bfseries\sffamily DONE} Podstawianie}
-\label{sec:orge43a92f}
+\label{sec:org701939a}
 $$x_4 = \frac{-12}{20} = \frac{-3}{5}$$
+\section{{\bfseries\sffamily DONE} Zad 4}
+\label{sec:orgae0d76d}
+\begin{align*}
+  \left[
+  \begin{array}{cccc|c}
+    3  & -2 & 1 & 0 & 4\\
+    2  & -1 & 3 & 1 & 1 \\
+    2 & -1 & 3 & 4  & -2\\
+    x_1 & x_2 & x_3 & x_4  & y\\
+  \end{array}
+  \right]
+  \xrightarrow[w_{1} = w_{1} - w_{2}]{}
+       & \left[
+         \begin{array}{cccc|c}
+           1  & -1 & -2 & -1 & 3\\
+           2  & -1 & 3 & 1 & 1 \\
+           2 & -1 & 3 & 4  & -2\\
+           x_1 & x_2 & x_3 & x_4  & y\\
+         \end{array}
+  \right]
+  \\
+  \xrightarrow[w_{2} = w_{2} - 2 w_{1} ]{w_3 = w_3 - 2 w_1}
+       & \left[
+         \begin{array}{cccc|c}
+           1  & -1 & -2 & -1 & 3\\
+           0  & 1 & 7 & 3 & -5 \\
+           0 & 1 & 7  & 6 & -8 \\
+           x_1 & x_2 & x_3 & x_4  & y\\
+         \end{array}
+  \right]
+  \\
+  \xrightarrow[w_{3} = w_{3} - w_{2}]{w_{1} = w_{1} + w_{2}}
+       &\left[
+         \begin{array}{cccc|c}
+           1 & 0 & 5 & 2 & -2\\
+           0 & 1 & 7 & 3 & -5\\
+           0 & 0 & 0 & 3 & -3\\
+           x_1 & x_2 & x_3 & x_4  & y\\
+         \end{array}
+  \right]
+  \\
+  \xrightarrow[k_{4} = k_{3}]{k_{3} = k_{4}}
+       &\left[
+         \begin{array}{cccc|c}
+           1 & 0 & 2 & 5 & -2\\
+           0 & 1 & 3 & 7 & -5\\
+           0 & 0 & 3 & 0 & -3\\
+           x_1 & x_2 & x_4 & x_3  & y\\
+         \end{array}
+  \right]
+  \\
+  \xrightarrow[w_{3} = w_{3} \cdot \frac{1}{3}]{}
+       &\left[
+         \begin{array}{cccc|c}
+           1 & 0 & 2 & 5 & -2\\
+           0 & 1 & 3 & 7 & -5\\
+           0 & 0 & 1 & 0 & -1\\
+           x_1 & x_2 & x_4 & x_3  & y\\
+         \end{array}
+  \right]
+  \\
+  \xrightarrow[w_{2} = w_{2} - 3 \cdot w_{3}]{w_1 = w_1 - 2 \cdot w_3}
+       &\left[
+         \begin{array}{cccc|c}
+           1 & 0  & 0 & 5 & 0\\
+           0 & 1  & 0 & 7 & -2\\
+           0 & 0 & 1 & 0 & -1\\
+           x_1 & x_2 & x_4 & x_3  & y\\
+         \end{array}
+  \right]
+\end{align*}
+\(x_1 = -5 x_3\)
+\\\empty
+\(x_2 = -7x_3 -2\)
+\\\empty
+\(x_3 \in \mathbb{R}\)
+\\\empty
+\(x_4 = -1\)
+\section{{\bfseries\sffamily PROJ} ZAD 5}
+\label{sec:org090e8d9}
+$$XA = B \xrightarrow[\text{prawostronnie } A^{-1}]{} X A A^{-1} = BA^{-1} \to X = B A^{-1}$$
+\(A = \begin{bmatrix}
+       1 & 2 & -3 \\
+       3 & 0 & -2 \\
+       -1 & -4 & 5\\
+     \end{bmatrix}\),
+     \(B= \begin{bmatrix}
+     4 & 2 & -5\\
+     3 & 0 & -2\\
+     \end{bmatrix}\)
+
+\(\det A = (36 + 4) - (8 + 30) = 40 - 38 = 2\)
+\begin{align*}
+  A^{-1} &= \frac{1}{2} \begin{bmatrix}
+                          &\begin{vmatrix}
+                             0 & -2\\
+                             -4 & 5\\
+                           \end{vmatrix}
+                          &- \begin{vmatrix}
+                               3 & -2 \\
+                               -1 & 5 \\
+                             \end{vmatrix}
+                          &\begin{vmatrix}
+                             3 & 0 \\
+                             -1 & -4\\
+                           \end{vmatrix}
+                          \\
+                          &- \begin{vmatrix}
+                               2 & -3 \\
+                               -4 & 5 \\
+                             \end{vmatrix}
+                          &\begin{vmatrix}
+                             1 & -3\\
+                             -1 & 5 \\
+                           \end{vmatrix}
+                          &- \begin{vmatrix}
+                               1 & 2 \\
+                               -1 & -4\\
+                             \end{vmatrix}
+                          \\
+                          &\begin{vmatrix}
+                             2 & -3\\
+                             0 & -2 \\
+                           \end{vmatrix}
+                          &- \begin{vmatrix}
+                               1 & -3 \\
+                               3 & -2\\
+                             \end{vmatrix}
+                          &\begin{vmatrix}
+                             1 & 2\\
+                             3 & 0\\
+                           \end{vmatrix}
+                        \end{bmatrix}^{T}
+  \\
+         &=\frac{1}{2}
+           \begin{bmatrix}
+             -8 & -13 & -12\\
+             2 & 2 & 2\\
+             -4 & -7 & -6\\
+           \end{bmatrix}^{T}
+\\
+         &=\frac{1}{2}
+           \begin{bmatrix}
+             -8 &  2 & -4\\
+             -13 & 2 & -7\\
+             -12 & 2 & -6\\
+           \end{bmatrix}
+  \\
+         &= \begin{bmatrix}
+              -4 & 1 & -2\\
+              -\frac{13}{2} & 1 & - \frac{7}{2}\\
+              -6 & 1 & -3\\
+            \end{bmatrix}
+\end{align*}
+
+\begin{align*}
+  X = BA^{-1} &= \begin{bmatrix}
+                   4 & 2 & -5\\
+                   3 & 0 & -2\\
+                 \end{bmatrix}
+  \begin{bmatrix}
+    -4 & 1 & -2\\
+    -\frac{13}{2} & 1 & - \frac{7}{2}\\
+    -6 & 1 & -3\\
+  \end{bmatrix}
+  \\
+              &= \begin{bmatrix}
+                   -16 - 13 + 30 & 4 + 2 - 5 & - 8 - 7 + 15\\
+                   -12 + 0 + 12  & 3 + 0 - 2 & - 6 +0 +6 \\
+                 \end{bmatrix}
+  \\
+              &= \begin{bmatrix}
+                   1 & 1 & 0\\
+                   0 & 1 & 0\\
+                 \end{bmatrix}
+\end{align*}
 \end{document}
