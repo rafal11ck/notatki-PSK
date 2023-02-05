@@ -1,4 +1,4 @@
-% Created 2023-02-04 Sat 13:34
+% Created 2023-02-05 Sun 15:46
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -31,7 +31,7 @@
 c \in \mathbb{R} && a \in \mathbb{R}
 \end{align*}
 \section{Wzory na pochodne wybranych funkcji}
-\label{sec:orgf6dabe6}
+\label{sec:org5b1d7fa}
 \begin{latex}
 \begin{align*}
   & c' = 0,
@@ -55,7 +55,7 @@ c \in \mathbb{R} && a \in \mathbb{R}
 \end{align*}
 \end{latex}
 \section{Pochodna sumy, różnicy, iloczynu, ilorazu funkcji}
-\label{sec:org5e1c076}
+\label{sec:org717ba96}
 \begin{align*}
   & \left( f(x) + g(x) \right)' = f'(x) + g'(x)\\
   & \left( c \cdot f(x) \right) ' = c \cdot f'(x),& c \text{ -- liczba }\\
@@ -63,13 +63,13 @@ c \in \mathbb{R} && a \in \mathbb{R}
   & \left( \frac{f(x)}{g(x)} \right) ' = \frac{f'(x) \cdot g(x) - f(x) \cdot g'(x)}{g^{2}(x)}, & \text{o ile } g \neq 0
 \end{align*}
 \section{Pochodna funkcji złożonej}
-\label{sec:orgdf8dbb2}
+\label{sec:orgdad70ff}
 Dana jest funkcja złozona \(y = (g^\circ w)(x)\) czyli \(y = g(w(x))\).
 \begin{center}
 \(w = w(x)\) - funkcja wewnętrzna, \qquad \(y = g(w)\) - funkcja zewnętrzna
 \end{center}
 \subsection{Wzory na pochodne funkcji złożonych}
-\label{sec:org0aa40b4}
+\label{sec:orgda80e8e}
 \begin{align*}
   & c' = 0,
   \\ \left(w^{a}\right)'&= a w^{a-1} \cdot w',
@@ -92,7 +92,7 @@ Dana jest funkcja złozona \(y = (g^\circ w)(x)\) czyli \(y = g(w(x))\).
 \end{align*}
 
 \section{Całki Oznaczone}
-\label{sec:org84e08d6}
+\label{sec:orgb5ac175}
 \textbf{Definicja całki oznaczonej z funkcji \(f(x) \ge 0\) w przedziale \(<a,b>\)}
 \\\empty
 Dla każdej z lcizb \(n = 1,2,3, \ldots\) postępujemy następująco:
@@ -133,7 +133,7 @@ Funkcja ciągła w przedziale domkniętym jest w tym przedziale całkowalna.
 \\ \int_a^b f(x)dx &= - \int_b^a f(x)dx
 \end{align*}
 \subsection{Właściowści}
-\label{sec:org114fa90}
+\label{sec:orgda6ff1c}
 Załóżmy, że funkcjie f(x), g(x) to funkcjie całkowalne w przedziale \(<a,b>\)
 \begin{enumerate}
 \item \(\displaystyle\int_a^b( f(x) + g(x) )dx
@@ -144,24 +144,49 @@ Załóżmy, że funkcjie f(x), g(x) to funkcjie całkowalne w przedziale \(<a,b>
 \item Niech \(f(x) \le g(x)\) w \(<a, b>\) wtedy \(\displaystyle \int_a^b f(x)dx \le \int_a^b g(x)dx\).
 \end{enumerate}
 \subsection{Twierdzenie o wratości średniej}
-\label{sec:org1436705}
+\label{sec:org6dafbb6}
 Dla dowolonej funkcji ciągłej f(x) w przedziale \(<a,b>\) istnieje taka liczba \(h \in <a,b>\), że
 $$\int_a^b f(x)dx = (b-a)f(h)$$
 \newpage
 \section{Całki nieoznaczone}
-\label{sec:org4825044}
+\label{sec:orgb56b439}
 Funkcja \(F\) jest \textbf{funkcją pierwotną} funkcji \(f\) na przedziale \(I\) , jeżeli \(F'(x) = f(x)\) dla każdego \(x \in I\).
 \subsection{Twierdzenie (warunek wystrczający instnienia funkcji pierwotnej)}
-\label{sec:org99fab2c}
+\label{sec:org5cf5d85}
 Jeżeli funkcja jest ciagłą na przedzale to, ma funkcję pierwotną na tym przedziale.
 \subsection{Definicja}
-\label{sec:orga18286d}
+\label{sec:org033d0ed}
 \textbf{Całkę nieoznaczoną} funkcji \(f\) zapisujemy w postaci \(\int f(x)dx\) i definiujemy następująco:
 $$\int f(x) dx = F(x) + c, \text{ gdy }F'(x) = f(x)$$
 \(c\) -- stała całkowania
 \subsection{Całki nioznaczone pewnych funkcji elementarnych}
-\label{sec:orge189057}
+\label{sec:orge629bb7}
 \begin{enumerate}
-\item \[\int\]
+\item \(\displaystyle\int 0 dx = c , x \in \mathbb{R}\)
+\item \(\displaystyle\int x^{a}dx = \frac{x^{a+1}}{a + 1} +c\)
+\item \(\displaystyle\int x^{-1}dx = \int \frac{1}{x}dx = \ln |x| + c\) dla \(x \in ( - \infty,0 )\) lub \(x \in (0, + \infty)\)
+\item \(\displaystyle\int a^x dx = \frac{a^x}{\ln a} + c\) dla \(a>0\) i \(a \ne 1, x \in \mathbb{R}\)
+\item \(\displaystyle\int e^{x} dx = e^x + c\) dla \(x \in \mathbb{R}\)
+\item \(\displaystyle\int x dx = -\cos x +c\) dla \(x \in \mathbb{R}\)
+\item \(\displaystyle\int \cos x dx = \sin x + c\) dla \(x \in \mathbb{R}\)
+\item \(\displaystyle\int \frac{a}{\cos^2 x}dx = \tan x + c\) dla \(\displaystyle x \in \left( - \frac{\pi}{2} + k \pi, \frac{\pi}{2}+k \pi \right)\) gdzie \(k \in \mathbb{Z}\)
+\item \(\displaystyle\int \frac{1}{\sin^2 x}dx = - \cot x+c\) dla \(x \in (k\pi, (k+1)\pi\) gdzie \(k \in \mathbb{Z}\)
+\item \(\displaystyle\int \frac{dx}{1 + x^2} = \arctan x + c\) dla \(x \in \mathbb{R}\)
+\item \(\displaystyle\int \frac{dx}{\sqrt{1-x^2}} = \arcsin x + c\) dla \(x \in (-1, 1)\)
+\item \(\displaystyle\int \sinh dx = \cosh x + c\) dla \(x \in \mathbb{R}\)
+\item \(\displaystyle\int \cosh x = \sinh x + c\) dla \(x \in \mathbb{R}\)
+\item \(\displaystyle\int \frac{1}{\cosh^2 x} dx = \tanh x + c\) dla \(x \in \mathbb{R}\)
+\item \(\displaystyle\int \frac{1}{\sinh^2 x} dx = - \coth x + c\) dla \(x \in ( - \infty , 0 )\) lub \(x \in (0 , + \infty)\)
+\item \(\displaystyle\int \sin x dx = -\cos x + c\)
+\item \(\displaystyle\int \frac{1}{\sin^2 x}dx = -\cot x + c\)
+\item \(\displaystyle\int \frac{1}{\sqrt{1 -x ^2}}dx = \arcsin x + c\)
+\end{enumerate}
+\subsection{Twierdzenie}
+\label{sec:orgefedf13}
+\begin{enumerate}
+\item \(\displaystyle\int \left( f(x) + g(x) \right) dx = \int f(x)dx + \int g(x)dx\)
+\item \(\displaystyle\int (c f(x))dx = c \int f(x) dx, c \in \mathbb{R}\)
+\item \(\displaystyle \left( \int f(x) dx \right)' = f(x)\)
+\item \(\displaystyle \int f'(dx) = f(x) +c\), gdzie \(c \in \mathbb{R}\)
 \end{enumerate}
 \end{document}
