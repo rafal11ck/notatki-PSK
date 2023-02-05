@@ -59,7 +59,7 @@ w^{11} &= 2^{11} \left( \cos \left(11 \cdot \frac{2}{3} \pi \right)
 &=\frac{ ((3\sqrt{2})^{14} i)(-1 + i\sqrt{3}) }
 {-2^{11}}
 \end{align*}
-* PROJ Zad 3
+* DONE Zad 3
 Wyznacznik macierzy głownej $= 20$.
 \\
 $A = \begin{bmatrix}
