@@ -110,6 +110,14 @@ $$\frac{x_1^2}{a^2}-\frac{x_2^2}{b^2}=1$$
 
 $$A(x - x_{0}) + B(y-y_{0}) + C(z - z_{0}) = 0$$
 * Analiza
+** Wzór Taylora
+\[f(x) \approx f(x_{0}) +
+  \frac{f'(x_0)}{1!}(x - x_0)^1 +
+  \frac{f''(x_0)}{2!}(x - x_0)^2 +
+  \ldots +
+  \frac{f^{(n-1)}'(x_0)}{(n-1)!}(x - x_0)^{(n-1)} +
+  \underbrace{\frac{f^{(n)}'(x_0)}{n!}(x - x_0)^n}_{\text{reszta}}
+   \]
 ** Asymptoty
 *** Pionowe
 - Prawostronna w punkcie $p$
