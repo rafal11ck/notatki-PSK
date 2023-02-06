@@ -391,13 +391,11 @@ $$\frac{x - 0}{-2 - 0} = \frac{y - 1}{7 - 1} = \frac{z - 5}{3 -5}
 \to \frac{x - 0}{-2} = \frac{y - 1}{6} = \frac{z - 5}{-2}
 = t$$
 ** DONE Równanie prostej w postaci paraetrycznej
-\begin{align*}
-x-0 = -2t \to& x = -2t
-\\
-y - 1 = 6t \to& y = 6t +1
-\\
-z -5 = -2t \to& z = -2t + 5
-\end{align*}
+\[\begin{cases}
+x-0 = -2t \to & x = -2t\\
+y - 1 = 6t \to & y = 6t +1\\
+z -5 = -2t \to & z = -2t + 5\\
+\end{cases}\]
 ** DONE Oblcizanie odległości punktu od prostej
 :jakiescos:
 \begin{align*}
@@ -436,7 +434,7 @@ $$P = \frac{ 2\sqrt{11} \cdot\frac{ \sqrt{120} }{\sqrt{11}} }
 = \frac{2\sqrt{120}}{2}
 = \sqrt{120}
 = 2\sqrt{30}$$
-* TODO Zad 9
+* DONE Zad 9
 :dane:
 Płaszczyzna: $\pi : x - y + z - 2 = 0$
 \\
@@ -447,21 +445,21 @@ $l_1 : \begin{cases}
 \end{cases}
 \end{cases}$
 :end:
-** Wyznaczyc punkt przebica płaszczyzny i prostej
-*** Wyznaczyć wektor kierunkowy porstej
+** DONE Wyznaczyć wektor kierunkowy porstej
 \begin{align*}
-  \vec n_{1} \times \vec n_{2} &= \begin{vmatrix}
-                                    \vec i & \vec j & \vec k\\
-                                    3 & 2 & -1 \\
-                                    -1 & -2 & 1\\
-                                  \end{vmatrix}
+  \vec k &= \begin{vmatrix}
+              \vec i & \vec j & \vec k\\
+              3 & 2 & -1 \\
+              -1 & -2 & 1\\
+            \end{vmatrix}
   \\
-                               &= 2 \vec i - 6 \vec k + 1 \vec j - (-2 \vec k + 2 \vec i + 3 \vec j)
+         &= 2 \vec i - 6 \vec k + 1 \vec j - (-2 \vec k + 2 \vec i + 3 \vec j)
   \\
-                               &= [0, -2, -4]
+         &= [0, -2, -4]
 \end{align*}
+** DONE Wyznaczyc punkt przebica płaszczyzny i prostej
 *** Znaleźć punkt na prostej
-Strzlamy punkt $P(1,1,1)$, bo spełnia równanie prostej.
+Strzlamy punkt $Q(1,1,1)$, bo spełnia równanie prostej.
 *** Równanie paramtryczne prostej
 \[l_1 : \begin{cases}
         x = 1 + 0t = 1\\
@@ -483,11 +481,42 @@ Podstawiamy $x, y, z$ z równania parametryczego do równiania płaszczyzny.
 \end{align*}
 **** Podstwaić $t$ do równania parametryczego prostej.
 \[l_1 : \begin{cases}
-        x = 1 + 0t = 1\\
-        y = 1 - 2t = 1 + 1 = 2 \\
-        z = 1 - 4t = 1 + 2 = 3\\
+        x = 1 + 0t &= 1\\
+        y = 1 - 2t = 1 + 1 &= 2 \\
+        z = 1 - 4t = 1 + 2 &= 3\\
 \end{cases}\]
 **** Punkt przecięcia prostej $l$ z płaszczyzną
-\\
-$P = (1, 2, 3)$
-** Obliczyć odległość punktu $P(0,1,0)$ od prostej $l_1$
+\[P_1 = (1, 2, 3)\]
+** DONE Obliczyć odległość punktu $P(0,1,0)$ od prostej $l_1$
+$\overrightarrow{PQ} = [1 -0 ,1 - 1,1  -0] = [ 1, 0, 1]$
+:obliczenieczegostam:
+\begin{align*}
+  \overrightarrow{PQ} \times \overrightarrow{k}
+  &= \begin{vmatrix}
+       \vec i & \vec j & \vec k\\
+       x_{\overrightarrow{PQ}} & y_{\overrightarrow{PQ}} & z_{\overrightarrow{PQ}}\\
+       x_{\vec{K}} & y_{\vec{K}} & z_{\vec{K}}\\
+     \end{vmatrix}
+  \\
+  &= \begin{vmatrix}
+       \vec i & \vec j & \vec k\\
+       1 & 0 & 1\\
+       0 & -2 & -4\\
+     \end{vmatrix}
+  \\
+  &= -2 \vec k - (-2 \vec i -4 \vec j)
+  \\
+  &= 2 \vec i + 4 \vec j - 2 \vec k
+  \\
+  &= [2, 4, -2]
+\end{align*}
+:end:
+*** Długość odcinka $PQ$
+\[|PQ| = \frac{ |\overrightarrow{PQ}| }{ | \vec k | } =
+  \frac{ \sqrt{2^{2} + 4^{2} + {(-2)}^{2}}}
+  { \sqrt{ {(-2)}^{2} + {(-4)}^{2} } }
+  = \sqrt{ \frac{24}{20} }
+  = \sqrt{ \frac{6}{5} }
+  = \frac{\sqrt{6} \cdot \sqrt{5} }{\sqrt{5} \cdot \sqrt{5}}
+  = \frac{\sqrt{30}}{5}
+\]
