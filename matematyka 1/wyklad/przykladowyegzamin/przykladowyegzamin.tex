@@ -1,4 +1,4 @@
-% Created 2023-02-06 Mon 22:16
+% Created 2023-02-06 Mon 23:06
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -12,6 +12,9 @@
 \usepackage{amssymb}
 \usepackage{capt-of}
 \usepackage{hyperref}
+\usepackage[polish, american]{babel}
+\usepackage[margin=3cm]{geometry}
+\newgeometry{vmargin={5mm}, hmargin={20mm,20mm}}
 \author{placeholder}
 \date{\today}
 \title{Przykladowyegzamin}
@@ -27,10 +30,10 @@
 \maketitle
 \tableofcontents
 
-\section{Algebra}
-\label{sec:org32e7f5f}
+\section{[8/9] Algebra}
+\label{sec:org42fcfa8}
 \subsection{{\bfseries\sffamily DONE} Zad 1}
-\label{sec:orgfd3b496}
+\label{sec:org26447e6}
 \begin{align*}
 \Im \left(\frac{1+3i}{3-2i} + i^{3} + 5\right)
  &=\Im \left(\frac{1+3i}{3-2i} + \frac{i^{3}(3-2i)}{3-2i} + \frac{5(3-2i)}{3-2i}\right)\\
@@ -43,14 +46,14 @@
  &= \frac{-2}{13}
 \end{align*}
 \subsection{{\bfseries\sffamily DONE} Zad 2}
-\label{sec:org8cd91f0}
+\label{sec:orgc37dc43}
 \begin{align*}
   \frac{ { (3 - 3i)}^{14} }
   { { (-1+i\sqrt{3}) }^{11} }
   &= \frac{z^{14}}{w^{11}}
 \end{align*}
 \subsubsection{\(z\)}
-\label{sec:orgcd4e9f6}
+\label{sec:org9c57428}
 $$\sin(\varphi_z) = \frac{-3}{3\sqrt{2}}
  = \frac{-1}{\sqrt{2}}
  = \frac{-\sqrt{2}}{2} \to \varphi_z = \frac{7}{4}\pi$$
@@ -66,7 +69,7 @@ $$\sin(\varphi_z) = \frac{-3}{3\sqrt{2}}
   &= {(3\sqrt{2})}^{14}i
 \end{align*}
 \subsubsection{\(w\)}
-\label{sec:orgcb8c3c5}
+\label{sec:orgb1e0c3d}
 $$\sin(\varphi_w) = \frac{\sqrt{3}}{\sqrt{4}} = \frac{\sqrt{3}}{2}
 \to \varphi_w = \frac{2}{3} \pi$$
 
@@ -79,7 +82,7 @@ w^{11} &= 2^{11} \left( \cos \left(11 \cdot \frac{2}{3} \pi \right)
 &= 2^{10} \left(-1 - i \sqrt{3} \right)
 \end{align*}
 \subsubsection{Podstawiamy}
-\label{sec:orgc08431f}
+\label{sec:org4e80b33}
 \begin{align*}
 \frac{ { (3 - 3i)}^{14} }
 { { (-1+i\sqrt{3}) }^{11} }
@@ -94,7 +97,7 @@ w^{11} &= 2^{11} \left( \cos \left(11 \cdot \frac{2}{3} \pi \right)
 {-2^{11}}
 \end{align*}
 \subsection{{\bfseries\sffamily DONE} Zad 3}
-\label{sec:orgc324e9c}
+\label{sec:org4397fdb}
 Wyznacznik macierzy głownej \(= 20\).
 \\\empty
 \(A = \begin{bmatrix}
@@ -110,7 +113,7 @@ Wyznacznik macierzy głownej \(= 20\).
 3
 \end{bmatrix}\)
 \subsubsection{{\bfseries\sffamily DONE} \(A_4\)}
-\label{sec:org8be44a5}
+\label{sec:orge1407e2}
 \begin{align*}A_4 &= \begin{vmatrix}
                        3  & -2 & 1 & 4 \\
                        2  & -1 & 3 & 1 \\
@@ -134,10 +137,10 @@ Wyznacznik macierzy głownej \(= 20\).
                   &= - 12
 \end{align*}
 \subsubsection{{\bfseries\sffamily DONE} Podstawianie}
-\label{sec:orgbeb8e0d}
+\label{sec:org3a2d2c9}
 $$x_4 = \frac{-12}{20} = \frac{-3}{5}$$
 \subsection{{\bfseries\sffamily DONE} Zad 4}
-\label{sec:orgf97fd09}
+\label{sec:orgc3df9e7}
 \begin{align*}
   \left[
   \begin{array}{cccc|c}
@@ -215,7 +218,7 @@ $$x_4 = \frac{-12}{20} = \frac{-3}{5}$$
 \\\empty
 \(x_4 = -1\)
 \subsection{{\bfseries\sffamily DONE} Zad 5}
-\label{sec:org748aa02}
+\label{sec:org7926695}
 $$XA = B \xrightarrow[\text{prawostronnie } A^{-1}]{} X A A^{-1} = BA^{-1} \to X = B A^{-1}$$
 \(A = \begin{bmatrix}
        1 & 2 & -3 \\
@@ -312,14 +315,14 @@ $$XA = B \xrightarrow[\text{prawostronnie } A^{-1}]{} X A A^{-1} = BA^{-1} \to X
                  \end{bmatrix}
 \end{align*}
 \subsection{{\bfseries\sffamily DONE} Zad 6}
-\label{sec:org79972e6}
+\label{sec:orgcb1a129}
 Macierz obrotu o kąt \(\displaystyle\frac{\pi}{3}\) w kierunku dodatnim
 \(A = \begin{bmatrix}
 \cos \frac{\pi}{3} & -\sin \frac{\pi}{3}\\
 \sin \frac{\pi}{3} & \cos \frac{\pi}{3}\\
 \end{bmatrix}\).
 \subsubsection{{\bfseries\sffamily DONE} Związek między współrzędnymi \(x_1, x_2\) w bazie \(\vec{e}_1, \vec{e}_2\) a współrzędnymi \(\hat{x}_1, \hat{x}_2\) w bazie \(\vec{u}, \vec{v}\).}
-\label{sec:org0901074}
+\label{sec:org79eb8c2}
 \begin{align*}
   \vec{u} &= A \cdot \vec e_{1}
   \\
@@ -358,7 +361,7 @@ Macierz obrotu o kąt \(\displaystyle\frac{\pi}{3}\) w kierunku dodatnim
              \end{bmatrix}
 \end{align*}
 \subsubsection{{\bfseries\sffamily DONE} Znalesć współrzędne wektora \(\vec{x}\) w bazie \(\vec u, \vec v\), jeżeli jego współrzędne w bazie \(\vec e_1, \vec e_2\) wynoszą: \(1, -2\).}
-\label{sec:org012eae0}
+\label{sec:orge57cfeb}
 \(\vec x = \begin{bmatrix}
             1 \\
             -2
@@ -404,15 +407,15 @@ Macierz obrotu o kąt \(\displaystyle\frac{\pi}{3}\) w kierunku dodatnim
 \end{align*}
 \begin{enumerate}
 \item Sporządzić rysunek
-\label{sec:org2cb7a42}
+\label{sec:org93cd3ef}
 \begin{center}
 \includegraphics[width=.9\linewidth]{img/zad6.jpg}
 \end{center}
 \end{enumerate}
-\subsection{{\bfseries\sffamily NO} Zad 7}
-\label{sec:org6e951d3}
+\subsection{{\bfseries\sffamily TODO} Zad 7}
+\label{sec:org0e2b6ac}
 \subsection{{\bfseries\sffamily DONE} Zad 8}
-\label{sec:org9f01292}
+\label{sec:org41f519c}
 \begin{align*}
 A&=(0,1,5),& B&=(-2,3,1),& C&=(-2, 7,3)
 \end{align*}
@@ -422,19 +425,19 @@ A&=(0,1,5),& B&=(-2,3,1),& C&=(-2, 7,3)
 \\\empty
 \(|BC| = \sqrt{0 + 16 + 4} = \sqrt{20} = 2\sqrt{5}\)
 \subsubsection{{\bfseries\sffamily DONE} Rówanie prostej w postaci kanonicznej}
-\label{sec:org94c48dd}
+\label{sec:org3056648}
 $$\frac{x - 0}{-2 - 0} = \frac{y - 1}{7 - 1} = \frac{z - 5}{3 -5}
 \to \frac{x - 0}{-2} = \frac{y - 1}{6} = \frac{z - 5}{-2}
 = t$$
 \subsubsection{{\bfseries\sffamily DONE} Równanie prostej w postaci paraetrycznej}
-\label{sec:org319e9e1}
+\label{sec:orgbe2ca0a}
 \[\begin{cases}
 x-0 = -2t \to & x = -2t\\
 y - 1 = 6t \to & y = 6t +1\\
 z -5 = -2t \to & z = -2t + 5\\
 \end{cases}\]
 \subsubsection{{\bfseries\sffamily DONE} Oblcizanie odległości punktu od prostej}
-\label{sec:orged3276a}
+\label{sec:org430b10f}
 \begin{align*}
   \overrightarrow{BD} \times \vec{k}
   &= \begin{vmatrix}
@@ -465,14 +468,14 @@ $$|BD| = \frac{|\overrightarrow{BD}|}{|\vec{k}|}
 = \sqrt{\frac{120}{11}}
 = \frac{\sqrt{120}}{\sqrt{11}}$$
 \subsubsection{{\bfseries\sffamily DONE} Obliczanie pola trójkąta}
-\label{sec:org220671d}
+\label{sec:orgd9c2ff6}
 $$P = \frac{ 2\sqrt{11} \cdot\frac{ \sqrt{120} }{\sqrt{11}} }
 {2}
 = \frac{2\sqrt{120}}{2}
 = \sqrt{120}
 = 2\sqrt{30}$$
 \subsection{{\bfseries\sffamily DONE} Zad 9}
-\label{sec:org63edd59}
+\label{sec:org0d54a69}
 Płaszczyzna: \(\pi : x - y + z - 2 = 0\)
 \\\empty
 Postać krawędziowa prostej:
@@ -481,7 +484,7 @@ Postać krawędziowa prostej:
 -x - 2y + z + 2 = 0
 \end{cases}\)
 \subsubsection{{\bfseries\sffamily DONE} Wyznaczyć wektor kierunkowy porstej}
-\label{sec:org48ed66f}
+\label{sec:orgf9479a8}
 \begin{align*}
   \vec k &= \begin{vmatrix}
               \vec i & \vec j & \vec k\\
@@ -494,24 +497,23 @@ Postać krawędziowa prostej:
          &= [0, -2, -4]
 \end{align*}
 \subsubsection{{\bfseries\sffamily DONE} Wyznaczyc punkt przebica płaszczyzny i prostej}
-\label{sec:orgfc545ad}
+\label{sec:orga1b5a2d}
 \begin{enumerate}
 \item Znaleźć punkt na prostej
-\label{sec:orgd7e6e63}
+\label{sec:org5b89949}
 Strzlamy punkt \(Q(1,1,1)\), bo spełnia równanie prostej.
 \item Równanie paramtryczne prostej
-\label{sec:org419f0d4}
+\label{sec:org366729c}
 \[l_1 : \begin{cases}
         x = 1 + 0t = 1\\
         y = 1 - 2t \\
         z = 1 - 4t\\
 \end{cases}\]
 \item Obliczyć punkt przecięcia płaszczyzny \(\pi\) oraz prostej \(l_1\)
-\label{sec:org39aa8bc}
+\label{sec:orgfd47559}
 \begin{enumerate}
 \item Obliczyć \(t\).
-\label{sec:org05a02e8}
-\\\empty
+\label{sec:org0596648}
 Podstawiamy \(x, y, z\) z równania parametryczego do równiania płaszczyzny.
 \begin{align*}
   0 &= 1 - 1 + 2t + 1 - 4t -2 && \text{uprościć}
@@ -523,19 +525,19 @@ Podstawiamy \(x, y, z\) z równania parametryczego do równiania płaszczyzny.
   t &= - \frac{1}{2}
 \end{align*}
 \item Podstwaić \(t\) do równania parametryczego prostej.
-\label{sec:org941fd56}
+\label{sec:orgc68c363}
 \[l_1 : \begin{cases}
         x = 1 + 0t &= 1\\
         y = 1 - 2t = 1 + 1 &= 2 \\
         z = 1 - 4t = 1 + 2 &= 3\\
 \end{cases}\]
 \item Punkt przecięcia prostej \(l\) z płaszczyzną
-\label{sec:org75a52af}
+\label{sec:org0284829}
 \[P_1 = (1, 2, 3)\]
 \end{enumerate}
 \end{enumerate}
 \subsubsection{{\bfseries\sffamily DONE} Obliczyć odległość punktu \(P(0,1,0)\) od prostej \(l_1\)}
-\label{sec:org69b1d35}
+\label{sec:orgd150362}
 \(\overrightarrow{PQ} = [1 -0 ,1 - 1,1  -0] = [ 1, 0, 1]\)
 \begin{align*}
   \overrightarrow{PQ} \times \overrightarrow{k}
@@ -559,7 +561,7 @@ Podstawiamy \(x, y, z\) z równania parametryczego do równiania płaszczyzny.
 \end{align*}
 \begin{enumerate}
 \item Długość odcinka \(PQ\)
-\label{sec:org5b9130e}
+\label{sec:org6042528}
 \[|PQ| = \frac{ |\overrightarrow{PQ}| }{ | \vec k | } =
   \frac{ \sqrt{2^{2} + 4^{2} + {(-2)}^{2}}}
   { \sqrt{ {(-2)}^{2} + {(-4)}^{2} } }
@@ -569,12 +571,39 @@ Podstawiamy \(x, y, z\) z równania parametryczego do równiania płaszczyzny.
   = \frac{\sqrt{30}}{5}
 \]
 \end{enumerate}
-\section{Analiza}
-\label{sec:orge4063a9}
-\subsection{Zad 7}
-\label{sec:orgcd05568}
+\section{[2/2] Analiza}
+\label{sec:org8d3f5c8}
+\subsection{{\bfseries\sffamily DONE} Zad 5}
+\label{sec:org5bb0a5b}
+Obliczyć w przybliżeniu wartość \(\sin(0.2)\) używająć weilomianu Taylora stopnia \(n = 3\).
+\begin{align*}
+f(x) &= \sin x & x &= 0.2 & n &= 3
+\end{align*}
+\[f'(x) = \cos x\]
+\[f''(x) = -\sin x\]
+\[f'''(x) = -\cos x\]
+\(x_0 = 0\)
+\[f(x) \approx f(x_{0}) +
+  \frac{f'(x_0)}{1!}{(x - x_0)}^1 +
+  \frac{f''(x_0)}{2!}{(x - x_0)}^2 +
+  \ldots +
+  \frac{f^{(n-1)}'(x_0)}{(n-1)!}{(x - x_0)}^{(n-1)} +
+  \underbrace{\frac{f^{(n)}'(x_0)}{n!}{(x - x_0)}^n}_{\text{reszta}}
+   \]
+\[f(x) \approx 0 +
+  \frac{1}{1}x +
+  \frac{0}{2}x +
+  \frac{-1}{6}x
+\]
+\[f(x) \approx 0.2 + 0 - \frac{1}{6} \cdot {\left(\frac{1}{5}\right)}^{3}
+  = \frac{1}{5} - \frac{1}{6} \cdot \frac{1}{125}
+  = \frac{1}{5} - \frac{1}{750}
+  = \frac{150}{750} - \frac{1}{750}
+  = \frac{149}{750}\]
+\subsection{{\bfseries\sffamily DONE} Zad 7}
+\label{sec:org1e4624a}
 \subsubsection{Zad 7b}
-\label{sec:org0d41e7b}
+\label{sec:orgf055211}
 Obliczyć \(\displaystyle\int_a^b f(x) dx\)
 \begin{align*}
 a &= -3 & b &= \frac{1}{2} & f(x)&=3+x^2
