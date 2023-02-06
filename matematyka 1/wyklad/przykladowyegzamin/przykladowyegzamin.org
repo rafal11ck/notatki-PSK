@@ -278,6 +278,105 @@ $\det A = (36 + 4) - (8 + 30) = 40 - 38 = 2$
                  \end{bmatrix}
 \end{align*}
 :end:
+* DONE Zad 6
+Macierz obrotu o kąt $\displaystyle\frac{\pi}{3}$ w kierunku dodatnim
+$A = \begin{bmatrix}
+\cos \frac{\pi}{3} & -\sin \frac{\pi}{3}\\
+\sin \frac{\pi}{3} & \cos \frac{\pi}{3}\\
+\end{bmatrix}$.
+** DONE Związek między współrzędnymi $x_1, x_2$ w bazie $\vec{e}_1, \vec{e}_2$ a współrzędnymi $\hat{x}_1, \hat{x}_2$ w bazie $\vec{u}, \vec{v}$.
+:obliczenieu:
+\begin{align*}
+  \vec{u} &= A \cdot \vec e_{1}
+  \\
+          &=
+            \begin{bmatrix}
+              \cos \frac{\pi}{3} & -\sin \frac{\pi}{3}\\
+              \sin \frac{\pi}{3} & \cos \frac{\pi}{3}\\
+            \end{bmatrix}
+  \begin{bmatrix}
+    1 \\
+    0 \\
+  \end{bmatrix}
+  \\
+          &= \begin{bmatrix}
+               \frac{1}{2}\\
+               \frac{\sqrt{3}}{2}\\
+             \end{bmatrix}
+\end{align*}
+:end:
+
+:oblczaniev:
+\begin{align*}
+  \vec{v} &= A \cdot \vec e_{2}
+  \\
+          &=
+            \begin{bmatrix}
+              \cos \frac{\pi}{3} & -\sin \frac{\pi}{3}\\
+              \sin \frac{\pi}{3} & \cos \frac{\pi}{3}\\
+            \end{bmatrix}
+  \begin{bmatrix}
+    0 \\
+    1 \\
+  \end{bmatrix}
+  \\
+          &= \begin{bmatrix}
+               -\frac{\sqrt{3}}{2}\\
+               \frac{1}{2}\\
+             \end{bmatrix}
+\end{align*}
+:end:
+** DONE Znalesć współrzędne wektora $\vec{x}$ w bazie $\vec u, \vec v$, jeżeli jego współrzędne w bazie $\vec e_1, \vec e_2$ wynoszą: $1, -2$.
+:wektorx:
+$\vec x = \begin{bmatrix}
+            1 \\
+            -2
+          \end{bmatrix}_{\vec e_1, \vec e_2}$
+:end:
+:obliczenia:
+\begin{align*}
+  \begin{bmatrix}
+    \hat x_{1} \\
+    \hat x_{2} \\
+  \end{bmatrix}
+  &= A^{T} \cdot
+    \begin{bmatrix}
+      x_{1}\\
+      x_{2}\\
+    \end{bmatrix}
+  \\
+  &= \begin{bmatrix}
+       \cos \frac{\pi}{3} & \sin \frac{\pi}{3}\\
+       \sin \frac{\pi}{3} & \cos \frac{\pi}{3}\\
+     \end{bmatrix}^{T}
+    \begin{bmatrix}
+      x_{1}\\
+      x_{2}\\
+    \end{bmatrix}
+  \\
+  &= \begin{bmatrix}
+       \frac{1}{2} &  \frac{\sqrt{3}}{2}\\
+       \frac{-\sqrt{3}}{2} & \frac{1}{2}\\
+     \end{bmatrix}
+    \begin{bmatrix}
+      1\\
+      -2\\
+    \end{bmatrix}
+  \\
+  &= \begin{bmatrix}
+       \frac{1}{2} - \sqrt{3}\\
+       -\frac{\sqrt{3}}{2} - 1\\
+     \end{bmatrix}
+  \\
+  &= \begin{bmatrix}
+       \frac{1 - 2\sqrt{3}}{2}\\
+       \frac{- 2 - \sqrt{3}}{2}\\
+    \end{bmatrix}
+\end{align*}
+:end:
+*** Sporządzić rysunek
+[[file:img/zad6.jpg]]
+* NO Zad 7
 * DONE Zad 8
 \begin{align*}
 A&=(0,1,5),& B&=(-2,3,1),& C&=(-2, 7,3)
@@ -337,3 +436,58 @@ $$P = \frac{ 2\sqrt{11} \cdot\frac{ \sqrt{120} }{\sqrt{11}} }
 = \frac{2\sqrt{120}}{2}
 = \sqrt{120}
 = 2\sqrt{30}$$
+* TODO Zad 9
+:dane:
+Płaszczyzna: $\pi : x - y + z - 2 = 0$
+\\
+Postać krawędziowa prostej:
+$l_1 : \begin{cases}
+3x + 2y - z - 4 = 0\\
+-x - 2y + z + 2 = 0
+\end{cases}
+\end{cases}$
+:end:
+** Wyznaczyc punkt przebica płaszczyzny i prostej
+*** Wyznaczyć wektor kierunkowy porstej
+\begin{align*}
+  \vec n_{1} \times \vec n_{2} &= \begin{vmatrix}
+                                    \vec i & \vec j & \vec k\\
+                                    3 & 2 & -1 \\
+                                    -1 & -2 & 1\\
+                                  \end{vmatrix}
+  \\
+                               &= 2 \vec i - 6 \vec k + 1 \vec j - (-2 \vec k + 2 \vec i + 3 \vec j)
+  \\
+                               &= [0, -2, -4]
+\end{align*}
+*** Znaleźć punkt na prostej
+Strzlamy punkt $P(1,1,1)$, bo spełnia równanie prostej.
+*** Równanie paramtryczne prostej
+\[l_1 : \begin{cases}
+        x = 1 + 0t = 1\\
+        y = 1 - 2t \\
+        z = 1 - 4t\\
+\end{cases}\]
+*** Obliczyć punkt przecięcia płaszczyzny $\pi$ oraz prostej $l_1$
+**** Obliczyć $t$.
+\\
+Podstawiamy $x, y, z$ z równania parametryczego do równiania płaszczyzny.
+\begin{align*}
+  0 &= 1 - 1 + 2t + 1 - 4t -2 && \text{uprościć}
+  \\
+  0 &= -2t -1
+  \\
+  -2t &= 1 && / -2
+  \\
+  t &= - \frac{1}{2}
+\end{align*}
+**** Podstwaić $t$ do równania parametryczego prostej.
+\[l_1 : \begin{cases}
+        x = 1 + 0t = 1\\
+        y = 1 - 2t = 1 + 1 = 2 \\
+        z = 1 - 4t = 1 + 2 = 3\\
+\end{cases}\]
+**** Punkt przecięcia prostej $l$ z płaszczyzną
+\\
+$P = (1, 2, 3)$
+** Obliczyć odległość punktu $P(0,1,0)$ od prostej $l_1$
