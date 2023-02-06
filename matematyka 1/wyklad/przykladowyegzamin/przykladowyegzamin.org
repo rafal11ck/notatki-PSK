@@ -1,6 +1,6 @@
 #+title: Przykladowyegzamin
-
-* DONE Zad 1
+* Algebra
+** DONE Zad 1
 \begin{align*}
 \Im \left(\frac{1+3i}{3-2i} + i^{3} + 5\right)
  &=\Im \left(\frac{1+3i}{3-2i} + \frac{i^{3}(3-2i)}{3-2i} + \frac{5(3-2i)}{3-2i}\right)\\
@@ -12,13 +12,13 @@
  &= \Im \left(\frac{62 - 2i }{13}\right)\\
  &= \frac{-2}{13}
 \end{align*}
-* DONE Zad 2
+** DONE Zad 2
 \begin{align*}
   \frac{ { (3 - 3i)}^{14} }
   { { (-1+i\sqrt{3}) }^{11} }
   &= \frac{z^{14}}{w^{11}}
 \end{align*}
-** $z$
+*** $z$
 $$\sin(\varphi_z) = \frac{-3}{3\sqrt{2}}
  = \frac{-1}{\sqrt{2}}
  = \frac{-\sqrt{2}}{2} \to \varphi_z = \frac{7}{4}\pi$$
@@ -33,7 +33,7 @@ $$\sin(\varphi_z) = \frac{-3}{3\sqrt{2}}
   &= {(3\sqrt{2})}^{14} ( 0 + i 1 )\\
   &= {(3\sqrt{2})}^{14}i
 \end{align*}
-** $w$
+*** $w$
 $$\sin(\varphi_w) = \frac{\sqrt{3}}{\sqrt{4}} = \frac{\sqrt{3}}{2}
 \to \varphi_w = \frac{2}{3} \pi$$
 
@@ -45,7 +45,7 @@ w^{11} &= 2^{11} \left( \cos \left(11 \cdot \frac{2}{3} \pi \right)
 &= 2^{11} \left(- \frac{1}{2} - i \frac{\sqrt{3}}{2} \right)\\
 &= 2^{10} \left(-1 - i \sqrt{3} \right)
 \end{align*}
-** Podstawiamy
+*** Podstawiamy
 \begin{align*}
 \frac{ { (3 - 3i)}^{14} }
 { { (-1+i\sqrt{3}) }^{11} }
@@ -59,7 +59,7 @@ w^{11} &= 2^{11} \left( \cos \left(11 \cdot \frac{2}{3} \pi \right)
 &=\frac{ ((3\sqrt{2})^{14} i)(-1 + i\sqrt{3}) }
 {-2^{11}}
 \end{align*}
-* DONE Zad 3
+** DONE Zad 3
 Wyznacznik macierzy głownej $= 20$.
 \\
 $A = \begin{bmatrix}
@@ -74,7 +74,7 @@ $X = \begin{bmatrix}
 -2\\
 3
 \end{bmatrix}$
-** DONE $A_4$
+*** DONE $A_4$
 \begin{align*}A_4 &= \begin{vmatrix}
                        3  & -2 & 1 & 4 \\
                        2  & -1 & 3 & 1 \\
@@ -97,9 +97,9 @@ $X = \begin{bmatrix}
                   &=82 - 94\\
                   &= - 12
 \end{align*}
-** DONE Podstawianie
+*** DONE Podstawianie
 $$x_4 = \frac{-12}{20} = \frac{-3}{5}$$
-* DONE Zad 4
+** DONE Zad 4
 :przeksz:
 \begin{align*}
   \left[
@@ -178,7 +178,7 @@ $x_2 = -7x_3 -2$
 $x_3 \in \mathbb{R}$
 \\
 $x_4 = -1$
-* DONE Zad 5
+** DONE Zad 5
 $$XA = B \xrightarrow[\text{prawostronnie } A^{-1}]{} X A A^{-1} = BA^{-1} \to X = B A^{-1}$$
 $A = \begin{bmatrix}
        1 & 2 & -3 \\
@@ -278,13 +278,13 @@ $\det A = (36 + 4) - (8 + 30) = 40 - 38 = 2$
                  \end{bmatrix}
 \end{align*}
 :end:
-* DONE Zad 6
+** DONE Zad 6
 Macierz obrotu o kąt $\displaystyle\frac{\pi}{3}$ w kierunku dodatnim
 $A = \begin{bmatrix}
 \cos \frac{\pi}{3} & -\sin \frac{\pi}{3}\\
 \sin \frac{\pi}{3} & \cos \frac{\pi}{3}\\
 \end{bmatrix}$.
-** DONE Związek między współrzędnymi $x_1, x_2$ w bazie $\vec{e}_1, \vec{e}_2$ a współrzędnymi $\hat{x}_1, \hat{x}_2$ w bazie $\vec{u}, \vec{v}$.
+*** DONE Związek między współrzędnymi $x_1, x_2$ w bazie $\vec{e}_1, \vec{e}_2$ a współrzędnymi $\hat{x}_1, \hat{x}_2$ w bazie $\vec{u}, \vec{v}$.
 :obliczenieu:
 \begin{align*}
   \vec{u} &= A \cdot \vec e_{1}
@@ -326,7 +326,7 @@ $A = \begin{bmatrix}
              \end{bmatrix}
 \end{align*}
 :end:
-** DONE Znalesć współrzędne wektora $\vec{x}$ w bazie $\vec u, \vec v$, jeżeli jego współrzędne w bazie $\vec e_1, \vec e_2$ wynoszą: $1, -2$.
+*** DONE Znalesć współrzędne wektora $\vec{x}$ w bazie $\vec u, \vec v$, jeżeli jego współrzędne w bazie $\vec e_1, \vec e_2$ wynoszą: $1, -2$.
 :wektorx:
 $\vec x = \begin{bmatrix}
             1 \\
@@ -374,10 +374,10 @@ $\vec x = \begin{bmatrix}
     \end{bmatrix}
 \end{align*}
 :end:
-*** Sporządzić rysunek
+**** Sporządzić rysunek
 [[file:img/zad6.jpg]]
-* NO Zad 7
-* DONE Zad 8
+** NO Zad 7
+** DONE Zad 8
 \begin{align*}
 A&=(0,1,5),& B&=(-2,3,1),& C&=(-2, 7,3)
 \end{align*}
@@ -386,17 +386,17 @@ $|AB| = \sqrt{(-2)^{2} + (3-1)^{2} + (5 -1)^{2}} = \sqrt{4 + 4 +16} = \sqrt{24} 
 $|AC| = \sqrt{ 4 + 36 + 4} = \sqrt{44} = 2 \sqrt{11}$
 \\
 $|BC| = \sqrt{0 + 16 + 4} = \sqrt{20} = 2\sqrt{5}$
-** DONE Rówanie prostej w postaci kanonicznej
+*** DONE Rówanie prostej w postaci kanonicznej
 $$\frac{x - 0}{-2 - 0} = \frac{y - 1}{7 - 1} = \frac{z - 5}{3 -5}
 \to \frac{x - 0}{-2} = \frac{y - 1}{6} = \frac{z - 5}{-2}
 = t$$
-** DONE Równanie prostej w postaci paraetrycznej
+*** DONE Równanie prostej w postaci paraetrycznej
 \[\begin{cases}
 x-0 = -2t \to & x = -2t\\
 y - 1 = 6t \to & y = 6t +1\\
 z -5 = -2t \to & z = -2t + 5\\
 \end{cases}\]
-** DONE Oblcizanie odległości punktu od prostej
+*** DONE Oblcizanie odległości punktu od prostej
 :jakiescos:
 \begin{align*}
   \overrightarrow{BD} \times \vec{k}
@@ -428,13 +428,13 @@ $$|BD| = \frac{|\overrightarrow{BD}|}{|\vec{k}|}
 = \frac{\sqrt{480}}{\sqrt{44}}
 = \sqrt{\frac{120}{11}}
 = \frac{\sqrt{120}}{\sqrt{11}}$$
-** DONE Obliczanie pola trójkąta
+*** DONE Obliczanie pola trójkąta
 $$P = \frac{ 2\sqrt{11} \cdot\frac{ \sqrt{120} }{\sqrt{11}} }
 {2}
 = \frac{2\sqrt{120}}{2}
 = \sqrt{120}
 = 2\sqrt{30}$$
-* DONE Zad 9
+** DONE Zad 9
 :dane:
 Płaszczyzna: $\pi : x - y + z - 2 = 0$
 \\
@@ -442,10 +442,9 @@ Postać krawędziowa prostej:
 $l_1 : \begin{cases}
 3x + 2y - z - 4 = 0\\
 -x - 2y + z + 2 = 0
-\end{cases}
 \end{cases}$
 :end:
-** DONE Wyznaczyć wektor kierunkowy porstej
+*** DONE Wyznaczyć wektor kierunkowy porstej
 \begin{align*}
   \vec k &= \begin{vmatrix}
               \vec i & \vec j & \vec k\\
@@ -457,17 +456,17 @@ $l_1 : \begin{cases}
   \\
          &= [0, -2, -4]
 \end{align*}
-** DONE Wyznaczyc punkt przebica płaszczyzny i prostej
-*** Znaleźć punkt na prostej
+*** DONE Wyznaczyc punkt przebica płaszczyzny i prostej
+**** Znaleźć punkt na prostej
 Strzlamy punkt $Q(1,1,1)$, bo spełnia równanie prostej.
-*** Równanie paramtryczne prostej
+**** Równanie paramtryczne prostej
 \[l_1 : \begin{cases}
         x = 1 + 0t = 1\\
         y = 1 - 2t \\
         z = 1 - 4t\\
 \end{cases}\]
-*** Obliczyć punkt przecięcia płaszczyzny $\pi$ oraz prostej $l_1$
-**** Obliczyć $t$.
+**** Obliczyć punkt przecięcia płaszczyzny $\pi$ oraz prostej $l_1$
+***** Obliczyć $t$.
 \\
 Podstawiamy $x, y, z$ z równania parametryczego do równiania płaszczyzny.
 \begin{align*}
@@ -479,15 +478,15 @@ Podstawiamy $x, y, z$ z równania parametryczego do równiania płaszczyzny.
   \\
   t &= - \frac{1}{2}
 \end{align*}
-**** Podstwaić $t$ do równania parametryczego prostej.
+***** Podstwaić $t$ do równania parametryczego prostej.
 \[l_1 : \begin{cases}
         x = 1 + 0t &= 1\\
         y = 1 - 2t = 1 + 1 &= 2 \\
         z = 1 - 4t = 1 + 2 &= 3\\
 \end{cases}\]
-**** Punkt przecięcia prostej $l$ z płaszczyzną
+***** Punkt przecięcia prostej $l$ z płaszczyzną
 \[P_1 = (1, 2, 3)\]
-** DONE Obliczyć odległość punktu $P(0,1,0)$ od prostej $l_1$
+*** DONE Obliczyć odległość punktu $P(0,1,0)$ od prostej $l_1$
 $\overrightarrow{PQ} = [1 -0 ,1 - 1,1  -0] = [ 1, 0, 1]$
 :obliczenieczegostam:
 \begin{align*}
@@ -511,7 +510,7 @@ $\overrightarrow{PQ} = [1 -0 ,1 - 1,1  -0] = [ 1, 0, 1]$
   &= [2, 4, -2]
 \end{align*}
 :end:
-*** Długość odcinka $PQ$
+**** Długość odcinka $PQ$
 \[|PQ| = \frac{ |\overrightarrow{PQ}| }{ | \vec k | } =
   \frac{ \sqrt{2^{2} + 4^{2} + {(-2)}^{2}}}
   { \sqrt{ {(-2)}^{2} + {(-4)}^{2} } }
@@ -520,3 +519,26 @@ $\overrightarrow{PQ} = [1 -0 ,1 - 1,1  -0] = [ 1, 0, 1]$
   = \frac{\sqrt{6} \cdot \sqrt{5} }{\sqrt{5} \cdot \sqrt{5}}
   = \frac{\sqrt{30}}{5}
 \]
+* Analiza
+** Zad 7
+*** Zad 7b
+Obliczyć $\displaystyle\int_a^b f(x) dx$
+\begin{align*}
+a &= -3 & b &= \frac{1}{2} & f(x)&=3+x^2
+\end{align*}
+\begin{align*}
+  \int_{-3}^\frac{1}{2} 3 + x^2 dx
+  &= \int_{-3}^{\frac{1}{2}}3 dx + \int_{-3}^{\frac{1}{2}} x^{2} dx
+  \\
+  &= \Big ( \underbrace{ 3x + \frac{x^{3}}{3} }_{F(x)} \Big) \Bigg|_{-3}^{\frac{1}{2}}
+  \\
+  &= F(b) - F(a)
+  \\
+  &= \left(\frac{36}{24} + \frac{1}{24} \right) - (-9 -9)
+  \\
+  &= \frac{37}{24} + 18
+  \\
+  &= \frac{37}{24} + \frac{432}{24}
+  \\
+  &=\frac{469}{24}
+\end{align*}
