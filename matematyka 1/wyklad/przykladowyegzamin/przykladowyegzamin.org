@@ -178,7 +178,7 @@ $x_2 = -7x_3 -2$
 $x_3 \in \mathbb{R}$
 \\
 $x_4 = -1$
-* PROJ ZAD 5
+* DONE Zad 5
 $$XA = B \xrightarrow[\text{prawostronnie } A^{-1}]{} X A A^{-1} = BA^{-1} \to X = B A^{-1}$$
 $A = \begin{bmatrix}
        1 & 2 & -3 \\
@@ -255,7 +255,7 @@ $\det A = (36 + 4) - (8 + 30) = 40 - 38 = 2$
             \end{bmatrix}
 \end{align*}
 :end:
-
+:obliczenieX:
 \begin{align*}
   X = BA^{-1} &= \begin{bmatrix}
                    4 & 2 & -5\\
@@ -277,3 +277,63 @@ $\det A = (36 + 4) - (8 + 30) = 40 - 38 = 2$
                    0 & 1 & 0\\
                  \end{bmatrix}
 \end{align*}
+:end:
+* DONE Zad 8
+\begin{align*}
+A&=(0,1,5),& B&=(-2,3,1),& C&=(-2, 7,3)
+\end{align*}
+$|AB| = \sqrt{(-2)^{2} + (3-1)^{2} + (5 -1)^{2}} = \sqrt{4 + 4 +16} = \sqrt{24} = 2\sqrt{6}$
+\\
+$|AC| = \sqrt{ 4 + 36 + 4} = \sqrt{44} = 2 \sqrt{11}$
+\\
+$|BC| = \sqrt{0 + 16 + 4} = \sqrt{20} = 2\sqrt{5}$
+** DONE Rówanie prostej w postaci kanonicznej
+$$\frac{x - 0}{-2 - 0} = \frac{y - 1}{7 - 1} = \frac{z - 5}{3 -5}
+\to \frac{x - 0}{-2} = \frac{y - 1}{6} = \frac{z - 5}{-2}
+= t$$
+** DONE Równanie prostej w postaci paraetrycznej
+\begin{align*}
+x-0 = -2t \to& x = -2t
+\\
+y - 1 = 6t \to& y = 6t +1
+\\
+z -5 = -2t \to& z = -2t + 5
+\end{align*}
+** DONE Oblcizanie odległości punktu od prostej
+:jakiescos:
+\begin{align*}
+  \overrightarrow{BD} \times \vec{k}
+  &= \begin{vmatrix}
+       \vec{i} & \vec{j} & \vec{k}\\
+       2 & -2 & 4\\
+       -2 & 6 & -2\\
+     \end{vmatrix}
+  \\
+  &= (4\vec{i} + 12\vec{k} - 8 \vec{j}) - (4 \vec{k} + 24 \vec{i} - 4 \vec{j})
+  \\
+  &= 4\vec{i} + 12\vec{k} - 8 \vec{j} - 4 \vec{k} - 24 \vec{i} + 4 \vec{j}
+  \\
+  &= -20\vec{i} - 4\vec{j} + 8 \vec{k}
+\end{align*}
+:end:
+$B=(-2,3,1)$
+\\
+$D=(0, 1, 5)$
+\\
+wektor kierunkowy: $\vec{k} = [-2, 6, -2]$
+\\
+$\overrightarrow{BD} = [0 + 2 , 1 - 3 ,5 -1] = [2, -2, 4]$
+\\
+$$|BD| = \frac{|\overrightarrow{BD}|}{|\vec{k}|}
+= \frac{\sqrt{(-20)^{2} + 4^{2} + 8^{2}}}
+{\sqrt{(-2)^{2} + 6^{2} + (-2)^{2}} }
+= \frac{\sqrt{400 + 16 + 64}}{\sqrt{4 + 36 + 4}}
+= \frac{\sqrt{480}}{\sqrt{44}}
+= \sqrt{\frac{120}{11}}
+= \frac{\sqrt{120}}{\sqrt{11}}$$
+** DONE Obliczanie pola trójkąta
+$$P = \frac{ 2\sqrt{11} \cdot\frac{ \sqrt{120} }{\sqrt{11}} }
+{2}
+= \frac{2\sqrt{120}}{2}
+= \sqrt{120}
+= 2\sqrt{30}$$
