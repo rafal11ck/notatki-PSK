@@ -2,7 +2,7 @@
 #+latex_header: \usepackage[polish]{babel}
 #+LATEX_HEADER: \usepackage[margin=3cm]{geometry}
 #+latex_header: \newgeometry{vmargin={5mm}, hmargin={20mm,20mm}}
-* [8/9] Algebra
+* [8/10] Algebra
 ** DONE Zad 1
 \begin{align*}
 \Im \left(\frac{1+3i}{3-2i} + i^{3} + 5\right)
@@ -380,6 +380,191 @@ $\vec x = \begin{bmatrix}
 **** Sporządzić rysunek
 [[file:img/zad6.jpg]]
 ** TODO Zad 7
+*** PROJ Zad 7a
+\[-72 + 13 x^{2} - 10xy + 13y^{2} = 0\]
+Forma kwadratowa:
+:delta:
+\[A = \begin{bmatrix}
+        13 & -5\\
+        -5 & 13\\
+      \end{bmatrix}\]
+:end:
+:detA:
+\[\det A = 13^2 - {(-5)}^{2}
+  = 169 - 25
+  = 144\]
+:end:
+Typ elptyczny
+**** DONE Znaleść wartości własne $\lambda$
+:macierz:
+\[A (I\lambda) = \begin{bmatrix}
+        13 - \lambda & -5\\
+        -5 & 13 - \lambda \\
+      \end{bmatrix}\]
+:end:
+:rownanieDoLambd:
+\begin{align*}
+  {(13 - \lambda)}^{2} - 25 &= 0\\
+  169 - 26 \lambda + {\lambda}^{2} - 25 &= 0 \\
+  {\lambda}^{2} - 26 \lambda + 144 &= 0\\
+\end{align*}
+:end:
+:delta:
+\[\Delta = 26^{2} - 4 \cdot 144 = 676 - 576 = 100\]
+\[\sqrt{\Delta} = 10\]
+:end:
+\[\lambda_1 = \frac{-b + \sqrt{\Delta}}{2a}
+= \frac{26 + 10}{2} = 18\]
+\[\lambda_2 = \frac{-b - \sqrt{\Delta}}{2a}
+= \frac{26 - 10}{2} = 8\]
+**** DONE Wersory
+***** Dla $\lambda_1$
+:jakasMacierz:
+\[\begin{bmatrix}
+  13 - 18 & -5\\
+  -5 & 13 - 18\\
+\end{bmatrix}
+=
+\begin{bmatrix}
+  -5 & -5\\
+  -5 & -5\\
+\end{bmatrix}\]
+:end:
+:równanie:
+\[\begin{bmatrix}
+    -5 & -5\\
+    -5 & -5\\
+  \end{bmatrix}
+  \begin{bmatrix}
+    v_{11}\\
+    v_{12}\\
+  \end{bmatrix} = \begin{bmatrix}
+                    0\\
+                    0\\
+                  \end{bmatrix}\]
+:end:
+****** Wyznaczyć $W_{1}$
+:v12:
+\begin{align*}
+-5 v_{11} -5 v_{12} &= 0 && / -5\\
+   v_{11} + v_{12} &= 0\\
+   v_{11} &= - v_{12}
+\end{align*}
+:end:
+:wektor:
+\[\vec V_{1} = \begin{bmatrix}
+                 v_{11}\\
+                 v_{12}
+               \end{bmatrix}
+               = \begin{bmatrix}
+                   -v_{12}\\
+                   v_{12}\\
+                 \end{bmatrix}\]
+:end:
+Trzeba będzie zamienić $W_{1}$ i $W_{2}$, bo wyszedł $-$ u góry.
+:długośćWektora:
+\[|\vec{V}_{1}| = \sqrt{ {(-v_{12})}^{2} + v_{12}^{2}}
+  = \sqrt{ v_{12}^{2} + v_{12}^{2}}
+    = \sqrt{ 2 v_{12}^{2} }
+    = \sqrt{2} v_{12}\]
+:end:
+:wersor:
+\[\vec W_1 = \begin{bmatrix}
+               \displaystyle\frac{-v_{12}}{\sqrt{2} v_{12}}\\
+               \displaystyle\frac{v_{12}}{\sqrt{2} v_{12}}\\
+             \end{bmatrix}
+             = \begin{bmatrix}
+                 \frac{-1}{\sqrt{2}}\\
+                 \frac{1}{\sqrt{2}}\\
+               \end{bmatrix}
+               = \begin{bmatrix}
+                   \frac{-\sqrt{2}}{2}\\
+                   \frac{\sqrt{2}}{2}\\
+                 \end{bmatrix}\]
+
+:end:
+***** Dla $\lambda_2$
+:jakasMacierz:
+\[\begin{bmatrix}
+  13 - 8 & -5\\
+  -5 & 13 - 8\\
+\end{bmatrix}
+=
+\begin{bmatrix}
+  5 & -5\\
+  -5 & 5\\
+\end{bmatrix}\]
+:end:
+:równanie:
+\[\begin{bmatrix}
+    5 & -5\\
+    -5 & 5\\
+  \end{bmatrix}
+  \begin{bmatrix}
+    v_{21}\\
+    v_{22}\\
+  \end{bmatrix} = \begin{bmatrix}
+                    0\\
+                    0\\
+                  \end{bmatrix}\]
+:end:
+****** Wyznaczyc $W_{2}$
+:v22:
+\begin{align*}
+  5 v_{21} - 5 v_{22} &= 0 && / 5\\
+  v_{21} - v_{22} &= 0 \\
+  v_{21} = v_{22}
+\end{align*}
+:end:
+:wektor:
+\[\vec V_{2} = \begin{bmatrix}
+                 v_{22}\\
+                 v_{22}
+               \end{bmatrix}\]
+:end:
+:długoścWektora:
+\[| \vec V_{2} | = \sqrt{ v_{22}^{2} + v_{22}^{2}}
+  = \sqrt{2 v_{22}^{2}}
+  = \sqrt{2} v_{22}\]
+:end:
+:wersor:
+\[\vec W_2 = \begin{bmatrix}
+               \displaystyle\frac{v_{22}}{\sqrt{2} v_{22}}\\
+               \displaystyle\frac{v_{22}}{\sqrt{2} v_{22}}\\
+             \end{bmatrix}
+             = \begin{bmatrix}
+                 \frac{1}{\sqrt{2}}\\
+                 \frac{1}{\sqrt{2}}\\
+               \end{bmatrix}
+               = \begin{bmatrix}
+                   \frac{\sqrt{2}}{2}\\
+                   \frac{\sqrt{2}}{2}\\
+                 \end{bmatrix}\]
+:end:
+**** DONE Macież obrotu
+Zamieniamy kolejność wersorów bo minus ma być w lewym górnym.
+:równanie:
+\[\begin{bmatrix}
+x_{1}\\
+x_{2}\\
+\end{bmatrix} =\begin{bmatrix}
+\frac{\sqrt{2}}{2} & -\frac{\sqrt{2}}{2}\\
+\frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2}\\
+\end{bmatrix}  \begin{bmatrix}
+\hat{x}_{1}\\
+\hat{x}_{2}\\
+\end{bmatrix}\]
+:end:
+\[x_1 = \frac{\sqrt{2}}{2} \hat{x}_{1} - \frac{\sqrt{2}}{2} \hat{x}_2\]
+\[x_2 = \frac{\sqrt{2}}{2} \hat{x}_{1} + \frac{\sqrt{2}}{2} \hat{x}_2\]
+*Zwijamy*
+:zwijanie:
+\begin{align*}
+  8 \hat{x}_1^2 + 18 \hat{x}_2^2 -72 &= 0 && / 72\\
+  \frac{\hat{x}_{1}^{2}}{3^{2}} + \frac{\hat{x}_{2}^{2}}{2^{2}} &= 1
+\end{align*}
+:end:
+**** TODO wykres
 ** DONE Zad 8
 \begin{align*}
 A&=(0,1,5),& B&=(-2,3,1),& C&=(-2, 7,3)
@@ -521,7 +706,7 @@ $\overrightarrow{PQ} = [1 -0 ,1 - 1,1  -0] = [ 1, 0, 1]$
   = \frac{\sqrt{6} \cdot \sqrt{5} }{\sqrt{5} \cdot \sqrt{5}}
   = \frac{\sqrt{30}}{5}
 \]
-* [2/2] Analiza
+* [2/3] Analiza
 ** DONE Zad 5
 Obliczyć w przybliżeniu wartość $\sin(0.2)$ używająć weilomianu Taylora stopnia $n = 3$.
 :dane:
