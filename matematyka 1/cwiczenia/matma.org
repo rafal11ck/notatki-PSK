@@ -24,9 +24,9 @@ Zapis zgodny z [[https://en.wikipedia.org/wiki/Complex_number]] (prznynajmniej w
 #+end_latex
 
 ** postać trygonometryczna liczby zespolonej
-$$z=(z)(\cos\varphi \cdot \sin\varphi)$$
+$$z=|z|(\cos\varphi \cdot \sin\varphi)$$
 ** postać wykładnicza liczby zespolonej
-$$z=(z) \cdot e^{i\varphi}$$
+$$z=|z| \cdot e^{i\varphi}$$
 ** moduł liczby zespolonej
 
 [[file:lzespolona.png]]
