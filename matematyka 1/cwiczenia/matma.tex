@@ -1,4 +1,4 @@
-% Created 2023-02-06 Mon 22:44
+% Created 2023-02-07 Tue 13:17
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -12,11 +12,10 @@
 \usepackage{amssymb}
 \usepackage{capt-of}
 \usepackage{hyperref}
-\author{placeholder}
 \date{\today}
 \title{Matma}
 \hypersetup{
- pdfauthor={placeholder},
+ pdfauthor={},
  pdftitle={Matma},
  pdfkeywords={},
  pdfsubject={},
@@ -29,7 +28,7 @@
 
 
 \section{liczby zespolone}
-\label{sec:org1cd9798}
+\label{sec:org2c876c8}
 \begin{itemize}
 \item \(\mathbb{Z}\) -- zbiór liczb całkowitych
 \item \(\mathbb{R}\) -- zboór liczb rzeczywistych
@@ -37,7 +36,7 @@
 \end{itemize}
 $$\mathbb{Z} \subset \mathbb{R} \subset \mathbb{C}$$
 \subsection{postać algerbraiczna liczby zespolonej}
-\label{sec:orgf690d27}
+\label{sec:orgf42123a}
 $$z=a+bi$$
 
 \begin{itemize}
@@ -46,7 +45,7 @@ $$z=a+bi$$
 \item \(i\) - jednostka urojona \(i^2=-1\)
 \end{itemize}
 \subsubsection{sprzężenie liczby zespolonej}
-\label{sec:org180f9f1}
+\label{sec:org475d921}
 \begin{latex}
 \begin{align*}
   z=a+bi && \overline{z}=a-bi \\
@@ -55,13 +54,13 @@ $$z=a+bi$$
 \end{latex}
 
 \subsection{postać trygonometryczna liczby zespolonej}
-\label{sec:org2fec5ac}
-$$z=(z)(\cos\varphi \cdot \sin\varphi)$$
+\label{sec:org95881db}
+$$z=|z|(\cos\varphi \cdot \sin\varphi)$$
 \subsection{postać wykładnicza liczby zespolonej}
-\label{sec:orge10d54b}
-$$z=(z) \cdot e^{i\varphi}$$
+\label{sec:orga791e5c}
+$$z=|z| \cdot e^{i\varphi}$$
 \subsection{moduł liczby zespolonej}
-\label{sec:orgbabf243}
+\label{sec:org80b4807}
 
 \begin{center}
 \includegraphics[width=.9\linewidth]{lzespolona.png}
@@ -72,11 +71,11 @@ $$|z|=\sqrt{a^2+b^2}$$
 \(\varphi\) -- argument
 
 \subsection{Potęgowanie liczby zespolonej}
-\label{sec:org8d26e33}
+\label{sec:org48cc8cb}
 $$z=a+bi \to z=|z|(\cos \varphi + i \sin \varphi)^n \to |z|^n(\cos n \varphi + i \sin n \varphi)$$
 
 \subsection{funkcja kwadratowa}
-\label{sec:org33313b6}
+\label{sec:org34bbacb}
 $$z^2+z+1=0$$
 \(\Delta = b^2-4ac = -3\) -- brak rozwiązań w \(\mathbb{R}\)
 $$\sqrt{\Delta} = \sqrt{-3} = \sqrt{(-1)3} = \sqrt{-1}  \sqrt{3} = \sqrt{i^2}\sqrt{3} = i \sqrt{3} $$
@@ -84,16 +83,16 @@ $$z_1 = \frac{-b - \sqrt{\Delta} }{2a} \lor z_2=\frac{-b + \sqrt{\Delta} }{2a}$$
 $$z_1 = \frac{-1-i\sqrt{3}}{2} = -\frac{1}{2} + \frac{\sqrt{3}}{2}i \lor
 z_2 = \frac{-1 + i\sqrt{3}}{2} = - \frac{1}{2}+ \frac{\sqrt{3}}{2}i $$
 \section{Wektory}
-\label{sec:org6fcd169}
+\label{sec:orga49fbd4}
 \subsection{Macierz obrotu}
-\label{sec:org5c037d0}
+\label{sec:org4694d33}
 $$A = \begin{bmatrix}
         \cos \alpha & - \sin \alpha\\
         \sin \alpha & \cos \alpha\\
       \end{bmatrix}$$
 
 \section{Stożkowe}
-\label{sec:orgdfce542}
+\label{sec:org9fa31da}
 \[Q(\vec{x}) = a_{11}x_1^2 + 2a_{12}x_1x_2+a_{22}x_2^2
 \to M =
 \begin{bmatrix}
@@ -112,7 +111,7 @@ $$A = \begin{bmatrix}
 \end{latex}
 
 \subsection{Sprowadzanie do postaci kwadratowej}
-\label{sec:org692bc59}
+\label{sec:org7db82a9}
 
 \[Q(\vec{x}) = a_{11}x_1^2 + 2a_{12}x_1x_2+a_{22}x_2^}
 \to
@@ -124,7 +123,7 @@ gdzie \(a_{1}, a_{2}\) -- wartości własne macierzy \(M\)
 
 wersor własny -- wektor własny o długości 1.
 \subsection{Elipsa}
-\label{sec:org6dcc0e8}
+\label{sec:org653c773}
 \begin{description}
 \item[{Wzór ogólny}] 
 \end{description}
@@ -134,12 +133,12 @@ $$\frac{x_1^2}{a^2}+\frac{x_2^2}{b^2}=1$$
 \end{description}
 \(a,b\)
 \subsection{Parabola}
-\label{sec:org9b0a5c8}
+\label{sec:orgdf5bb55}
 \begin{description}
 \item[{Wzór ogólny}] $$x_1=ax_2^2$$
 \end{description}
 \subsection{Hiperbola}
-\label{sec:orgc66f2d1}
+\label{sec:org3fbeb6d}
 \begin{description}
 \item[{Wzór ogólny}] 
 \end{description}
@@ -150,9 +149,9 @@ $$\frac{x_1^2}{a^2}-\frac{x_2^2}{b^2}=1$$
 \end{description}
 
 \section{\(\mathbb{R}^3\)}
-\label{sec:org3028bca}
+\label{sec:org40abd4e}
 \subsection{Równianie ogólne płaszczyzny}
-\label{sec:org61a92fe}
+\label{sec:orgc4eae3a}
 
 \begin{center}
 \includegraphics[width=.9\linewidth]{figures/plaszczyzna.png}
@@ -166,9 +165,9 @@ $$\frac{x_1^2}{a^2}-\frac{x_2^2}{b^2}=1$$
 
 $$A(x - x_{0}) + B(y-y_{0}) + C(z - z_{0}) = 0$$
 \section{Analiza}
-\label{sec:orgfbba787}
+\label{sec:org6b20976}
 \subsection{Wzór Taylora}
-\label{sec:org2daa295}
+\label{sec:org1dfecef}
 \[f(x) \approx f(x_{0}) +
   \frac{f'(x_0)}{1!}(x - x_0)^1 +
   \frac{f''(x_0)}{2!}(x - x_0)^2 +
@@ -177,9 +176,9 @@ $$A(x - x_{0}) + B(y-y_{0}) + C(z - z_{0}) = 0$$
   \underbrace{\frac{f^{(n)}'(x_0)}{n!}(x - x_0)^n}_{\text{reszta}}
    \]
 \subsection{Asymptoty}
-\label{sec:org7137187}
+\label{sec:orgd97632e}
 \subsubsection{Pionowe}
-\label{sec:org53a141e}
+\label{sec:org5c03cd5}
 \begin{itemize}
 \item Prawostronna w punkcie \(p\)
 jeżeli \(\lim_{x \to p^+} = - \infty\).
@@ -188,7 +187,7 @@ jeżeli \(\lim_{x \to p^-} = + \infty\).
 \item Obustronna  jeżeli oba powyższe.
 \end{itemize}
 \subsubsection{Ukośne}
-\label{sec:org8669e7c}
+\label{sec:org4c5e5fd}
 \begin{latex}
 \begin{align*}
   & y = ax +b
