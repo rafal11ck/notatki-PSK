@@ -748,7 +748,9 @@ a &= -3 & b &= \frac{1}{2} & f(x)&=3+x^2
 \end{align*}
 \begin{align*}
   \int_{-3}^\frac{1}{2} 3 + x^2 dx
-  &= \int_{-3}^{\frac{1}{2}}3 dx + \int_{-3}^{\frac{1}{2}} x^{2} dx
+  &= \int_{-3}^{\frac{1}{2}} 3 dx + \int_{-3}^{\frac{1}{2}} x^{2} dx
+  \\
+  &= 3 \int_{-3}^{\frac{1}{2}} x^{0} dx + \int_{-3}^{\frac{1}{2}} x^{2} dx
   \\
   &= \Big ( \underbrace{ 3x + \frac{x^{3}}{3} }_{F(x)} \Big) \Bigg|_{-3}^{\frac{1}{2}}
   \\
