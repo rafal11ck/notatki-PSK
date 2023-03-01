@@ -1,0 +1,8 @@
+#+title: Materialy
+* Algorytmy i struktury danych
+** Wykład
+=AiSD_23=
+https://weaii-moodle.tu.kielce.pl/course/view.php?id=113
+* Miernictwo cyfrowe
+** Wykład
+Na miala wysyła
