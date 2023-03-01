@@ -11,3 +11,4 @@
 Moodle klucz =AiSD_23=, tylko slajdy wykładowe.
 ** Konsultacje
 Będą. Lepej pisać maila i się umówić.
+-----
