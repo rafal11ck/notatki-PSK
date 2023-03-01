@@ -1,0 +1,5 @@
+#+title: Wyklad01
+
+* Zaliczenie
+- na koniec semestru, w forme pisemnej.
+- *Być może(nie gwarantowane)* 4.5, 5 przepis z lab.

@@ -1,0 +1,52 @@
+#+title: algortmy i struktury danych ćwiczenia 1
+#+options: toc:nil
+* Algorytm
+Etapy rozwiązania problemu:
+1. cel + dane wejściowe / wyjściowe
+2. analiza problemu -- model matematyczny
+3. wybór metody rozwiązania
+4. opracowanie algorytmu w postaci
+   a) opis słowny
+   b) lista kroków
+   c) schemat blokowy
+   d) kod programu
+5. Analiza poprawności rozwiązania -- testy
+6. Ocena effektywności rozwiązania
+** Cechy
+- Prostota
+- Skończoność
+- Określony
+- Efektywny
+** Przykłady
+*** $ax+b=0$
+**** Opis słowny :: Należy rozwiązać równanie
+**** Lista kroków:
+\\
+krok 0: $a,b \in \mathbb{R}, x = ?$
+\\
+krok 1: $a \ne 0$ to wtedy $x = - \frac{b}{a}$
+\\
+krok 2: $a = 0$ i $b = 0$ to wtedy $x \in \mathbb{R}$. wypisz "$\infty$ rozwiązań".
+\\
+krok 3: $0 = 0$ i b \ne 0$ to wtedy wypisz "brak rozwiązań"
+**** TODO Schemat blokowy
+
+Będzie na kolokwium.
+**** TODO Kod
+#+begin_src C
+#include <stdio.h>
+
+int main() {
+  double a, b, x;
+  puts("podaj a,b");
+  scanf("%lf%lf", &a, &b);
+  if (a != 0) {
+    x = -b / a;
+    printf("%lf", x);
+  } else if (b == 0)
+    puts("\\infty rozwiązań.");
+  else
+    puts("Brak rozwiązan");
+  return 0;
+}
+#+end_src
