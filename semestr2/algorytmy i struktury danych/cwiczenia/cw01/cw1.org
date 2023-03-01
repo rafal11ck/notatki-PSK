@@ -1,5 +1,7 @@
 #+title: algortmy i struktury danych ćwiczenia 1
 #+options: toc:nil
+#+author:
+#+date: 01.03.2023
 * Algorytm
 Etapy rozwiązania problemu:
 1. cel + dane wejściowe / wyjściowe
@@ -24,15 +26,17 @@ Etapy rozwiązania problemu:
 \\
 krok 0: $a,b \in \mathbb{R}, x = ?$
 \\
-krok 1: $a \ne 0$ to wtedy $x = - \frac{b}{a}$
+krok 1: $a \ne 0$ to wtedy $x = - \displaystyle\frac{b}{a}$
 \\
 krok 2: $a = 0$ i $b = 0$ to wtedy $x \in \mathbb{R}$. wypisz "$\infty$ rozwiązań".
 \\
-krok 3: $0 = 0$ i b \ne 0$ to wtedy wypisz "brak rozwiązań"
+krok 3: $0 = 0$ i $b \ne 0$ to wtedy wypisz "brak rozwiązań"
 **** TODO Schemat blokowy
 
 Będzie na kolokwium.
-**** TODO Kod
+**** DONE Kod
+
+Implementacja w języku C
 #+begin_src C
 #include <stdio.h>
 
@@ -46,7 +50,7 @@ int main() {
   } else if (b == 0)
     puts("\\infty rozwiązań.");
   else
-    puts("Brak rozwiązan");
+    puts("Brak rozwiązań");
   return 0;
 }
 #+end_src
