@@ -1,0 +1,14 @@
+#+title: Architektura systemów komputerowych 2 wykład01
+* Organizacja
+** Zaliczenie
+Egzamin, 3 poziomy pytań na oceny:
+- 3
+- 4
+- 5
+** Materiały
+Na serwerze achilles. Spakowane z chasłem
+** Kontakt
+- Najlepiej mailem.
+* Wykład
+*Komputer* to jest urządzenie do prztwarzania danych, gdzie spsób przetwarzania danych jest określony przez użytkownika.
+- Operacje arytmetyczne traktują argumenty jako liczby
