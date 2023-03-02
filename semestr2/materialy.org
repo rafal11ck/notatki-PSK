@@ -2,10 +2,13 @@
 * Algorytmy i struktury danych
 ** Wykład
 =AiSD_23=
+\\
 https://weaii-moodle.tu.kielce.pl/course/view.php?id=113
 * Miernictwo cyfrowe
 ** Wykład
 Na miala wysyła
 * Architektura systemów komputerowych 2
 ** Wykład
-=ASK2_2021= gdzieś archiwum na achillesie [[https://achilles.tu.kielce.pl/portal]]
+=ASK2_2021=
+\\
+[[https://achilles.tu.kielce.pl/portal/Members/d240aef6944e4dcaa8cc84c0d9cc7c6b/ask2]]
