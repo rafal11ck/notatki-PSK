@@ -9,4 +9,3 @@ Na miala wysyła
 * Architektura systemów komputerowych 2
 ** Wykład
 =ASK2_2021= gdzieś archiwum na achillesie [[https://achilles.tu.kielce.pl/portal]]
-Komputer to jest urządzenie do prztwarzania danychy, gdzie spsób przetwarzania danych jest określony przez użytkownika.
