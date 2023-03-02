@@ -1,0 +1,61 @@
+#+title: Cw01
+
+* Organizcajca
+Paulina Dolęga MA
+- pdolenga@tu.kielce.pl :: sprawdza regularnie
+- paulinadolega@gmail.com :: sprawy pilne
+Ocena standarowo punkty.
+** Punkty
+100 punktów
+| za co        | punkty |
+|--------------+--------|
+| 2 x kolos    | 2 x 35 |
+| 1 x speaking |     10 |
+| 1 x CV       |     10 |
+| Extra points |  10-15 |
+
+2 razy niebecność, potem usprawiedliwenia.
+** Podręcznik
+Technical English 4(pierwsza edycja) wydawnictwo Pearson, można forma elektroniczna.
+** Zajęcia ropooczynamy 30 min wcześniej
+Czyli 13:30-15:00.
+* Jakies coś
+1. Something about yourself. *I use Arch by the way.*
+2. I've chosen Computer Science because... *I like it and it's realtead to the things that I care about.*.
+3. I study in Kielce because ... *I live here.*
+4. In the future I'd like ... *to pass this subject*.
+5. English is important because ... *it's common on the internet.*
+* PROJ COMMENT zad 1
+** A
+| to graduate from           | v                             |
+| a seminar                  | seminarium                    |
+| a certifcate of competiton | absolatorium                  |
+| an index book              | index                         |
+| classes                    | ćwiczenia                     |
+| a campus                   | miasteczko studenckie         |
+| scholarship                | stypedium naukowe             |
+|                            | oborna pracy mag              |
+| credit                     | uzystkać zaliczenie           |
+|                            | uzyslać stopieni w dziedzinie |
+|                            |                               |
+|                            |                               |
+** b
+| a rector                | rektor              |   |
+| a dead                  | dziekan             |   |
+|                         |                     |   |
+| TA                      | teachin assistant   |   |
+| MA                      | Master of Arts      |   |
+| BA                      | bachelor of Arts    |   |
+| BSc                     | bachelor of Science |   |
+| MSc                     | master of Science   |   |
+| lectuler                | wykładowca          |   |
+| an examiner of a thesis | promotor            |   |
+|                         |                     |   |
+** c
+| BSc studies (undergraduate studies) | studja licencjackie            |
+| MSc studies                         | studia magisterskie techniczne |
+| PHD studies                         | Studia doktorskie              |
+| full-time studies                   | stuida dzienne                 |
+| extensive knowadge                  | rozległa wiedza                |
+| eductional background               | wykształćenie                  |
+| know-how                            |                                |
