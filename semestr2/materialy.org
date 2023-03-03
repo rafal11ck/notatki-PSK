@@ -12,3 +12,10 @@ Na miala wysyła
 =ASK2_2021=
 \\
 [[https://achilles.tu.kielce.pl/portal/Members/d240aef6944e4dcaa8cc84c0d9cc7c6b/ask2]]
+* Matematyka 2
+** wykład
+=Mat2-h4tf=
+\\
+[[https://weaii-moodle.tu.kielce.pl/course/view.php?id=651]]
+** ćwiczenia
+[[https://weaii-moodle.tu.kielce.pl/course/view.php?id=743]]
