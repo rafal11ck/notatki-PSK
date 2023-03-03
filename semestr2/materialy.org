@@ -18,4 +18,5 @@ Na miala wysyła
 \\
 [[https://weaii-moodle.tu.kielce.pl/course/view.php?id=651]]
 ** ćwiczenia
+=matematyka2KP=
 [[https://weaii-moodle.tu.kielce.pl/course/view.php?id=743]]
