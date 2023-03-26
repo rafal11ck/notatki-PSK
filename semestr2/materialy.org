@@ -22,4 +22,8 @@ Na miala wysyła
 ** ćwiczenia
 =matematyka2KP=
 [[https://weaii-moodle.tu.kielce.pl/course/view.php?id=743]]
+<<<<<<< HEAD
 * Podstawy programowania 2
+=======
+- konsultacje środa 10:00 4.02D
+>>>>>>> origin/main
