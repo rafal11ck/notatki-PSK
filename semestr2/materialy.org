@@ -4,6 +4,8 @@
 =AiSD_23=
 \\
 https://weaii-moodle.tu.kielce.pl/course/view.php?id=113
+** ćwiczenia
+https://weaii-moodle.tu.kielce.pl/course/view.php?id=734
 * Miernictwo cyfrowe
 ** Wykład
 Na miala wysyła
@@ -20,3 +22,4 @@ Na miala wysyła
 ** ćwiczenia
 =matematyka2KP=
 [[https://weaii-moodle.tu.kielce.pl/course/view.php?id=743]]
+* Podstawy programowania 2
