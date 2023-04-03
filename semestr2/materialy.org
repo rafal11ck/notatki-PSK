@@ -9,6 +9,9 @@ https://weaii-moodle.tu.kielce.pl/course/view.php?id=734
 * Miernictwo cyfrowe
 ** Wykład
 Na miala wysyła
+** labortaroia
+\\
+[[https://weaii-moodle.tu.kielce.pl/course/view.php?id=80]]
 * Architektura systemów komputerowych 2
 ** Wykład
 =ASK2_2021=
